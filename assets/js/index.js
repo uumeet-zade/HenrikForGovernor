@@ -26,7 +26,7 @@ const toggleTheme = () => {
 const translations = {
   en: {
     'intro.headline': 'NO PARTY.<br>NO HANDLERS.<br>JUST CAMBRIA.',
-    'intro.subtext': 'Henrik Vasmer. Independent representation for the Southern Coast.',
+    'intro.subtext': 'Henrik Vasmer. Independent representation for all of Cambria.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. Rejecting the trade that defined his family in favour of academia, he earned a PhD in Rhetoric and Persuasion Culture. Now, he brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.',
     
     'platform.title': 'THE PLATFORM',
