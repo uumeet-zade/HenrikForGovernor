@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henrik Vasmer | Independent for Governor</title>
+  <meta name="description" content="Henrik Vasmer. Independent representation for the Southern Coast. No party. No handlers. Just Cambria.">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+  <!-- Language Selector -->
+  <nav class="lang-nav">
+    <button class="lang-btn display-text" data-lang="en">ALANIAN</button>
+    <button class="lang-btn display-text" data-lang="es">ALCAMERIAN</button>
+    <button class="lang-btn display-text" data-lang="fr">GALLIC</button>
+  </nav>
+
+  <!-- Section 1: Introduction -->
+  <section id="intro" class="section">
+    <div class="container">
+      <div class="intro-content">
+        <h1 class="display-text" data-i18n="intro.headline">NO PARTY.<br>NO HANDLERS.<br>JUST CAMBRIA.</h1>
+        <p data-i18n="intro.subtext">Henrik Vasmer. Independent representation for the Southern Coast.</p>
+        
+        <div class="intro-bio" data-i18n="intro.bio">
+          <strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. Rejecting the trade that defined his family in favour of academia, he earned a PhD in Rhetoric and Persuasion Culture. Now, he brings decades of local, academic, and practical experience to the forefront to fight for Cambria's coastal and working communities.
+        </div>
+      </div>
+      <div class="intro-visual brutalist-border brutalist-shadow combat-ready">
+        <img src="assets/images/portraits/henrikvasmer.jpg" alt="Portrait of Henrik Vasmer" class="duotone-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Platform -->
+  <section id="platform" class="section">
+    <div class="container">
+      <h2 class="section-title display-text" data-i18n="platform.title">THE PLATFORM</h2>
+      <div class="platform-grid">
+        
+        <div class="platform-card combat-ready card-cyan">
+          <h3 class="display-text" data-i18n="platform.maritime.title">Maritime & Labor</h3>
+          <p data-i18n="platform.maritime.desc">Protecting our coastal industries and fishermen. Ensuring fair wages and safe conditions across all ports in southern Cambria.</p>
+        </div>
+
+        <div class="platform-card combat-ready card-yellow">
+          <h3 class="display-text" data-i18n="platform.education.title">Education & Economy</h3>
+          <p data-i18n="platform.education.desc">Bringing high-level academia and practical economic reform to the working class. Investing in local schools and vocational training.</p>
+        </div>
+
+        <div class="platform-card combat-ready card-magenta">
+          <h3 class="display-text" data-i18n="platform.reform.title">Reform & Persuasion</h3>
+          <p data-i18n="platform.reform.desc">Using structural persuasion and rhetorical power to dismantle bureaucratic hurdles and establish direct democratic accountability.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Events -->
+  <section id="events" class="section">
+    <div class="marquee-container">
+      <div class="marquee" data-i18n="events.marquee">
+        ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; 
+      </div>
+    </div>
+    <div class="container">
+      <div class="events-list">
+        
+        <div class="event-row combat-ready" data-event-id="alto-port" style="cursor: pointer;">
+          <div class="event-date">SEP 15</div>
+          <div class="event-details">
+            <h4 class="display-text" data-i18n="event.alto.title">Alto Port Rally</h4>
+            <p data-i18n="event.alto.loc">Main Docks, Alto, Cambria</p>
+          </div>
+        </div>
+
+        <div class="event-row combat-ready" data-event-id="town-hall" style="cursor: pointer;">
+          <div class="event-date">OCT 02</div>
+          <div class="event-details">
+            <h4 class="display-text" data-i18n="event.townhall.title">Town Hall Debate</h4>
+            <p data-i18n="event.townhall.loc">University of Cambria Civic Center</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Ultimatum -->
+  <section id="ultimatum" class="section">
+    <button class="ultimatum-btn" data-i18n="ultimatum.btn">
+      JOIN THE FIGHT
+    </button>
+  </section>
+
+  <!-- Event Modal -->
+  <div id="event-modal" class="modal-overlay">
+    <div class="modal-content brutalist-border brutalist-shadow">
+      <button class="modal-close display-text">X</button>
+      <div class="modal-header">
+        <h2 id="modal-title" class="display-text">Title</h2>
+        <p id="modal-meta" data-i18n="modal.date.loc">Date | Location</p>
+      </div>
+      <div id="modal-body" class="modal-body">
+        <!-- Content injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/eventsData.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
