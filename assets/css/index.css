@@ -771,6 +771,12 @@ a {
     font-size: 1.2rem;
   }
 
+  /* Always color portrait on mobile */
+  .duotone-img {
+    filter: none;
+    box-shadow: var(--shadow-red);
+  }
+
   /* Platform */
   .platform-grid {
     grid-template-columns: 1fr;
