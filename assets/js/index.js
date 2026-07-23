@@ -198,4 +198,48 @@ document.addEventListener('DOMContentLoaded', () => {
       closeModal();
     }
   });
+
+  // Simulated Form Submissions
+  const btnJoin = document.getElementById('btn-join-fight');
+  const submitBtn = document.getElementById('footer-submit-btn');
+  const emailInput = document.getElementById('footer-email-input');
+
+  // "Join the Fight" auto-scrolls to the footer form
+  if (btnJoin) {
+    btnJoin.addEventListener('click', () => {
+      document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => emailInput.focus(), 500); // Focus the input after scrolling
+    });
+  }
+
+  // Footer Email Submission simulation
+  if (submitBtn && emailInput) {
+    submitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const email = emailInput.value.trim();
+      if (!email || !email.includes('@')) return; // Basic validation
+
+      // Combat State: Loading
+      submitBtn.textContent = 'TRANSMITTING...';
+      submitBtn.style.backgroundColor = 'var(--color-black)';
+      submitBtn.style.color = 'var(--color-yellow)';
+      submitBtn.style.pointerEvents = 'none'; // Prevent double clicking
+      
+      // Simulate network request
+      setTimeout(() => {
+        // Combat State: Success
+        submitBtn.textContent = 'ORDERS RECEIVED';
+        submitBtn.style.backgroundColor = 'var(--color-cyan)';
+        submitBtn.style.color = 'var(--color-black)';
+        emailInput.value = '';
+
+        // Reset to resting state after 3 seconds
+        setTimeout(() => {
+          submitBtn.textContent = translations[currentLang]['footer.subscribe'] || 'SUBMIT';
+          submitBtn.style = ''; // Clear inline styles
+          submitBtn.style.pointerEvents = 'all';
+        }, 3000);
+      }, 1500);
+    });
+  }
 });
