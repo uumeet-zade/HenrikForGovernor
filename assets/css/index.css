@@ -264,6 +264,7 @@ a {
 
 /* Hover States for Cards */
 .card-cyan:hover {
+  background-color: var(--color-black);
   border-color: var(--color-cyan);
   box-shadow: var(--shadow-cyan);
   color: var(--color-cyan);
@@ -274,6 +275,7 @@ a {
 }
 
 .card-yellow:hover {
+  background-color: var(--color-black);
   border-color: var(--color-yellow);
   box-shadow: var(--shadow-yellow);
   color: var(--color-yellow);
@@ -284,6 +286,7 @@ a {
 }
 
 .card-magenta:hover {
+  background-color: var(--color-black);
   border-color: var(--color-magenta);
   box-shadow: var(--shadow-magenta);
   color: var(--color-magenta);
