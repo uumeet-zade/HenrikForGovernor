@@ -110,8 +110,18 @@ a {
   transition: var(--transition-fast);
 }
 
-.lang-btn:hover {
-  background-color: var(--color-red);
+.lang-btn[data-lang="en"]:hover {
+  background-color: var(--color-cyan);
+  color: var(--color-black);
+}
+
+.lang-btn[data-lang="es"]:hover {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}
+
+.lang-btn[data-lang="fr"]:hover {
+  background-color: var(--color-magenta);
   color: var(--color-white);
 }
 
