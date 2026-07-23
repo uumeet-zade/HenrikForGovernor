@@ -30,12 +30,12 @@ const translations = {
     'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. Rejecting the trade that defined his family in favour of academia, he earned a PhD in Rhetoric and Persuasion Culture. Now, he brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.',
     
     'platform.title': 'THE PLATFORM',
-    'platform.maritime.title': 'Maritime & Labor',
-    'platform.maritime.desc': 'Protecting our coastal industries and fishermen. Ensuring fair wages and safe conditions across all ports in southern Cambria.',
-    'platform.education.title': 'Education & Economy',
-    'platform.education.desc': 'Bringing high-level academia and practical economic reform to the working class. Investing in local schools and vocational training.',
-    'platform.reform.title': 'Reform & Persuasion',
-    'platform.reform.desc': 'Using structural persuasion and rhetorical power to dismantle bureaucratic hurdles and establish direct democratic accountability.',
+    'platform.maritime.title': 'Anti-Monopoly Enforcement',
+    'platform.maritime.desc': 'Targeting single-buyer dominance in our ports and freight lines. Applying strict antitrust scrutiny to corporate monopolies that dictate prices to working-class suppliers.',
+    'platform.education.title': 'Co-op Reformation',
+    'platform.education.desc': 'Providing bonding and freight-sharing assistance to keep existing rural co-ops standing, while offering logistics support to rebuild collapsed fishing co-ops along the coast.',
+    'platform.reform.title': 'Contract Floor Protections',
+    'platform.reform.desc': 'Establishing sector-wide minimum price floors for catch and grain contracts. Ensuring that the absence of a second buyer can never be used to drive working-class profits into the ground.',
     
     'events.marquee': 'ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ',
     'event.alto.title': 'Alto Port Rally',
@@ -43,7 +43,31 @@ const translations = {
     'event.townhall.title': 'Town Hall Debate',
     'event.townhall.loc': 'University of Cambria Civic Center',
     
+    'problem.title': 'THE PROBLEM',
+    'problem.monopoly': 'Monopoly Grip & Tax Evasion',
+    'problem.desc1': 'Right now, a single corporate buyer controls the docks and the freight lines. They dictate the prices you get for your labor. Meanwhile, the conservative establishment protects them: <strong>0% Federal Tax on Luxury Goods</strong> and <strong>0% Wealth Tax</strong>.',
+    'problem.desc2': 'They are ramping up taxes on small businesses, independent workers, and the middle class, actively punishing Cambria while shielding the elite.',
+    
+    'voices.title': 'THE VOICES OF CAMBRIA',
+    'voices.quote1': '"I\'ve worked these docks for 30 years. Halvent sets the price, and we starve. Henrik is the only one who actually read their contract and told them \'no\'."',
+    'voices.author1': '- Joren, Alto Port Fisherman',
+    'voices.quote2': '"Without the co-op, we\'d be selling grain at a loss. Henrik helped us rebuild it. He doesn\'t just talk, he dismantles the system holding us back."',
+    'voices.author2': '- Runa Sabel, Rensk Hollow Grain Co-op',
+    
+    'timeline.title': 'THE RECORD',
+    'timeline.item1': 'Born to a family of fishermen in Alto Port. Learned the cost of a broken system on the docks.',
+    'timeline.item2': 'Rejected the trade to understand the system. Earned a PhD in Rhetoric and Persuasion Culture.',
+    'timeline.item3': 'Served on the Alto Local Council. Fought for contract floor protections for local workers.',
+    'timeline.item4': 'Independent Run for Governor. Fighting the monopolies to reclaim Cambria for the working class.',
+    
     'ultimatum.btn': 'JOIN THE FIGHT',
+    
+    'footer.poster': '[ CAMPAIGN POSTER ASSET HERE ]',
+    'footer.title': 'STAY IN THE FIGHT',
+    'footer.desc': 'Sign up for deployment orders and campaign updates.',
+    'footer.email.placeholder': 'EMAIL ADDRESS',
+    'footer.subscribe': 'SUBMIT',
+    'footer.legal': 'PAID FOR BY HENRIK VASMER HIMSELF. WE NEED YOUR VOTE, NOT YOUR MONEY.',
     
     'modal.date.loc': 'Date | Location'
   },
@@ -53,12 +77,12 @@ const translations = {
     'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazando el oficio que definía a su familia en favor de la academia, obtuvo un doctorado en Retórica y Cultura de la Persuasión. Ahora, pone décadas de experiencia local, académica y práctica al frente para luchar por las comunidades costeras y trabajadoras de Cambria.',
     
     'platform.title': 'LA PLATAFORMA',
-    'platform.maritime.title': 'Marítimo y Laboral',
-    'platform.maritime.desc': 'Proteger nuestras industrias costeras y a los pescadores. Garantizar salarios justos y condiciones seguras en todos los puertos del sur de Cambria.',
-    'platform.education.title': 'Educación y Economía',
-    'platform.education.desc': 'Llevar el alto nivel académico y la reforma económica práctica a la clase trabajadora. Invertir en escuelas locales y formación profesional.',
-    'platform.reform.title': 'Reforma y Persuasión',
-    'platform.reform.desc': 'Uso de la persuasión estructural y el poder retórico para desmantelar los obstáculos burocráticos y establecer una responsabilidad democrática directa.',
+    'platform.maritime.title': 'Aplicación Antimonopolio',
+    'platform.maritime.desc': 'Atacar el dominio de un solo comprador en nuestros puertos y líneas de transporte. Aplicar un estricto escrutinio antimonopolio a los monopolios corporativos que dictan los precios a los proveedores de la clase trabajadora.',
+    'platform.education.title': 'Reforma de Cooperativas',
+    'platform.education.desc': 'Proporcionar asistencia en logística y transporte compartido para mantener en pie las cooperativas rurales existentes, al mismo tiempo que se reconstruyen las cooperativas pesqueras colapsadas en la costa.',
+    'platform.reform.title': 'Protecciones de Contratos Base',
+    'platform.reform.desc': 'Establecer precios mínimos sectoriales para contratos de pesca y grano. Garantizar que la ausencia de un segundo comprador nunca pueda utilizarse para hundir las ganancias de la clase trabajadora.',
     
     'events.marquee': 'SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; ',
     'event.alto.title': 'Mitin en el Puerto de Alto',
@@ -76,12 +100,12 @@ const translations = {
     'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un homme politique caprican indépendant originaire d\'Alto, une ville portuaire du sud de Cambria. Rejetant le métier de sa famille au profit du monde universitaire, il a obtenu un doctorat en Rhétorique et Culture de la Persuasion. Aujourd\'hui, il met des décennies d\'expérience locale, universitaire et pratique au premier plan pour défendre les communautés côtières et ouvrières de Cambria.',
     
     'platform.title': 'LE PROGRAMME',
-    'platform.maritime.title': 'Maritime et Travail',
-    'platform.maritime.desc': 'Protéger nos industries côtiennes et nos pêcheurs. Garantir des salaires équitables et des conditions sûres dans tous les ports du sud de Cambria.',
-    'platform.education.title': 'Éducation et Économie',
-    'platform.education.desc': 'Apporter un enseignement universitaire de haut niveau et des réformes économiques pratiques à la classe ouvrière. Investir dans les écoles locales et la formation professionnelle.',
-    'platform.reform.title': 'Réforme et Persuasion',
-    'platform.reform.desc': 'Utiliser la persuasion structurelle et le pouvoir rhétorique pour démanteler les obstacles bureaucratiques et établir une responsabilité démocratique directe.',
+    'platform.maritime.title': 'Application de la Loi Antimonopole',
+    'platform.maritime.desc': 'Cibler la domination de l\'acheteur unique dans nos ports et lignes de fret. Appliquer un contrôle antimonopole strict aux monopoles d\'entreprise qui dictent les prix aux fournisseurs de la classe ouvrière.',
+    'platform.education.title': 'Réforme des Coopératives',
+    'platform.education.desc': 'Fournir une aide au transport partagé et à la logistique pour maintenir les coopératives rurales existantes, tout en soutenant la reconstruction des coopératives de pêche effondrées le long de la côte.',
+    'platform.reform.title': 'Protections des Contrats Planchers',
+    'platform.reform.desc': 'Établir des prix planchers sectoriels pour les contrats de pêche et de céréales. S\'assurer que l\'absence d\'un deuxième acheteur ne puisse jamais être utilisée pour anéantir les bénéfices de la classe ouvrière.',
     
     'events.marquee': 'SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; ',
     'event.alto.title': 'Rassemblement au Port d\'Alto',
@@ -152,7 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = eventsData[eventId];
         modalTitle.textContent = data.title;
         modalMeta.textContent = `${data.date} | ${data.location}`;
-        modalBody.innerHTML = data.content;
+        
+        // Privacy Override: Do not show actual campaign event data yet
+        modalBody.innerHTML = "<h3 style='color: var(--color-red); margin-bottom: 1rem;'>[ CAMPAIGN EVENT DETAILS CLASSIFIED ]</h3><p>For privacy and strategic purposes, the full details of this event are temporarily withheld.</p><p>Deployment orders and full debriefing will be made public shortly.</p>";
+        
         modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
       }
