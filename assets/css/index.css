@@ -366,7 +366,7 @@ a {
 
 .ultimatum-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 4rem;
   align-items: center;
 }
@@ -384,10 +384,12 @@ a {
   color: var(--text-primary);
   border: none;
   font-family: var(--font-display);
-  font-size: 6rem;
+  font-size: clamp(3rem, 5vw, 6rem);
   font-weight: 800;
   cursor: pointer;
   transition: var(--transition-fast);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .ultimatum-btn:hover {

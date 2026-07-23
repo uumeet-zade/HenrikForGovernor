@@ -42,6 +42,8 @@ const translations = {
     'event.alto.loc': 'Main Docks, Alto, Cambria',
     'event.townhall.title': 'Town Hall Debate',
     'event.townhall.loc': 'University of Cambria Civic Center',
+    'event.alto.date': 'SEP 15',
+    'event.townhall.date': 'OCT 02',
     
     'problem.title': 'THE PROBLEM',
     'problem.monopoly': 'Monopoly Grip & Tax Evasion',
@@ -60,6 +62,7 @@ const translations = {
     'timeline.item3': 'Served on the Alto Local Council. Fought for contract floor protections for local workers.',
     'timeline.item4': 'Independent Run for Governor. Fighting the monopolies to reclaim Cambria for the working class.',
     
+    'ultimatum.title': 'THE TIME IS NOW',
     'ultimatum.btn': 'JOIN THE FIGHT',
     
     'footer.poster': '[ CAMPAIGN POSTER ASSET HERE ]',
@@ -89,8 +92,35 @@ const translations = {
     'event.alto.loc': 'Muelles Principales, Alto, Cambria',
     'event.townhall.title': 'Debate Abierto',
     'event.townhall.loc': 'Centro Cívico de la Universidad de Cambria',
+    'event.alto.date': 'SEP 15',
+    'event.townhall.date': 'OCT 02',
     
+    'problem.title': 'EL PROBLEMA',
+    'problem.monopoly': 'Control Monopolístico y Evasión Fiscal',
+    'problem.desc1': 'Ahora mismo, un único comprador corporativo controla los muelles y las líneas de transporte. Ellos dictan los precios que obtienes por tu trabajo. Mientras tanto, el sistema conservador los protege: <strong>0% de Impuesto Federal a los Bienes de Lujo</strong> y <strong>0% de Impuesto sobre el Patrimonio</strong>.',
+    'problem.desc2': 'Están aumentando los impuestos a las pequeñas empresas, a los trabajadores independientes y a la clase media, castigando activamente a Cambria mientras protegen a la élite.',
+    
+    'voices.title': 'LAS VOCES DE CAMBRIA',
+    'voices.quote1': '"He trabajado en estos muelles durante 30 años. Halvent fija el precio y nosotros nos morimos de hambre. Henrik es el único que realmente leyó su contrato y les dijo \'no\'."',
+    'voices.author1': '- Joren, Pescador del Puerto de Alto',
+    'voices.quote2': '"Sin la cooperativa, estaríamos vendiendo grano a pérdida. Henrik nos ayudó a reconstruirla. Él no solo habla, él desmantela el sistema que nos detiene."',
+    'voices.author2': '- Runa Sabel, Cooperativa de Granos de Rensk Hollow',
+    
+    'timeline.title': 'EL HISTORIAL',
+    'timeline.item1': 'Nacido en una familia de pescadores en el Puerto de Alto. Aprendió el costo de un sistema roto en los muelles.',
+    'timeline.item2': 'Rechazó el oficio para entender el sistema. Obtuvo un Doctorado en Retórica y Cultura de la Persuasión.',
+    'timeline.item3': 'Sirvió en el Consejo Local de Alto. Luchó por protecciones de contratos base para los trabajadores locales.',
+    'timeline.item4': 'Candidatura Independiente a Gobernador. Luchando contra los monopolios para reclamar Cambria para la clase trabajadora.',
+    
+    'ultimatum.title': 'EL MOMENTO ES AHORA',
     'ultimatum.btn': 'ÚNETE A LA LUCHA',
+    
+    'footer.poster': '[ RECURSO DE CARTEL DE CAMPAÑA AQUÍ ]',
+    'footer.title': 'MANTENTE EN LA LUCHA',
+    'footer.desc': 'Regístrate para órdenes de despliegue y actualizaciones de la campaña.',
+    'footer.email.placeholder': 'DIRECCIÓN DE CORREO',
+    'footer.subscribe': 'ENVIAR',
+    'footer.legal': 'PAGADO POR EL PROPIO HENRIK VASMER. NECESITAMOS TU VOTO, NO TU DINERO.',
     
     'modal.date.loc': 'Fecha | Ubicación'
   },
@@ -112,8 +142,35 @@ const translations = {
     'event.alto.loc': 'Quais Principaux, Alto, Cambria',
     'event.townhall.title': 'Débat Public',
     'event.townhall.loc': 'Centre Civique de l\'Université de Cambria',
+    'event.alto.date': 'SEP 15',
+    'event.townhall.date': 'OCT 02',
     
+    'problem.title': 'LE PROBLÈME',
+    'problem.monopoly': 'Emprise Monopolistique et Évasion Fiscale',
+    'problem.desc1': 'En ce moment, un seul acheteur corporatif contrôle les quais et les lignes de fret. Ils dictent les prix que vous obtenez pour votre travail. Pendant ce temps, l\'establishment conservateur les protège : <strong>0% d\'Impôt Fédéral sur les Biens de Luxe</strong> et <strong>0% d\'Impôt sur la Fortune</strong>.',
+    'problem.desc2': 'Ils augmentent les impôts sur les petites entreprises, les travailleurs indépendants et la classe moyenne, punissant activement Cambria tout en protégeant l\'élite.',
+    
+    'voices.title': 'LES VOIX DE CAMBRIA',
+    'voices.quote1': '"J\'ai travaillé sur ces quais pendant 30 ans. Halvent fixe les prix, et nous mourons de faim. Henrik est le seul à avoir vraiment lu leur contrat et à leur avoir dit \'non\'."',
+    'voices.author1': '- Joren, Pêcheur du Port d\'Alto',
+    'voices.quote2': '"Sans la coopérative, nous vendrions le grain à perte. Henrik nous a aidés à la reconstruire. Il ne fait pas que parler, il démantèle le système qui nous retient."',
+    'voices.author2': '- Runa Sabel, Coopérative Céréalière de Rensk Hollow',
+    
+    'timeline.title': 'LE BILAN',
+    'timeline.item1': 'Né dans une famille de pêcheurs au Port d\'Alto. A appris le coût d\'un système brisé sur les quais.',
+    'timeline.item2': 'A rejeté le métier pour comprendre le système. A obtenu un Doctorat en Rhétorique et Culture de la Persuasion.',
+    'timeline.item3': 'A siégé au Conseil Local d\'Alto. S\'est battu pour des protections de contrats planchers pour les travailleurs locaux.',
+    'timeline.item4': 'Candidature Indépendante au poste de Gouverneur. Lutte contre les monopoles pour récupérer Cambria pour la classe ouvrière.',
+    
+    'ultimatum.title': 'LE MOMENT EST VENU',
     'ultimatum.btn': 'REJOIGNEZ LE COMBAT',
+    
+    'footer.poster': '[ RESSOURCE DE L\'AFFICHE DE CAMPAGNE ICI ]',
+    'footer.title': 'RESTEZ DANS LE COMBAT',
+    'footer.desc': 'Inscrivez-vous pour les ordres de déploiement et les mises à jour de la campagne.',
+    'footer.email.placeholder': 'ADRESSE E-MAIL',
+    'footer.subscribe': 'SOUMETTRE',
+    'footer.legal': 'PAYÉ PAR HENRIK VASMER LUI-MÊME. NOUS AVONS BESOIN DE VOTRE VOTE, PAS DE VOTRE ARGENT.',
     
     'modal.date.loc': 'Date | Emplacement'
   }
@@ -133,6 +190,14 @@ const setLanguage = (lang) => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang][key]) {
       el.innerHTML = translations[lang][key];
+    }
+  });
+
+  // Find all elements with data-i18n-placeholder and update their placeholder attribute
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang][key]) {
+      el.setAttribute('placeholder', translations[lang][key]);
     }
   });
 
