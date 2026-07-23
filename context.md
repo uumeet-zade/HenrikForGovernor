@@ -18,7 +18,11 @@
 ## Technical Architecture
 * **Stack:** Vanilla HTML, CSS, JavaScript.
 * **Theming:** CSS Variables with a semantic setup (`--bg-primary`, `--text-primary`) supporting a `[data-theme="dark"]` override.
-* **Internationalization (i18n):** Foundation laid in `index.js` utilizing `data-i18n` attributes for dynamic language switching.
+* **Internationalization (i18n):** Custom Vanilla JS system laid in `index.js` utilizing `data-i18n` attributes for dynamic language switching.
+* **UI Simulation:** The "Join the Fight" email form is purely visual frontend JS. It intercepts clicks, simulates a 1.5s "TRANSMITTING..." network request, and snaps to a neon success state to look perfectly functional without a backend.
+* **Link Previews & Media:** 
+  * `favicon.svg` dynamically embeds the actual `MonumentExtended-Ultrabold` font file inside its SVG code using Base64 so it renders perfectly on all devices.
+  * `og-image.png` is generated via a custom 16:9 SVG (`og-image.svg`) that is perfectly rasterized using Headless Google Chrome to ensure the custom fonts load perfectly for social media scrapers (Twitter, Discord, iMessage). Meta tags must always use the absolute GitHub Pages URL.
 
 Spoken languages in Cambria are
 

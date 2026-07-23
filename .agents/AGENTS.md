@@ -17,3 +17,9 @@ Never use soft gradients or muted pastels. Colors must be fully saturated and hi
 *   **Transitions:** Fast and aggressive. `0.15s ease-in-out`. Elements must snap violently into their active states.
 *   **Hover States:** Interactive elements must shift diagonally (`transform: translate(-2px, -2px)`) to simulate the button being physically pressed against its hard shadow.
 *   **Imagery:** High-contrast, duotone or halftone black and white (`filter: grayscale(100%) contrast(150%)`). Images flash into full color only when hovered.
+
+## Internationalization (i18n) Rules
+*   **Architecture:** The site uses a custom Vanilla JS translation system.
+*   **HTML Structure:** Any translatable text must be placed inside an element with a `data-i18n="namespace.key"` attribute. Do not hardcode text without this attribute.
+*   **JavaScript Dictionary:** All translations must be stored inside the `translations` dictionary object in `assets/js/index.js`.
+*   **Caprican Languages:** In the UI, English is "Alanian", Spanish is "Alcamerian", and French is "Gallic". When adding new text, always provide translations for all three (`en`, `es`, `fr`).
