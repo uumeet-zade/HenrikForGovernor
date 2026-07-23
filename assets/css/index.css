@@ -57,7 +57,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -739,6 +740,7 @@ a {
 }
 
 @media (max-width: 900px) {
+
   /* Navigation */
   .lang-btn {
     padding: 1rem 0.5rem;
@@ -746,6 +748,7 @@ a {
     flex: 1;
     text-align: center;
   }
+
   .lang-nav {
     justify-content: space-between;
     width: 100%;
@@ -765,7 +768,7 @@ a {
   .section {
     padding: 3rem 1rem;
   }
-  
+
   #intro .container {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -828,33 +831,42 @@ a {
   .problem-content {
     padding: 1.5rem;
   }
+
   .problem-content h3 {
     font-size: 1.8rem;
   }
 
-  /* Timeline */
+  /* Timeline Centered */
   .timeline-line {
-    left: 8px;
-    transform: none;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .timeline-item {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .timeline-item.left,
   .timeline-item.right {
     left: 0;
-    padding-left: 36px;
-    padding-right: 0;
-    text-align: left;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .timeline-item.left .timeline-dot,
   .timeline-item.right .timeline-dot {
+    position: relative;
     left: 0;
-    right: auto;
+    right: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .timeline-content {
+    text-align: left;
   }
 
   .timeline-content h4 {
@@ -865,6 +877,7 @@ a {
   .voices-grid {
     grid-template-columns: 1fr;
   }
+
   .voice-card .quote {
     font-size: 1.2rem;
   }
@@ -879,7 +892,7 @@ a {
     width: 100%;
     padding: 1rem;
   }
-  
+
   .poster-placeholder {
     padding: 1rem;
   }
@@ -888,6 +901,7 @@ a {
   .modal-content {
     padding: 1.5rem;
   }
+
   .modal-header h2 {
     font-size: 2rem;
   }
