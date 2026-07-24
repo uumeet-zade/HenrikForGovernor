@@ -25,7 +25,7 @@ const toggleTheme = () => {
 // ==========================================
 const translations = {
   en: {
-    'intro.headline': 'NO PARTY.<br>NO HANDLERS.<br>JUST CAMBRIA.',
+    'intro.headline': '<span class="hover-cyan">NO PARTY.</span><br><span class="hover-yellow">NO HANDLERS.</span><br><span class="hover-magenta">JUST CAMBRIA.</span>',
     'intro.subtext': 'Henrik Vasmer. Independent representation for all of Cambria.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. Rejecting the trade that defined his family in favour of academia, he earned a PhD in Rhetoric and Persuasion Culture. Now, he brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.',
     
@@ -75,7 +75,7 @@ const translations = {
     'modal.date.loc': 'Date | Location'
   },
   es: {
-    'intro.headline': 'SIN PARTIDO.<br>SIN GESTORES.<br>SÓLO CAMBRIA.',
+    'intro.headline': '<span class="hover-cyan">SIN PARTIDO.</span><br><span class="hover-yellow">SIN GESTORES.</span><br><span class="hover-magenta">SÓLO CAMBRIA.</span>',
     'intro.subtext': 'Henrik Vasmer. Representación independiente para la Costa Sur.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazando el oficio que definía a su familia en favor de la academia, obtuvo un doctorado en Retórica y Cultura de la Persuasión. Ahora, pone décadas de experiencia local, académica y práctica al frente para luchar por las comunidades costeras y trabajadoras de Cambria.',
     
@@ -125,7 +125,7 @@ const translations = {
     'modal.date.loc': 'Fecha | Ubicación'
   },
   fr: {
-    'intro.headline': 'SANS PARTI.<br>SANS INTERMÉDIAIRES.<br>JUSTE CAMBRIA.',
+    'intro.headline': '<span class="hover-cyan">SANS PARTI.</span><br><span class="hover-yellow">SANS INTERMÉDIAIRES.</span><br><span class="hover-magenta">JUSTE CAMBRIA.</span>',
     'intro.subtext': 'Henrik Vasmer. Représentation indépendante pour la Côte Sud.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un homme politique caprican indépendant originaire d\'Alto, une ville portuaire du sud de Cambria. Rejetant le métier de sa famille au profit du monde universitaire, il a obtenu un doctorat en Rhétorique et Culture de la Persuasion. Aujourd\'hui, il met des décennies d\'expérience locale, universitaire et pratique au premier plan pour défendre les communautés côtières et ouvrières de Cambria.',
     

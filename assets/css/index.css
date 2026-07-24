@@ -199,6 +199,25 @@ a {
   letter-spacing: -2px;
   overflow-wrap: break-word;
   word-break: keep-all;
+  transition: var(--transition-fast);
+  cursor: default;
+  display: inline-block;
+}
+
+.hover-cyan, .hover-yellow, .hover-magenta {
+  transition: var(--transition-fast);
+}
+
+.hover-cyan:hover {
+  color: var(--color-cyan);
+}
+
+.hover-yellow:hover {
+  color: var(--color-yellow);
+}
+
+.hover-magenta:hover {
+  color: var(--color-magenta);
 }
 
 .intro-content p {
