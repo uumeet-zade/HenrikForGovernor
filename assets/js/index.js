@@ -30,31 +30,34 @@ const translations = {
     'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. Rejecting the trade that defined his family in favour of academia, he earned a PhD in Rhetoric and Persuasion Culture. Now, he brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.',
 
     'platform.title': 'THE PLATFORM',
-    'platform.maritime.title': 'Anti-Monopoly Enforcement',
-    'platform.maritime.desc': 'Targeting single-buyer dominance in our ports and freight lines. Applying strict antitrust scrutiny to corporate monopolies that dictate prices to working-class suppliers.',
-    'platform.education.title': 'Co-op Reformation',
-    'platform.education.desc': 'Providing bonding and freight-sharing assistance to keep existing rural co-ops standing, while offering logistics support to rebuild collapsed fishing co-ops along the coast.',
-    'platform.reform.title': 'Contract Floor Protections',
-    'platform.reform.desc': 'Establishing sector-wide minimum price floors for catch and grain contracts. Ensuring that the absence of a second buyer can never be used to drive working-class profits into the ground.',
+    'platform.maritime.title': 'Enforcement & Referrals',
+    'platform.maritime.desc': 'Using the governor\'s enforcement referral authority to challenge monopolistic mergers and protect local freight contracts.',
+    'platform.education.title': 'Statutory Appointments',
+    'platform.education.desc': 'Filling regional anti-monopoly and freight timetabling boards with actual workers and local stakeholders.',
+    'platform.reform.title': 'Administrative Reallocation',
+    'platform.reform.desc': 'Auditing and restaffing provincial offices to eliminate permit backlogs and actively support small businesses.',
 
     'events.marquee': 'ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ',
-    'event.alto.title': 'Alto Port Rally',
-    'event.alto.loc': 'Main Docks, Alto, Cambria',
-    'event.townhall.title': 'Town Hall Debate',
-    'event.townhall.loc': 'University of Cambria Civic Center',
+    'event.alto.title': 'Alto Harbor Visit',
+    'event.alto.loc': 'Main Docks, Alto',
     'event.alto.date': 'SEP 15',
-    'event.townhall.date': 'OCT 02',
+    'event.union.title': 'Union Hall Address',
+    'event.union.loc': 'Freight District, Cambria',
+    'event.union.date': 'OCT 02',
+    'event.permit.title': 'Permit Office Audit',
+    'event.permit.loc': 'District Office, Cambria',
+    'event.permit.date': 'OCT 18',
 
-    'problem.title': 'THE PROBLEM',
-    'problem.monopoly': 'Monopoly Grip & Tax Evasion',
-    'problem.desc1': 'Right now, a single corporate buyer controls the docks and the freight lines. They dictate the prices you get for your labor. Meanwhile, the conservative establishment protects them: <strong>0% Federal Tax on Luxury Goods</strong> and <strong>0% Wealth Tax</strong>.',
-    'problem.desc2': 'They are ramping up taxes on small businesses, independent workers, and the middle class, actively punishing Cambria while shielding the elite.',
+    'problem.title': 'WHO ACTUALLY RUNS IT',
+    'problem.monopoly': 'THE HONEST ANSWER',
+    'problem.desc1': 'Cambria suffers from a severe lack of enforcement. When a single buyer dictates prices on the docks or a merger threatens freight lines, the crisis is an immediate failure of executive action. A governor sits in Cambria. Right now, regional board seats are filled by whoever is convenient for the national parties. This leaves our anti-monopoly enforcement toothless and our administrative offices painfully understaffed.',
+    'problem.desc2': 'I am Henrik Vasmer, and I am here to offer you the truth. A legislator writes the tool. A governor decides whether it gets picked up. The power to enforce the law depends entirely on the person holding the office. I will use the governor\'s enforcement referral authority to scrutinize monopolies. I will fill Cambria\'s regional boards with people who know the docks and the soil. I will reallocate the administrative budget to clear the permitting backlog. That is the actual job.',
 
     'voices.title': 'THE VOICES OF CAMBRIA',
-    'voices.quote1': '"I\'ve worked these docks for 30 years. Halvent sets the price, and we starve. Henrik is the only one who actually read their contract and told them \'no\'."',
-    'voices.author1': '- Joren, Alto Port Fisherman',
-    'voices.quote2': '"Without the co-op, we\'d be selling grain at a loss. Henrik helped us rebuild it. He doesn\'t just talk, he dismantles the system holding us back."',
-    'voices.author2': '- Runa Sabel, Rensk Hollow Grain Co-op',
+    'voices.quote1': '"That is the first honest thing a politician has said to me in this harbor in a decade. Walk me through it."',
+    'voices.author1': 'Alto Harbor Cooperative Treasurer',
+    'voices.quote2': '"Most candidates want credit for passing the law. You are asking for credit for using it."',
+    'voices.author2': 'Osric Bellamy, Dockworkers\' Union Chairman',
 
     'timeline.title': 'THE RECORD',
     'timeline.item1': 'Born to a family of fishermen in Alto Port. Learned the cost of a broken system on the docks.',
@@ -81,31 +84,34 @@ const translations = {
     'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazando el oficio que definía a su familia en favor de la academia, obtuvo un doctorado en Retórica y Cultura de la Persuasión. Ahora, pone décadas de experiencia local, académica y práctica al frente para luchar por las comunidades costeras y trabajadoras de Cambria.',
 
     'platform.title': 'LA PLATAFORMA',
-    'platform.maritime.title': 'Aplicación Antimonopolio',
-    'platform.maritime.desc': 'Atacar el dominio de un solo comprador en nuestros puertos y líneas de transporte. Aplicar un estricto escrutinio antimonopolio a los monopolios corporativos que dictan los precios a los proveedores de la clase trabajadora.',
-    'platform.education.title': 'Reforma de Cooperativas',
-    'platform.education.desc': 'Proporcionar asistencia en logística y transporte compartido para mantener en pie las cooperativas rurales existentes, al mismo tiempo que se reconstruyen las cooperativas pesqueras colapsadas en la costa.',
-    'platform.reform.title': 'Protecciones de Contratos Base',
-    'platform.reform.desc': 'Establecer precios mínimos sectoriales para contratos de pesca y grano. Garantizar que la ausencia de un segundo comprador nunca pueda utilizarse para hundir las ganancias de la clase trabajadora.',
+    'platform.maritime.title': 'Aplicación y Remisiones',
+    'platform.maritime.desc': 'Uso de la autoridad de remisión de aplicación del gobernador para desafiar fusiones monopolísticas y proteger los contratos de carga locales.',
+    'platform.education.title': 'Nombramientos Estatutarios',
+    'platform.education.desc': 'Llenar las juntas regionales antimonopolio y de horarios de carga con trabajadores reales y partes interesadas locales.',
+    'platform.reform.title': 'Reasignación Administrativa',
+    'platform.reform.desc': 'Auditar y dotar de nuevo personal a las oficinas provinciales para eliminar los atrasos de permisos y apoyar activamente a las pequeñas empresas.',
 
     'events.marquee': 'SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; ',
-    'event.alto.title': 'Mitin en el Puerto de Alto',
-    'event.alto.loc': 'Muelles Principales, Alto, Cambria',
-    'event.townhall.title': 'Debate Abierto',
-    'event.townhall.loc': 'Centro Cívico de la Universidad de Cambria',
+    'event.alto.title': 'Visita al Puerto de Alto',
+    'event.alto.loc': 'Muelles Principales, Alto',
     'event.alto.date': 'SEP 15',
-    'event.townhall.date': 'OCT 02',
+    'event.union.title': 'Discurso en el Sindicato',
+    'event.union.loc': 'Distrito de Carga, Cambria',
+    'event.union.date': 'OCT 02',
+    'event.permit.title': 'Auditoría a la Oficina de Permisos',
+    'event.permit.loc': 'Oficina de Distrito, Cambria',
+    'event.permit.date': 'OCT 18',
 
-    'problem.title': 'EL PROBLEMA',
-    'problem.monopoly': 'Control Monopolístico y Evasión Fiscal',
-    'problem.desc1': 'Ahora mismo, un único comprador corporativo controla los muelles y las líneas de transporte. Ellos dictan los precios que obtienes por tu trabajo. Mientras tanto, el sistema conservador los protege: <strong>0% de Impuesto Federal a los Bienes de Lujo</strong> y <strong>0% de Impuesto sobre el Patrimonio</strong>.',
-    'problem.desc2': 'Están aumentando los impuestos a las pequeñas empresas, a los trabajadores independientes y a la clase media, castigando activamente a Cambria mientras protegen a la élite.',
+    'problem.title': 'QUIÉN GOBIERNA REALMENTE',
+    'problem.monopoly': 'LA RESPUESTA HONESTA',
+    'problem.desc1': 'Cambria sufre de una grave falta de aplicación de la ley. Cuando un comprador único dicta los precios en los muelles o una fusión amenaza las líneas de carga, la crisis es un fracaso inmediato de la acción ejecutiva. Un gobernador se sienta en Cambria. En este momento, los puestos de las juntas regionales son ocupados por quien sea conveniente para los partidos nacionales. Esto deja nuestra aplicación antimonopolio sin efecto y nuestras oficinas administrativas dolorosamente faltas de personal.',
+    'problem.desc2': 'Soy Henrik Vasmer, y estoy aquí para ofrecerles la verdad. Un legislador escribe la herramienta. Un gobernador decide si se utiliza. El poder de hacer cumplir la ley depende enteramente de la persona que ocupa el cargo. Utilizaré la autoridad de remisión de aplicación del gobernador para escrutar los monopolios. Llenaré las juntas regionales de Cambria con personas que conocen los muelles y la tierra. Reasignaré el presupuesto administrativo para despejar el atraso de permisos. Ese es el verdadero trabajo.',
 
     'voices.title': 'LAS VOCES DE CAMBRIA',
-    'voices.quote1': '"He trabajado en estos muelles durante 30 años. Halvent fija el precio y nosotros nos morimos de hambre. Henrik es el único que realmente leyó su contrato y les dijo \'no\'."',
-    'voices.author1': '- Joren, Pescador del Puerto de Alto',
-    'voices.quote2': '"Sin la cooperativa, estaríamos vendiendo grano a pérdida. Henrik nos ayudó a reconstruirla. Él no solo habla, él desmantela el sistema que nos detiene."',
-    'voices.author2': '- Runa Sabel, Cooperativa de Granos de Rensk Hollow',
+    'voices.quote1': '"Esa es la primera cosa honesta que un político me ha dicho en este puerto en una década. Explícamelo."',
+    'voices.author1': 'Tesorera de la Cooperativa del Puerto de Alto',
+    'voices.quote2': '"La mayoría de los candidatos quieren crédito por aprobar la ley. Tú estás pidiendo crédito por usarla."',
+    'voices.author2': 'Osric Bellamy, Presidente del Sindicato de Trabajadores Portuarios',
 
     'timeline.title': 'EL HISTORIAL',
     'timeline.item1': 'Nacido en una familia de pescadores en el Puerto de Alto. Aprendió el costo de un sistema roto en los muelles.',
@@ -132,31 +138,34 @@ const translations = {
     'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un homme politique caprican indépendant originaire d\'Alto, une ville portuaire du sud de Cambria. Rejetant le métier de sa famille au profit du monde universitaire, il a obtenu un doctorat en Rhétorique et Culture de la Persuasion. Aujourd\'hui, il met des décennies d\'expérience locale, universitaire et pratique au premier plan pour défendre les communautés côtières et ouvrières de Cambria.',
 
     'platform.title': 'LE PROGRAMME',
-    'platform.maritime.title': 'Application de la Loi Antimonopole',
-    'platform.maritime.desc': 'Cibler la domination de l\'acheteur unique dans nos ports et lignes de fret. Appliquer un contrôle antimonopole strict aux monopoles d\'entreprise qui dictent les prix aux fournisseurs de la classe ouvrière.',
-    'platform.education.title': 'Réforme des Coopératives',
-    'platform.education.desc': 'Fournir une aide au transport partagé et à la logistique pour maintenir les coopératives rurales existantes, tout en soutenant la reconstruction des coopératives de pêche effondrées le long de la côte.',
-    'platform.reform.title': 'Protections des Contrats Planchers',
-    'platform.reform.desc': 'Établir des prix planchers sectoriels pour les contrats de pêche et de céréales. S\'assurer que l\'absence d\'un deuxième acheteur ne puisse jamais être utilisée pour anéantir les bénéfices de la classe ouvrière.',
+    'platform.maritime.title': 'Application et Renvois',
+    'platform.maritime.desc': 'Utilisation de l\'autorité de renvoi d\'application du gouverneur pour contester les fusions monopolistiques et protéger les contrats de fret locaux.',
+    'platform.education.title': 'Nominations Statutaires',
+    'platform.education.desc': 'Remplir les conseils régionaux anti-monopoles et de planification du fret avec de vrais travailleurs et des acteurs locaux.',
+    'platform.reform.title': 'Réallocation Administrative',
+    'platform.reform.desc': 'Auditer et repourvoir en personnel les bureaux provinciaux pour éliminer les retards de permis et soutenir activement les petites entreprises.',
 
     'events.marquee': 'SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; ',
-    'event.alto.title': 'Rassemblement au Port d\'Alto',
-    'event.alto.loc': 'Quais Principaux, Alto, Cambria',
-    'event.townhall.title': 'Débat Public',
-    'event.townhall.loc': 'Centre Civique de l\'Université de Cambria',
+    'event.alto.title': 'Visite au Port d\'Alto',
+    'event.alto.loc': 'Quais Principaux, Alto',
     'event.alto.date': 'SEP 15',
-    'event.townhall.date': 'OCT 02',
+    'event.union.title': 'Discours au Syndicat',
+    'event.union.loc': 'Quartier du Fret, Cambria',
+    'event.union.date': 'OCT 02',
+    'event.permit.title': 'Audit du Bureau des Permis',
+    'event.permit.loc': 'Bureau de District, Cambria',
+    'event.permit.date': 'OCT 18',
 
-    'problem.title': 'LE PROBLÈME',
-    'problem.monopoly': 'Emprise Monopolistique et Évasion Fiscale',
-    'problem.desc1': 'En ce moment, un seul acheteur corporatif contrôle les quais et les lignes de fret. Ils dictent les prix que vous obtenez pour votre travail. Pendant ce temps, l\'establishment conservateur les protège : <strong>0% d\'Impôt Fédéral sur les Biens de Luxe</strong> et <strong>0% d\'Impôt sur la Fortune</strong>.',
-    'problem.desc2': 'Ils augmentent les impôts sur les petites entreprises, les travailleurs indépendants et la classe moyenne, punissant activement Cambria tout en protégeant l\'élite.',
+    'problem.title': 'QUI GOUVERNE VRAIMENT',
+    'problem.monopoly': 'LA RÉPONSE HONNÊTE',
+    'problem.desc1': 'Cambria souffre d\'un grave manque d\'application de la loi. Lorsqu\'un acheteur unique dicte les prix sur les quais ou qu\'une fusion menace les lignes de fret, la crise est un échec immédiat de l\'action exécutive. Un gouverneur siège à Cambria. En ce moment, les sièges des conseils régionaux sont occupés par quiconque arrange les partis nationaux. Cela laisse notre application anti-monopole sans effet et nos bureaux administratifs cruellement en manque de personnel.',
+    'problem.desc2': 'Je suis Henrik Vasmer, et je suis ici pour vous offrir la vérité. Un législateur écrit l\'outil. Un gouverneur décide s\'il est utilisé. Le pouvoir de faire appliquer la loi dépend entièrement de la personne qui occupe le poste. J\'utiliserai l\'autorité de renvoi d\'application du gouverneur pour examiner les monopoles. Je remplirai les conseils régionaux de Cambria avec des personnes qui connaissent les quais et la terre. Je réaffecterai le budget administratif pour résorber le retard des permis. C\'est là le véritable travail.',
 
     'voices.title': 'LES VOIX DE CAMBRIA',
-    'voices.quote1': '"J\'ai travaillé sur ces quais pendant 30 ans. Halvent fixe les prix, et nous mourons de faim. Henrik est le seul à avoir vraiment lu leur contrat et à leur avoir dit \'non\'."',
-    'voices.author1': '- Joren, Pêcheur du Port d\'Alto',
-    'voices.quote2': '"Sans la coopérative, nous vendrions le grain à perte. Henrik nous a aidés à la reconstruire. Il ne fait pas que parler, il démantèle le système qui nous retient."',
-    'voices.author2': '- Runa Sabel, Coopérative Céréalière de Rensk Hollow',
+    'voices.quote1': '"C\'est la première chose honnête qu\'un politicien m\'ait dite dans ce port depuis une décennie. Expliquez-moi."',
+    'voices.author1': 'Trésorière de la Coopérative du Port d\'Alto',
+    'voices.quote2': '"La plupart des candidats veulent s\'attribuer le mérite d\'avoir fait passer la loi. Vous demandez le mérite de l\'utiliser."',
+    'voices.author2': 'Osric Bellamy, Président du Syndicat des Travailleurs Portuaires',
 
     'timeline.title': 'LE BILAN',
     'timeline.item1': 'Né dans une famille de pêcheurs au Port d\'Alto. A appris le coût d\'un système brisé sur les quais.',
@@ -240,13 +249,18 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.event-row').forEach(row => {
     row.addEventListener('click', () => {
       const eventId = row.getAttribute('data-event-id');
+      
+      // Extract already-translated text from the clicked DOM element
+      const titleText = row.querySelector('h4').textContent;
+      const dateText = row.querySelector('.event-date').textContent;
+      const locText = row.querySelector('p').textContent;
+
       if (eventId && typeof eventsData !== 'undefined' && eventsData[eventId]) {
         const data = eventsData[eventId];
-        modalTitle.textContent = data.title;
-        modalMeta.textContent = `${data.date} | ${data.location}`;
-
-        // Privacy Override: Do not show actual campaign event data yet
-        modalBody.innerHTML = "<h3 style='color: var(--color-red); margin-bottom: 1rem;'>[ CAMPAIGN EVENT DETAILS CLASSIFIED ]</h3><p>For privacy and strategic purposes, the full details of this event are temporarily withheld.</p><p>Deployment orders and full debriefing will be made public shortly.</p>";
+        
+        modalTitle.textContent = titleText;
+        modalMeta.textContent = `${dateText} | ${locText}`;
+        modalBody.innerHTML = data.content;
 
         modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling

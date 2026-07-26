@@ -198,7 +198,7 @@ a {
   word-spacing: 5px;
   letter-spacing: -2px;
   overflow-wrap: break-word;
-  word-break: keep-all;
+  word-break: break-word;
   transition: var(--transition-fast);
   cursor: default;
   display: inline-block;
