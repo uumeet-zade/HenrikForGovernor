@@ -401,15 +401,24 @@ a {
   padding: 6rem 0;
 }
 
-.ultimatum-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 4rem;
+.ultimatum-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 4rem;
+}
+
+.posters-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
 }
 
 .ultimatum-action {
-  text-align: left;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
 }
 
 .ultimatum-btn {
@@ -863,7 +872,7 @@ a {
   }
 
   /* Ultimatum */
-  .ultimatum-grid {
+  .posters-wrapper {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
