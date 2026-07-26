@@ -64,6 +64,7 @@ const translations = {
 
     'ultimatum.title': 'THE TIME IS NOW',
     'ultimatum.btn': 'JOIN THE FIGHT',
+    'ultimatum.download_docx': 'LINK TO THE CAMPAIGNING MATERIAL (docx)',
 
     'footer.poster': '[ CAMPAIGN POSTER ASSET HERE ]',
     'footer.title': 'STAY IN THE FIGHT',
@@ -114,6 +115,7 @@ const translations = {
 
     'ultimatum.title': 'EL MOMENTO ES AHORA',
     'ultimatum.btn': 'ÚNETE A LA LUCHA',
+    'ultimatum.download_docx': 'ENLACE AL MATERIAL DE CAMPAÑA (docx)',
 
     'footer.poster': '[ RECURSO DE CARTEL DE CAMPAÑA AQUÍ ]',
     'footer.title': 'MANTENTE EN LA LUCHA',
@@ -164,6 +166,7 @@ const translations = {
 
     'ultimatum.title': 'LE MOMENT EST VENU',
     'ultimatum.btn': 'REJOIGNEZ LE COMBAT',
+    'ultimatum.download_docx': 'LIEN VERS LE MATÉRIEL DE CAMPAGNE (docx)',
 
     'footer.poster': '[ RESSOURCE DE L\'AFFICHE DE CAMPAGNE ICI ]',
     'footer.title': 'RESTEZ DANS LE COMBAT',
