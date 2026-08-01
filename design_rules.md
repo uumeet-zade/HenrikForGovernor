@@ -21,6 +21,8 @@ Never use soft gradients or muted pastels. Colors must be fully saturated and hi
     *   Neon Cyan: `#00FFFF` (Used for Maritime/Labor)
     *   Electric Yellow: `#FFCC00` (Used for Education/Economy)
     *   Hot Magenta: `#FF00FF` (Used for Reform/Persuasion)
+    *   Neon Green: `#00FF00` (Used for Civil Defense/Firearms)
+    *   Hot Orange: `#FF6600` (Additional combat accent)
 
 ## 3. Typography
 *   **Display / Headings:** `Monument Extended` (Ultra-bold, uppercase). Must be used for all section titles, massive call-outs, and buttons.

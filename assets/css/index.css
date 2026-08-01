@@ -22,6 +22,8 @@
   --color-cyan: #00FFFF;
   --color-yellow: #FFCC00;
   --color-magenta: #FF00FF;
+  --color-green: #00FF00;
+  --color-orange: #FF6600;
 
   /* Theme Foundation (Light Mode Default) */
   --bg-primary: var(--color-white);
@@ -36,6 +38,8 @@
   --shadow-cyan: 8px 8px 0px var(--color-cyan);
   --shadow-yellow: 8px 8px 0px var(--color-yellow);
   --shadow-magenta: 8px 8px 0px var(--color-magenta);
+  --shadow-green: 8px 8px 0px var(--color-green);
+  --shadow-orange: 8px 8px 0px var(--color-orange);
 
   --font-display: 'Monument Extended', sans-serif;
   --font-body: 'Space Grotesk', 'Inter', sans-serif;
@@ -285,6 +289,16 @@ a {
   gap: 2rem;
 }
 
+@media (min-width: 1024px) {
+  .platform-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.platform-card-full {
+  grid-column: 1 / -1;
+}
+
 .platform-card {
   background-color: var(--bg-inverted);
   border: var(--border-light);
@@ -392,6 +406,66 @@ a {
 
 .card-magenta.is-ticked .tick-fill {
   stroke: var(--color-magenta);
+}
+
+.card-red:hover {
+  background-color: var(--color-black);
+  border-color: var(--color-red);
+  box-shadow: var(--shadow-red);
+  color: var(--color-red);
+}
+
+.card-red:hover h3 {
+  color: var(--color-red);
+}
+
+.card-red.is-ticked .tick-border,
+.card-red.is-ticked .tick-fill {
+  stroke-dashoffset: 0;
+}
+
+.card-red.is-ticked .tick-fill {
+  stroke: var(--color-red);
+}
+
+.card-green:hover {
+  background-color: var(--color-black);
+  border-color: var(--color-green);
+  box-shadow: var(--shadow-green);
+  color: var(--color-green);
+}
+
+.card-green:hover h3 {
+  color: var(--color-green);
+}
+
+.card-green.is-ticked .tick-border,
+.card-green.is-ticked .tick-fill {
+  stroke-dashoffset: 0;
+}
+
+.card-green.is-ticked .tick-fill {
+  stroke: var(--color-green);
+}
+
+.card-orange:hover {
+  background-color: var(--color-black);
+  border-color: var(--color-orange);
+  box-shadow: var(--shadow-orange);
+  color: var(--color-orange);
+}
+
+.card-orange:hover h3 {
+  color: var(--color-orange);
+}
+
+.card-orange.is-ticked .tick-border,
+.card-orange.is-ticked .tick-fill {
+  stroke-dashoffset: 0;
+}
+
+.card-orange.is-ticked .tick-fill {
+  stroke: var(--color-orange);
 }
 
 /* Section 3: Events */
@@ -728,15 +802,15 @@ a {
 }
 
 .timeline-item:nth-child(6) .timeline-dot {
-  background-color: var(--color-cyan);
+  background-color: var(--color-orange);
 }
 
 .timeline-item:nth-child(6) .timeline-content {
-  border-color: var(--color-cyan);
+  border-color: var(--color-orange);
 }
 
 .timeline-item:nth-child(6) .timeline-content h4 {
-  color: var(--color-cyan);
+  color: var(--color-orange);
 }
 
 /* Section 5: Footer */

@@ -8,7 +8,7 @@ The visual language reflects the two sides of Henrik Vasmer:
 ## Color Palette
 Never use soft gradients or muted pastels. Colors must be fully saturated and high-contrast.
 *   **Base Colors:** White (`#FFFFFF`), Black (`#000000`)
-*   **Combat Colors (Exclusively for hovers and accents):** Hero Crimson Red (`#E60000`), Neon Cyan (`#00FFFF`), Electric Yellow (`#FFCC00`), Hot Magenta (`#FF00FF`)
+*   **Combat Colors (Exclusively for hovers and accents):** Hero Crimson Red (`#E60000`), Neon Cyan (`#00FFFF`), Electric Yellow (`#FFCC00`), Hot Magenta (`#FF00FF`), Neon Green (`#00FF00`), Hot Orange (`#FF6600`)
 
 ## Neobrutalist UI Rules
 *   **Borders:** Thick and unapologetic. `4px solid #000000` (or White in Combat State).

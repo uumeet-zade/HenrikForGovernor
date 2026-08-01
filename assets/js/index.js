@@ -32,6 +32,11 @@ const translations = {
     'platform.reform.title': 'Administrative Reallocation',
     'platform.reform.desc': 'Auditing and restaffing provincial offices to eliminate permit backlogs and actively support small businesses.',
 
+    'platform.cmc.title': 'CMC Pipeline Act',
+    'platform.cmc.desc': 'Establishing a jointly-owned Southern Water Corridor with Mezata and Costa Blanca to secure regional water independence.',
+    'platform.firearms.title': 'Civil Defense & Firearms Act',
+    'platform.firearms.desc': 'Establishing the Office of Civil Defense and enacting licensing reforms to ensure our rural and coastal communities have the means to protect themselves in an emergency.',
+
     'events.marquee': 'ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ',
     'event.alto.title': 'Alto Harbor Visit',
     'event.alto.loc': 'Main Docks, Alto',
@@ -85,7 +90,12 @@ const translations = {
     'platform.education.title': 'Nombramientos Estatutarios',
     'platform.education.desc': 'Llenar las juntas regionales antimonopolio y de horarios de carga con trabajadores reales y partes interesadas locales.',
     'platform.reform.title': 'Reasignación Administrativa',
-    'platform.reform.desc': 'Auditar y dotar de nuevo personal a las oficinas provinciales para eliminar los atrasos de permisos y apoyar activamente a las pequeñas empresas.',
+    'platform.reform.desc': 'Auditando y dotando de personal a las oficinas provinciales para eliminar los retrasos en los permisos y apoyar activamente a las pequeñas empresas.',
+
+    'platform.cmc.title': 'Ley del Oleoducto CMC',
+    'platform.cmc.desc': 'Estableciendo un Corredor de Agua del Sur de propiedad conjunta con Mezata y Costa Blanca para asegurar la independencia hídrica regional.',
+    'platform.firearms.title': 'Ley de Defensa Civil y Armas de Fuego',
+    'platform.firearms.desc': 'Estableciendo la Oficina de Defensa Civil y promulgando reformas de licencias para asegurar que nuestras comunidades rurales y costeras tengan los medios para protegerse en caso de emergencia.',
 
     'events.marquee': 'SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; ',
     'event.alto.title': 'Visita al Puerto de Alto',
@@ -139,8 +149,13 @@ const translations = {
     'platform.maritime.desc': 'Utilisation de l\'autorité de renvoi d\'application du gouverneur pour contester les fusions monopolistiques et protéger les contrats de fret locaux.',
     'platform.education.title': 'Nominations Statutaires',
     'platform.education.desc': 'Remplir les conseils régionaux anti-monopoles et de planification du fret avec de vrais travailleurs et des acteurs locaux.',
-    'platform.reform.title': 'Réallocation Administrative',
-    'platform.reform.desc': 'Auditer et repourvoir en personnel les bureaux provinciaux pour éliminer les retards de permis et soutenir activement les petites entreprises.',
+    'platform.reform.title': 'Réaffectation Administrative',
+    'platform.reform.desc': 'Auditer et réaffecter le personnel des bureaux provinciaux pour éliminer les retards de permis et soutenir activement les petites entreprises.',
+
+    'platform.cmc.title': 'Loi sur le Pipeline CMC',
+    'platform.cmc.desc': 'Établissement d\'un Corridor d\'Eau du Sud détenu conjointement avec Mezata et Costa Blanca pour garantir l\'indépendance hydrique régionale.',
+    'platform.firearms.title': 'Loi sur la Défense Civile et les Armes à Feu',
+    'platform.firearms.desc': 'Établissement du Bureau de la Défense Civile et promulgation de réformes des licences pour garantir que nos communautés rurales et côtières aient les moyens de se protéger en cas d\'urgence.',
 
     'events.marquee': 'SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; ',
     'event.alto.title': 'Visite au Port d\'Alto',
