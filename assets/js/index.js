@@ -326,11 +326,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Footer Email Submission simulation
-  if (submitBtn && emailInput) {
-    submitBtn.addEventListener('click', (e) => {
+  const footerForm = document.getElementById('footer-form');
+  if (footerForm && submitBtn && emailInput) {
+    footerForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = emailInput.value.trim();
-      if (!email || !email.includes('@')) return; // Basic validation
+      if (!email) return; // Basic validation
 
       // Combat State: Loading
       submitBtn.textContent = 'TRANSMITTING...';

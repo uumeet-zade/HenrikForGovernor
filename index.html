@@ -18,7 +18,7 @@
   <meta name="twitter:image" content="https://uumeet-zade.github.io/HenrikForGovernor/assets/images/og-image.png">
 
   <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
-  <link rel="stylesheet" href="./assets/css/index.css?v=5.23">
+  <link rel="stylesheet" href="./assets/css/index.css?v=5.25">
 </head>
 
 <body>
@@ -289,12 +289,12 @@
       <div class="footer-info">
         <h3 class="display-text" data-i18n="footer.title">STAY IN THE FIGHT</h3>
         <p data-i18n="footer.desc">Sign up for deployment orders and campaign updates.</p>
-        <div class="email-signup">
-          <input type="email" id="footer-email-input" placeholder="EMAIL ADDRESS" class="brutalist-border"
-            data-i18n-placeholder="footer.email.placeholder">
-          <button id="footer-submit-btn" class="brutalist-border brutalist-shadow"
+        <form id="footer-form" class="email-signup">
+          <input type="text" id="footer-email-input" placeholder="EMAIL ADDRESS" class="brutalist-border"
+            data-i18n-placeholder="footer.email.placeholder" required>
+          <button type="submit" id="footer-submit-btn" class="brutalist-border brutalist-shadow"
             data-i18n="footer.subscribe">SUBMIT</button>
-        </div>
+        </form>
         <div class="footer-legal">
           <p data-i18n="footer.legal">PAID FOR BY HENRIK VASMER HIMSELF. WE NEED YOUR VOTE, NOT YOUR MONEY.</p>
         </div>
