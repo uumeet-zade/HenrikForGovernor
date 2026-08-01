@@ -20,11 +20,15 @@ const toggleTheme = () => {
 // ==========================================
 const translations = {
   en: {
-    'intro.headline': '<span class="hover-cyan">NO PARTY.</span><br><span class="hover-yellow">NO HANDLERS.</span><br><span class="hover-magenta">JUST CAMBRIA.</span>',
-    'intro.subtext': 'Henrik Vasmer. Independent representation for all of Cambria.',
+    'nav.platform': 'PLATFORM',
+    'nav.events': 'EVENTS',
+    'nav.record': 'THE RECORD',
+    'intro.headline': '<span class="hover-cyan">PROMISES KEPT.</span><br><span class="hover-yellow">THE FIGHT CONTINUES.</span><br><span class="hover-red">FINISH WHAT WE STARTED.</span>',
+    'intro.subtext': 'Governor Henrik Vasmer. The independent voice for all of Cambria. Re-election 2062.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. Rejecting the trade that defined his family in favour of academia, he earned a PhD in Rhetoric and Persuasion Culture. Now, he brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.',
 
     'platform.title': 'THE PLATFORM',
+    'platform.slogan': 'HENRIK ALWAYS KEEPS HIS WORD.',
     'platform.maritime.title': 'Enforcement & Referrals',
     'platform.maritime.desc': 'Using the governor\'s enforcement referral authority to challenge monopolistic mergers and protect local freight contracts.',
     'platform.education.title': 'Statutory Appointments',
@@ -50,8 +54,8 @@ const translations = {
 
     'problem.title': 'WHO ACTUALLY RUNS IT',
     'problem.monopoly': 'THE HONEST ANSWER',
-    'problem.desc1': 'Cambria suffers from a severe lack of enforcement. When a single buyer dictates prices on the docks or a merger threatens freight lines, the crisis is an immediate failure of executive action. A governor sits in Cambria. Right now, regional board seats are filled by whoever is convenient for the national parties. This leaves our anti-monopoly enforcement toothless and our administrative offices painfully understaffed.',
-    'problem.desc2': 'I am Henrik Vasmer, and I am here to offer you the truth. A legislator writes the tool. A governor decides whether it gets picked up. The power to enforce the law depends entirely on the person holding the office. I will use the governor\'s enforcement referral authority to scrutinize monopolies. I will fill Cambria\'s regional boards with people who know the docks and the soil. I will reallocate the administrative budget to clear the permitting backlog. That is the actual job.',
+    'problem.desc1': 'Cambria suffers from a severe lack of enforcement. When a single buyer dictates the price of a catch, when one shipping firm controls the timetable, and when basic utilities are strangled by bureaucratic delay, the working class bleeds.',
+    'problem.desc2': 'In 2060, you delivered a historic 73.63% mandate to break the monopolies. We\'ve kept our promises and passed landmark reforms, but the establishment still fights us at every turn. A 75% mandate permanently secures our progress and proves that Cambria belongs to its people, not its politicians.',
 
     'voices.title': 'THE VOICES OF CAMBRIA',
     'voices.quote1': '"That is the first honest thing a politician has said to me in this harbor in a decade. Walk me through it."',
@@ -65,6 +69,8 @@ const translations = {
     'timeline.item3': 'Served on the Alto Local Council. Fought for contract floor protections for local workers.',
     'timeline.item4': 'Independent Run for Governor. Fighting the monopolies to reclaim Cambria for the working class.',
     'timeline.item5': 'Elected Governor of Cambria with a historic 73.63% of the vote. A crushing defeat for the conservative establishment and a clear mandate from the people to take back our region.',
+    'timeline.item6': 'Promises Kept. Passed the CMC Pipeline Act, Civil Defense Act, and dismantled regional monopolies in a single year.',
+    'timeline.item7': 'The Re-election Campaign. Fighting for a 75% mandate to finish what we started.',
 
     'ultimatum.title': 'THE TIME IS NOW',
     'ultimatum.btn': 'JOIN THE FIGHT',
@@ -80,11 +86,15 @@ const translations = {
     'modal.date.loc': 'Date | Location'
   },
   es: {
-    'intro.headline': '<span class="hover-cyan">SIN PARTIDO.</span><br><span class="hover-yellow">SIN GESTORES.</span><br><span class="hover-magenta">SÓLO CAMBRIA.</span>',
-    'intro.subtext': 'Henrik Vasmer. Representación independiente para la Costa Sur.',
-    'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazando el oficio que definía a su familia en favor de la academia, obtuvo un doctorado en Retórica y Cultura de la Persuasión. Ahora, pone décadas de experiencia local, académica y práctica al frente para luchar por las comunidades costeras y trabajadoras de Cambria.',
+    'nav.platform': 'PLATAFORMA',
+    'nav.events': 'EVENTOS',
+    'nav.record': 'EL REGISTRO',
+    'intro.headline': '<span class="hover-cyan">PROMESAS CUMPLIDAS.</span><br><span class="hover-yellow">LA LUCHA CONTINÚA.</span><br><span class="hover-red">TERMINEMOS LO QUE EMPEZAMOS.</span>',
+    'intro.subtext': 'Gobernador Henrik Vasmer. La voz independiente de toda Cambria. Reelección 2062.',
+    'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazando el oficio que definía a su familia a favor de la academia, obtuvo un doctorado en Retórica y Cultura de la Persuasión. Ahora, aporta décadas de experiencia local, académica y práctica a la vanguardia para luchar por las comunidades costeras y trabajadoras de Cambria.',
 
     'platform.title': 'LA PLATAFORMA',
+    'platform.slogan': 'HENRIK SIEMPRE CUMPLE SU PALABRA.',
     'platform.maritime.title': 'Aplicación y Remisiones',
     'platform.maritime.desc': 'Uso de la autoridad de remisión de aplicación del gobernador para desafiar fusiones monopolísticas y proteger los contratos de carga locales.',
     'platform.education.title': 'Nombramientos Estatutarios',
@@ -108,10 +118,10 @@ const translations = {
     'event.permit.loc': 'Oficina de Distrito, Cambria',
     'event.permit.date': 'OCT 18',
 
-    'problem.title': 'QUIÉN GOBIERNA REALMENTE',
+    'problem.title': 'QUIÉN LO MANEJA REALMENTE',
     'problem.monopoly': 'LA RESPUESTA HONESTA',
-    'problem.desc1': 'Cambria sufre de una grave falta de aplicación de la ley. Cuando un comprador único dicta los precios en los muelles o una fusión amenaza las líneas de carga, la crisis es un fracaso inmediato de la acción ejecutiva. Un gobernador se sienta en Cambria. En este momento, los puestos de las juntas regionales son ocupados por quien sea conveniente para los partidos nacionales. Esto deja nuestra aplicación antimonopolio sin efecto y nuestras oficinas administrativas dolorosamente faltas de personal.',
-    'problem.desc2': 'Soy Henrik Vasmer, y estoy aquí para ofrecerles la verdad. Un legislador escribe la herramienta. Un gobernador decide si se utiliza. El poder de hacer cumplir la ley depende enteramente de la persona que ocupa el cargo. Utilizaré la autoridad de remisión de aplicación del gobernador para escrutar los monopolios. Llenaré las juntas regionales de Cambria con personas que conocen los muelles y la tierra. Reasignaré el presupuesto administrativo para despejar el atraso de permisos. Ese es el verdadero trabajo.',
+    'problem.desc1': 'Cambria sufre de una grave falta de aplicación. Cuando un solo comprador dicta el precio de una captura, cuando una empresa naviera controla los horarios y cuando los servicios básicos son estrangulados por el retraso burocrático, la clase trabajadora sangra.',
+    'problem.desc2': 'En 2060, ustedes entregaron un mandato histórico del 73.63% para romper los monopolios. Hemos cumplido nuestras promesas y aprobado reformas históricas, pero el establishment todavía nos combate en cada oportunidad. Un mandato del 75% asegura permanentemente nuestro progreso y demuestra que Cambria pertenece a su pueblo, no a sus políticos.',
 
     'voices.title': 'LAS VOCES DE CAMBRIA',
     'voices.quote1': '"Esa es la primera cosa honesta que un político me ha dicho en este puerto en una década. Explícamelo."',
@@ -119,12 +129,14 @@ const translations = {
     'voices.quote2': '"La mayoría de los candidatos quieren crédito por aprobar la ley. Tú estás pidiendo crédito por usarla."',
     'voices.author2': 'Osric Bellamy, Presidente del Sindicato de Trabajadores Portuarios',
 
-    'timeline.title': 'EL HISTORIAL',
+    'timeline.title': 'EL REGISTRO',
     'timeline.item1': 'Nacido en una familia de pescadores en el Puerto de Alto. Aprendió el costo de un sistema roto en los muelles.',
     'timeline.item2': 'Rechazó el oficio para entender el sistema. Obtuvo un Doctorado en Retórica y Cultura de la Persuasión.',
     'timeline.item3': 'Sirvió en el Consejo Local de Alto. Luchó por protecciones de contratos base para los trabajadores locales.',
     'timeline.item4': 'Candidatura Independiente a Gobernador. Luchando contra los monopolios para reclamar Cambria para la clase trabajadora.',
     'timeline.item5': 'Elegido Gobernador de Cambria con un histórico 73.63% de los votos. Una derrota aplastante para el establishment conservador y un mandato claro del pueblo para recuperar nuestra región.',
+    'timeline.item6': 'Promesas Cumplidas. Aprobó la Ley del Oleoducto CMC, la Ley de Defensa Civil y desmanteló los monopolios regionales en un solo año.',
+    'timeline.item7': 'La Campaña de Reelección. Luchando por un mandato del 75% para terminar lo que empezamos.',
 
     'ultimatum.title': 'EL MOMENTO ES AHORA',
     'ultimatum.btn': 'ÚNETE A LA LUCHA',
@@ -140,11 +152,15 @@ const translations = {
     'modal.date.loc': 'Fecha | Ubicación'
   },
   fr: {
-    'intro.headline': '<span class="hover-cyan">SANS PARTI.</span><br><span class="hover-yellow">SANS INTERMÉDIAIRES.</span><br><span class="hover-magenta">JUSTE CAMBRIA.</span>',
-    'intro.subtext': 'Henrik Vasmer. Représentation indépendante pour la Côte Sud.',
-    'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un homme politique caprican indépendant originaire d\'Alto, une ville portuaire du sud de Cambria. Rejetant le métier de sa famille au profit du monde universitaire, il a obtenu un doctorat en Rhétorique et Culture de la Persuasion. Aujourd\'hui, il met des décennies d\'expérience locale, universitaire et pratique au premier plan pour défendre les communautés côtières et ouvrières de Cambria.',
+    'nav.platform': 'PLATEFORME',
+    'nav.events': 'ÉVÉNEMENTS',
+    'nav.record': 'LE BILAN',
+    'intro.headline': '<span class="hover-cyan">PROMESSES TENUES.</span><br><span class="hover-yellow">LE COMBAT CONTINUE.</span><br><span class="hover-red">FINISSONS CE QUE NOUS AVONS COMMENCÉ.</span>',
+    'intro.subtext': 'Gouverneur Henrik Vasmer. La voix indépendante de toute la Cambria. Réélection 2062.',
+    'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un politicien indépendant de Caprica originaire d\'Alto, une ville portuaire du sud de la Cambria. Rejetant le métier qui définissait sa famille au profit du monde universitaire, il a obtenu un doctorat en rhétorique et culture de la persuasion. Aujourd\'hui, il met ses décennies d\'expérience locale, universitaire et pratique au premier plan pour lutter pour les communautés côtières et ouvrières de Cambria.',
 
-    'platform.title': 'LE PROGRAMME',
+    'platform.title': 'LA PLATEFORME',
+    'platform.slogan': 'HENRIK TIENT TOUJOURS PAROLE.',
     'platform.maritime.title': 'Application et Renvois',
     'platform.maritime.desc': 'Utilisation de l\'autorité de renvoi d\'application du gouverneur pour contester les fusions monopolistiques et protéger les contrats de fret locaux.',
     'platform.education.title': 'Nominations Statutaires',
@@ -168,10 +184,10 @@ const translations = {
     'event.permit.loc': 'Bureau de District, Cambria',
     'event.permit.date': 'OCT 18',
 
-    'problem.title': 'QUI GOUVERNE VRAIMENT',
+    'problem.title': 'QUI DIRIGE RÉELLEMENT',
     'problem.monopoly': 'LA RÉPONSE HONNÊTE',
-    'problem.desc1': 'Cambria souffre d\'un grave manque d\'application de la loi. Lorsqu\'un acheteur unique dicte les prix sur les quais ou qu\'une fusion menace les lignes de fret, la crise est un échec immédiat de l\'action exécutive. Un gouverneur siège à Cambria. En ce moment, les sièges des conseils régionaux sont occupés par quiconque arrange les partis nationaux. Cela laisse notre application anti-monopole sans effet et nos bureaux administratifs cruellement en manque de personnel.',
-    'problem.desc2': 'Je suis Henrik Vasmer, et je suis ici pour vous offrir la vérité. Un législateur écrit l\'outil. Un gouverneur décide s\'il est utilisé. Le pouvoir de faire appliquer la loi dépend entièrement de la personne qui occupe le poste. J\'utiliserai l\'autorité de renvoi d\'application du gouverneur pour examiner les monopoles. Je remplirai les conseils régionaux de Cambria avec des personnes qui connaissent les quais et la terre. Je réaffecterai le budget administratif pour résorber le retard des permis. C\'est là le véritable travail.',
+    'problem.desc1': 'La Cambria souffre d\'un grave manque d\'application des lois. Lorsqu\'un seul acheteur dicte le prix d\'une pêche, lorsqu\'une compagnie maritime contrôle les horaires, et lorsque les services de base sont étranglés par les retards bureaucratiques, la classe ouvrière saigne.',
+    'problem.desc2': 'En 2060, vous avez délivré un mandat historique de 73,63 % pour briser les monopoles. Nous avons tenu nos promesses et adopté des réformes historiques, mais l\'establishment nous combat toujours à chaque instant. Un mandat de 75 % garantit définitivement nos progrès et prouve que Cambria appartient à son peuple et non à ses politiciens.',
 
     'voices.title': 'LES VOIX DE CAMBRIA',
     'voices.quote1': '"C\'est la première chose honnête qu\'un politicien m\'ait dite dans ce port depuis une décennie. Expliquez-moi."',
@@ -180,11 +196,13 @@ const translations = {
     'voices.author2': 'Osric Bellamy, Président du Syndicat des Travailleurs Portuaires',
 
     'timeline.title': 'LE BILAN',
-    'timeline.item1': 'Né dans une famille de pêcheurs au Port d\'Alto. A appris le coût d\'un système brisé sur les quais.',
-    'timeline.item2': 'A rejeté le métier pour comprendre le système. A obtenu un Doctorat en Rhétorique et Culture de la Persuasion.',
-    'timeline.item3': 'A siégé au Conseil Local d\'Alto. S\'est battu pour des protections de contrats planchers pour les travailleurs locaux.',
-    'timeline.item4': 'Candidature Indépendante au poste de Gouverneur. Lutte contre les monopoles pour récupérer Cambria pour la classe ouvrière.',
+    'timeline.item1': 'Né dans une famille de pêcheurs à Alto Port. A appris le coût d\'un système défaillant sur les quais.',
+    'timeline.item2': 'A rejeté le métier pour comprendre le système. A obtenu un doctorat en rhétorique et culture de la persuasion.',
+    'timeline.item3': 'A siégé au Conseil Local d\'Alto. S\'est battu pour des protections de plancher de contrat pour les travailleurs locaux.',
+    'timeline.item4': 'Course Indépendante pour le poste de Gouverneur. Lutte contre les monopoles pour reconquérir la Cambria pour la classe ouvrière.',
     'timeline.item5': 'Élu Gouverneur de Cambria avec un score historique de 73.63% des voix. Une défaite écrasante pour l\'establishment conservateur et un mandat clair du peuple pour reprendre notre région.',
+    'timeline.item6': 'Promesses Tenues. A adopté la loi sur le pipeline CMC, la loi sur la défense civile et a démantelé les monopoles régionaux en une seule année.',
+    'timeline.item7': 'La Campagne de Réélection. Lutter pour un mandat de 75 % afin de terminer ce que nous avons commencé.',
 
     'ultimatum.title': 'LE MOMENT EST VENU',
     'ultimatum.btn': 'REJOIGNEZ LE COMBAT',

@@ -215,7 +215,8 @@ a {
 
 .hover-cyan,
 .hover-yellow,
-.hover-magenta {
+.hover-magenta,
+.hover-red {
   transition: var(--transition-fast);
   position: relative;
   z-index: 20;
@@ -240,6 +241,12 @@ a {
 
 .hover-magenta:hover {
   color: var(--color-magenta) !important;
+  top: -2px;
+  left: -2px;
+}
+
+.hover-red:hover {
+  color: var(--color-red) !important;
   top: -2px;
   left: -2px;
 }
@@ -802,14 +809,38 @@ a {
 }
 
 .timeline-item:nth-child(6) .timeline-dot {
-  background-color: var(--color-orange);
+  background-color: var(--color-cyan);
 }
 
 .timeline-item:nth-child(6) .timeline-content {
-  border-color: var(--color-orange);
+  border-color: var(--color-cyan);
 }
 
 .timeline-item:nth-child(6) .timeline-content h4 {
+  color: var(--color-cyan);
+}
+
+.timeline-item:nth-child(7) .timeline-dot {
+  background-color: var(--color-yellow);
+}
+
+.timeline-item:nth-child(7) .timeline-content {
+  border-color: var(--color-yellow);
+}
+
+.timeline-item:nth-child(7) .timeline-content h4 {
+  color: var(--color-yellow);
+}
+
+.timeline-item:nth-child(8) .timeline-dot {
+  background-color: var(--color-orange);
+}
+
+.timeline-item:nth-child(8) .timeline-content {
+  border-color: var(--color-orange);
+}
+
+.timeline-item:nth-child(8) .timeline-content h4 {
   color: var(--color-orange);
 }
 
