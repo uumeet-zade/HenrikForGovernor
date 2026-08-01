@@ -2,13 +2,8 @@
 // Theme Management Foundation
 // ==========================================
 const initTheme = () => {
-  // Check for saved theme preference, otherwise use system preference
-  const savedTheme = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  }
+  // Always force the Combat State (Dark Mode)
+  document.documentElement.setAttribute('data-theme', 'dark');
 };
 
 const toggleTheme = () => {
@@ -64,6 +59,7 @@ const translations = {
     'timeline.item2': 'Rejected the trade to understand the system. Earned a PhD in Rhetoric and Persuasion Culture.',
     'timeline.item3': 'Served on the Alto Local Council. Fought for contract floor protections for local workers.',
     'timeline.item4': 'Independent Run for Governor. Fighting the monopolies to reclaim Cambria for the working class.',
+    'timeline.item5': 'Elected Governor of Cambria with a historic 73.63% of the vote. A crushing defeat for the conservative establishment and a clear mandate from the people to take back our region.',
 
     'ultimatum.title': 'THE TIME IS NOW',
     'ultimatum.btn': 'JOIN THE FIGHT',
@@ -118,6 +114,7 @@ const translations = {
     'timeline.item2': 'Rechazó el oficio para entender el sistema. Obtuvo un Doctorado en Retórica y Cultura de la Persuasión.',
     'timeline.item3': 'Sirvió en el Consejo Local de Alto. Luchó por protecciones de contratos base para los trabajadores locales.',
     'timeline.item4': 'Candidatura Independiente a Gobernador. Luchando contra los monopolios para reclamar Cambria para la clase trabajadora.',
+    'timeline.item5': 'Elegido Gobernador de Cambria con un histórico 73.63% de los votos. Una derrota aplastante para el establishment conservador y un mandato claro del pueblo para recuperar nuestra región.',
 
     'ultimatum.title': 'EL MOMENTO ES AHORA',
     'ultimatum.btn': 'ÚNETE A LA LUCHA',
@@ -172,6 +169,7 @@ const translations = {
     'timeline.item2': 'A rejeté le métier pour comprendre le système. A obtenu un Doctorat en Rhétorique et Culture de la Persuasion.',
     'timeline.item3': 'A siégé au Conseil Local d\'Alto. S\'est battu pour des protections de contrats planchers pour les travailleurs locaux.',
     'timeline.item4': 'Candidature Indépendante au poste de Gouverneur. Lutte contre les monopoles pour récupérer Cambria pour la classe ouvrière.',
+    'timeline.item5': 'Élu Gouverneur de Cambria avec un score historique de 73.63% des voix. Une défaite écrasante pour l\'establishment conservateur et un mandat clair du peuple pour reprendre notre région.',
 
     'ultimatum.title': 'LE MOMENT EST VENU',
     'ultimatum.btn': 'REJOIGNEZ LE COMBAT',
@@ -249,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.event-row').forEach(row => {
     row.addEventListener('click', () => {
       const eventId = row.getAttribute('data-event-id');
-      
+
       // Extract already-translated text from the clicked DOM element
       const titleText = row.querySelector('h4').textContent;
       const dateText = row.querySelector('.event-date').textContent;
@@ -257,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (eventId && typeof eventsData !== 'undefined' && eventsData[eventId]) {
         const data = eventsData[eventId];
-        
+
         modalTitle.textContent = titleText;
         modalMeta.textContent = `${dateText} | ${locText}`;
         modalBody.innerHTML = data.content;
@@ -324,4 +322,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 1500);
     });
   }
+
+  // Platform Card Tick Logic
+  const platformCards = document.querySelectorAll('.platform-card');
+  platformCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.classList.add('is-ticked');
+    });
+  });
 });

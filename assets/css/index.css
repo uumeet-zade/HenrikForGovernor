@@ -192,6 +192,11 @@ a {
   min-width: 0;
 }
 
+.intro-content {
+  position: relative;
+  z-index: 10;
+}
+
 .intro-content h1 {
   font-size: clamp(3.5rem, 5vw + 1rem, 6rem);
   margin-bottom: 2rem;
@@ -201,23 +206,38 @@ a {
   word-break: break-word;
   transition: var(--transition-fast);
   cursor: default;
-  display: inline-block;
+  display: inline-block; /* Revert to standard flow */
 }
 
-.hover-cyan, .hover-yellow, .hover-magenta {
+.hover-cyan,
+.hover-yellow,
+.hover-magenta {
   transition: var(--transition-fast);
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
+  color: var(--text-primary);
+  display: inline;
+  /* Force WebKit's dirty repaint rectangle to expand upwards to fix the "Ó" clipping glitch without ruining standard inline hitboxes */
+  text-shadow: 0 -0.5em 0 rgba(0,0,0,0), 0 0.5em 0 rgba(0,0,0,0);
 }
 
 .hover-cyan:hover {
-  color: var(--color-cyan);
+  color: var(--color-cyan) !important;
+  top: -2px;
+  left: -2px;
 }
 
 .hover-yellow:hover {
-  color: var(--color-yellow);
+  color: var(--color-yellow) !important;
+  top: -2px;
+  left: -2px;
 }
 
 .hover-magenta:hover {
-  color: var(--color-magenta);
+  color: var(--color-magenta) !important;
+  top: -2px;
+  left: -2px;
 }
 
 .intro-content p {
@@ -270,6 +290,38 @@ a {
   border: var(--border-light);
   padding: 2rem;
   cursor: crosshair;
+  position: relative;
+}
+
+/* Giant Tick Animation */
+.giant-tick {
+  position: absolute;
+  top: -55px;
+  right: -35px;
+  width: 100px;
+  height: 100px;
+  fill: none;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  pointer-events: none; /* So it doesn't block interactions */
+  z-index: 100;
+}
+
+.tick-border,
+.tick-fill {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 0.3s ease-out;
+}
+
+.tick-border {
+  stroke: var(--color-black); /* Hard black border */
+  stroke-width: 14px; /* Slightly thicker than fill */
+}
+
+.tick-fill {
+  stroke: transparent;
+  stroke-width: 10px;
 }
 
 .platform-card h3 {
@@ -293,6 +345,15 @@ a {
   color: var(--color-cyan);
 }
 
+.card-cyan.is-ticked .tick-border,
+.card-cyan.is-ticked .tick-fill {
+  stroke-dashoffset: 0;
+}
+
+.card-cyan.is-ticked .tick-fill {
+  stroke: var(--color-cyan);
+}
+
 .card-yellow:hover {
   background-color: var(--color-black);
   border-color: var(--color-yellow);
@@ -304,6 +365,15 @@ a {
   color: var(--color-yellow);
 }
 
+.card-yellow.is-ticked .tick-border,
+.card-yellow.is-ticked .tick-fill {
+  stroke-dashoffset: 0;
+}
+
+.card-yellow.is-ticked .tick-fill {
+  stroke: var(--color-yellow);
+}
+
 .card-magenta:hover {
   background-color: var(--color-black);
   border-color: var(--color-magenta);
@@ -313,6 +383,15 @@ a {
 
 .card-magenta:hover h3 {
   color: var(--color-magenta);
+}
+
+.card-magenta.is-ticked .tick-border,
+.card-magenta.is-ticked .tick-fill {
+  stroke-dashoffset: 0;
+}
+
+.card-magenta.is-ticked .tick-fill {
+  stroke: var(--color-magenta);
 }
 
 /* Section 3: Events */
@@ -648,6 +727,18 @@ a {
   color: var(--color-red);
 }
 
+.timeline-item:nth-child(6) .timeline-dot {
+  background-color: var(--color-cyan);
+}
+
+.timeline-item:nth-child(6) .timeline-content {
+  border-color: var(--color-cyan);
+}
+
+.timeline-item:nth-child(6) .timeline-content h4 {
+  color: var(--color-cyan);
+}
+
 /* Section 5: Footer */
 .footer-grid {
   display: flex;
@@ -927,7 +1018,7 @@ a {
     right: 0;
     margin-bottom: 1.5rem;
   }
-  
+
   .timeline-content {
     text-align: left;
   }

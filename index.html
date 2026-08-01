@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,7 @@
   <meta name="twitter:image" content="https://uumeet-zade.github.io/HenrikForGovernor/assets/images/og-image.png">
 
   <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
-  <link rel="stylesheet" href="./assets/css/index.css?v=4.5">
+  <link rel="stylesheet" href="./assets/css/index.css?v=5.13">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
   <section id="intro" class="section">
     <div class="container">
       <div class="intro-content">
-        <h1 class="display-text" data-i18n="intro.headline">NO PARTY.<br>NO HANDLERS.<br>JUST CAMBRIA.</h1>
+        <h1 class="display-text" data-i18n="intro.headline"><span class="hover-cyan">NO PARTY.</span><br><span class="hover-yellow">NO HANDLERS.</span><br><span class="hover-magenta">JUST CAMBRIA.</span></h1>
         <p data-i18n="intro.subtext">Henrik Vasmer. Independent representation for all of Cambria.</p>
 
         <div class="intro-bio" data-i18n="intro.bio">
@@ -56,8 +56,16 @@
       <h2 class="section-title display-text" data-i18n="problem.title">WHO ACTUALLY RUNS IT</h2>
       <div class="problem-content brutalist-border brutalist-shadow">
         <h3 class="display-text" data-i18n="problem.monopoly">THE HONEST ANSWER</h3>
-        <p data-i18n="problem.desc1">Cambria suffers from a severe lack of enforcement. When a single buyer dictates prices on the docks or a merger threatens freight lines, the crisis is an immediate failure of executive action. A governor sits in Cambria. Right now, regional board seats are filled by whoever is convenient for the national parties. This leaves our anti-monopoly enforcement toothless and our administrative offices painfully understaffed.</p>
-        <p data-i18n="problem.desc2">I am Henrik Vasmer, and I am here to offer you the truth. A legislator writes the tool. A governor decides whether it gets picked up. The power to enforce the law depends entirely on the person holding the office. I will use the governor's enforcement referral authority to scrutinize monopolies. I will fill Cambria's regional boards with people who know the docks and the soil. I will reallocate the administrative budget to clear the permitting backlog. That is the actual job.</p>
+        <p data-i18n="problem.desc1">Cambria suffers from a severe lack of enforcement. When a single buyer dictates
+          prices on the docks or a merger threatens freight lines, the crisis is an immediate failure of executive
+          action. A governor sits in Cambria. Right now, regional board seats are filled by whoever is convenient for
+          the national parties. This leaves our anti-monopoly enforcement toothless and our administrative offices
+          painfully understaffed.</p>
+        <p data-i18n="problem.desc2">I am Henrik Vasmer, and I am here to offer you the truth. A legislator writes the
+          tool. A governor decides whether it gets picked up. The power to enforce the law depends entirely on the
+          person holding the office. I will use the governor's enforcement referral authority to scrutinize monopolies.
+          I will fill Cambria's regional boards with people who know the docks and the soil. I will reallocate the
+          administrative budget to clear the permitting backlog. That is the actual job.</p>
       </div>
     </div>
   </section>
@@ -69,18 +77,33 @@
       <div class="platform-grid">
 
         <div class="platform-card combat-ready card-cyan">
+          <svg class="giant-tick" viewBox="0 0 100 100">
+            <polyline class="tick-border" points="20,50 45,70 90,20"></polyline>
+            <polyline class="tick-fill" points="20,50 45,70 90,20"></polyline>
+          </svg>
           <h3 class="display-text" data-i18n="platform.maritime.title">Enforcement & Referrals</h3>
-          <p data-i18n="platform.maritime.desc">Using the governor's enforcement referral authority to challenge monopolistic mergers and protect local freight contracts.</p>
+          <p data-i18n="platform.maritime.desc">Using the governor's enforcement referral authority to challenge
+            monopolistic mergers and protect local freight contracts.</p>
         </div>
 
         <div class="platform-card combat-ready card-yellow">
+          <svg class="giant-tick" viewBox="0 0 100 100">
+            <polyline class="tick-border" points="20,50 45,70 90,20"></polyline>
+            <polyline class="tick-fill" points="20,50 45,70 90,20"></polyline>
+          </svg>
           <h3 class="display-text" data-i18n="platform.education.title">Statutory Appointments</h3>
-          <p data-i18n="platform.education.desc">Filling regional anti-monopoly and freight timetabling boards with actual workers and local stakeholders.</p>
+          <p data-i18n="platform.education.desc">Filling regional anti-monopoly and freight timetabling boards with
+            actual workers and local stakeholders.</p>
         </div>
 
         <div class="platform-card combat-ready card-magenta">
+          <svg class="giant-tick" viewBox="0 0 100 100">
+            <polyline class="tick-border" points="20,50 45,70 90,20"></polyline>
+            <polyline class="tick-fill" points="20,50 45,70 90,20"></polyline>
+          </svg>
           <h3 class="display-text" data-i18n="platform.reform.title">Administrative Reallocation</h3>
-          <p data-i18n="platform.reform.desc">Auditing and restaffing provincial offices to eliminate permit backlogs and actively support small businesses.</p>
+          <p data-i18n="platform.reform.desc">Auditing and restaffing provincial offices to eliminate permit backlogs
+            and actively support small businesses.</p>
         </div>
 
       </div>
@@ -97,11 +120,14 @@
           class="campaign-poster brutalist-border brutalist-shadow">
       </div>
       <div class="ultimatum-action">
-        <h2 class="display-text" style="font-size: 3rem; margin-bottom: 2rem;" data-i18n="ultimatum.title">THE TIME IS NOW</h2>
+        <h2 class="display-text" style="font-size: 3rem; margin-bottom: 2rem;" data-i18n="ultimatum.title">THE TIME IS
+          NOW</h2>
         <button id="btn-join-fight" class="ultimatum-btn" data-i18n="ultimatum.btn">
           JOIN THE FIGHT
         </button>
-        <a id="btn-download-docx" class="small-download-btn" href="https://docs.google.com/document/d/18i_zgRk6YISJSjcpd7JKTX-MZl1aDDbZ-karEDlMdnQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="ultimatum.download_docx">
+        <a id="btn-download-docx" class="small-download-btn"
+          href="https://docs.google.com/document/d/18i_zgRk6YISJSjcpd7JKTX-MZl1aDDbZ-karEDlMdnQ/edit?usp=sharing"
+          target="_blank" rel="noopener noreferrer" data-i18n="ultimatum.download_docx">
           LINK TO THE CAMPAIGNING MATERIAL (docx)
         </a>
       </div>
@@ -114,11 +140,13 @@
       <h2 class="section-title display-text" data-i18n="voices.title">THE VOICES OF CAMBRIA</h2>
       <div class="voices-grid">
         <div class="voice-card brutalist-border brutalist-shadow">
-          <p class="quote" data-i18n="voices.quote1">"That is the first honest thing a politician has said to me in this harbor in a decade. Walk me through it."</p>
+          <p class="quote" data-i18n="voices.quote1">"That is the first honest thing a politician has said to me in this
+            harbor in a decade. Walk me through it."</p>
           <p class="author" data-i18n="voices.author1">Alto Harbor Cooperative Treasurer</p>
         </div>
         <div class="voice-card brutalist-border brutalist-shadow">
-          <p class="quote" data-i18n="voices.quote2">"Most candidates want credit for passing the law. You are asking for credit for using it."</p>
+          <p class="quote" data-i18n="voices.quote2">"Most candidates want credit for passing the law. You are asking
+            for credit for using it."</p>
           <p class="author" data-i18n="voices.author2">Osric Bellamy, Dockworkers' Union Chairman</p>
         </div>
       </div>
@@ -207,6 +235,14 @@
           </div>
         </div>
 
+        <div class="timeline-item left">
+          <div class="timeline-dot brutalist-border"></div>
+          <div class="timeline-content brutalist-border brutalist-shadow">
+            <h4 class="display-text">NOV 9, 2060</h4>
+            <p data-i18n="timeline.item5">Elected as the Governor of Cambria.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -245,8 +281,8 @@
     </div>
   </div>
 
-  <script src="./assets/js/eventsData.js?v=4.5"></script>
-  <script src="./assets/js/index.js?v=4.5"></script>
+  <script src="./assets/js/eventsData.js?v=5.8"></script>
+  <script src="./assets/js/index.js?v=5.8"></script>
 </body>
 
 </html>
