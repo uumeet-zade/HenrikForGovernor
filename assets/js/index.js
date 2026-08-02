@@ -51,6 +51,7 @@ const translations = {
     'platform2.item4.title': 'IV. Finish What We Started',
     'platform2.item4.desc': 'Every commission we seated, every office we reformed, every board we handed back to workers and stakeholders — the establishment wants it undone the moment we look away. A 75% mandate does not just re-elect a governor. It tells the conservative establishment and every entrenched interest still fighting these reforms in the courts and in the Legislature: Cambria is not going back.',
 
+    'marquee.hero': '/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///',
     'events.marquee': 'ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ',
     'event.alto.title': 'Alto Harbor Visit',
     'event.alto.loc': 'Main Docks, Alto',
@@ -99,7 +100,7 @@ const translations = {
     'nav.problem': 'LA LUCHA',
     'nav.platform': 'LA PLATAFORMA',
     'nav.record': 'EL REGISTRO',
-    'intro.headline': '<span class="hover-cyan">PROMESAS CUMPLIDAS.</span><br><span class="hover-yellow">LA LUCHA CONTINÚA.</span><br><span class="hover-red">TERMINEMOS LO QUE EMPEZAMOS.</span>',
+    'intro.headline': '<span class="hover-cyan">PROMESAS CUMPLIDAS.</span><br><span class="hover-yellow">LA LUCHA CONTINÚA.</span><br><span class="hover-red">TERMINEMOS EL TRABAJO.</span>',
     'intro.subtext': 'Gobernador Henrik Vasmer. La voz independiente de toda Cambria. Reelección 2062.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazando el oficio que definía a su familia a favor de la academia, obtuvo un doctorado en Retórica y Cultura de la Persuasión. Ahora, aporta décadas de experiencia local, académica y práctica a la vanguardia para luchar por las comunidades costeras y trabajadoras de Cambria.',
 
@@ -127,6 +128,7 @@ const translations = {
     'platform2.item4.title': 'IV. Terminar lo que Empezamos',
     'platform2.item4.desc': 'Cada comisión que sentamos, cada oficina que reformamos, cada junta que devolvimos a los trabajadores y las partes interesadas — el establishment quiere deshacerlo en el momento en que miramos a otro lado. Un mandato del 75% no solo reelige a un gobernador. Le dice al establishment conservador y a todos los intereses arraigados que todavía luchan contra estas reformas en los tribunales y en la Legislatura: Cambria no volverá atrás.',
 
+    'marquee.hero': '/// EL MANDATO /// 2062 /// EL MANDATO /// 2062 /// EL MANDATO ///',
     'events.marquee': 'SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; ',
     'event.alto.title': 'Visita al Puerto de Alto',
     'event.alto.loc': 'Muelles Principales, Alto',
@@ -175,7 +177,7 @@ const translations = {
     'nav.problem': 'LE COMBAT',
     'nav.platform': 'LA PLATEFORME',
     'nav.record': 'LE DOSSIER',
-    'intro.headline': '<span class="hover-cyan">PROMESSES TENUES.</span><br><span class="hover-yellow">LE COMBAT CONTINUE.</span><br><span class="hover-red">FINISSONS CE QUE NOUS AVONS COMMENCÉ.</span>',
+    'intro.headline': '<span class="hover-cyan">PROMESSES TENUES.</span><br><span class="hover-yellow">LE COMBAT CONTINUE.</span><br><span class="hover-red">ACHEVONS LE TRAVAIL.</span>',
     'intro.subtext': 'Gouverneur Henrik Vasmer. La voix indépendante de toute la Cambria. Réélection 2062.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un politicien indépendant de Caprica originaire d\'Alto, une ville portuaire du sud de la Cambria. Rejetant le métier qui définissait sa famille au profit du monde universitaire, il a obtenu un doctorat en rhétorique et culture de la persuasion. Aujourd\'hui, il met ses décennies d\'expérience locale, universitaire et pratique au premier plan pour lutter pour les communautés côtières et ouvrières de Cambria.',
 
@@ -203,6 +205,7 @@ const translations = {
     'platform2.item4.title': 'IV. Finir ce que Nous Avons Commencé',
     'platform2.item4.desc': 'Chaque commission que nous avons siégée, chaque bureau que nous avons réformé, chaque conseil que nous avons rendu aux travailleurs et aux parties prenantes — l\'establishment veut tout défaire dès que nous détournons le regard. Un mandat de 75 % ne réélit pas seulement un gouverneur. Il dit à l\'establishment conservateur et à tous les intérêts bien ancrés qui combattent encore ces réformes devant les tribunaux et à l\'Assemblée : Cambria ne reculera pas.',
 
+    'marquee.hero': '/// LE MANDAT /// 2062 /// LE MANDAT /// 2062 /// LE MANDAT ///',
     'events.marquee': 'SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; ',
     'event.alto.title': 'Visite au Port d\'Alto',
     'event.alto.loc': 'Quais Principaux, Alto',
@@ -300,11 +303,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Event Modal Logic
-  const modal = document.getElementById('event-modal');
+  const eventModal = document.getElementById('event-modal');
   const modalTitle = document.getElementById('modal-title');
   const modalMeta = document.getElementById('modal-meta');
   const modalBody = document.getElementById('modal-body');
-  const closeBtn = document.querySelector('.modal-close');
+  const eventCloseBtn = eventModal ? eventModal.querySelector('.modal-close') : null;
 
   // Open modal on event click
   document.querySelectorAll('.event-row').forEach(row => {
@@ -316,31 +319,64 @@ document.addEventListener('DOMContentLoaded', () => {
       const dateText = row.querySelector('.event-date').textContent;
       const locText = row.querySelector('p').textContent;
 
-      if (eventId && typeof eventsData !== 'undefined' && eventsData[eventId]) {
+      if (eventId && typeof eventsData !== 'undefined' && eventsData[eventId] && eventModal) {
         const data = eventsData[eventId];
 
-        modalTitle.textContent = titleText;
-        modalMeta.textContent = `${dateText} | ${locText}`;
-        modalBody.innerHTML = data.content;
+        if (modalTitle) modalTitle.textContent = titleText;
+        if (modalMeta) modalMeta.textContent = `${dateText} | ${locText}`;
+        
+        const lang = document.documentElement.getAttribute('lang') || 'en';
+        const contentBlock = data[lang] ? data[lang].content : (data.en ? data.en.content : data.content);
+        if (modalBody) modalBody.innerHTML = contentBlock;
 
-        modal.classList.add('active');
+        eventModal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
       }
     });
   });
 
-  // Close modal
-  const closeModal = () => {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
+  const closeEventModal = () => {
+    if (eventModal) {
+      eventModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
   };
 
-  closeBtn.addEventListener('click', closeModal);
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
+  if (eventCloseBtn) eventCloseBtn.addEventListener('click', closeEventModal);
+  if (eventModal) {
+    eventModal.addEventListener('click', (e) => {
+      if (e.target === eventModal) closeEventModal();
+    });
+  }
+
+  // Image Modal Logic for Posters
+  const imageModal = document.getElementById('image-modal');
+  const modalImage = document.getElementById('modal-image');
+  const imageCloseBtn = imageModal ? imageModal.querySelector('.modal-close') : null;
+
+  document.querySelectorAll('.campaign-poster').forEach(poster => {
+    poster.addEventListener('click', () => {
+      if (imageModal && modalImage) {
+        modalImage.src = poster.src;
+        imageModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
   });
+
+  const closeImageModal = () => {
+    if (imageModal) {
+      imageModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (imageCloseBtn) imageCloseBtn.addEventListener('click', closeImageModal);
+  if (imageModal) {
+    imageModal.addEventListener('click', (e) => {
+      if (e.target === imageModal) closeImageModal();
+    });
+  }
 
   // Simulated Form Submissions
   const btnJoin = document.getElementById('btn-join-fight');
@@ -389,22 +425,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Platform Card Tick Logic
   const platformCards = document.querySelectorAll('.platform-card');
-  const tickObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // Add a small delay so they see it animate after scrolling
-        setTimeout(() => {
-          entry.target.classList.add('is-ticked');
-        }, 150);
-        tickObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.3 });
-
+  
   platformCards.forEach(card => {
     if (card.querySelector('.giant-tick')) {
-      tickObserver.observe(card);
-      // Fallback manual trigger
       card.addEventListener('mouseenter', () => {
         card.classList.add('is-ticked');
       });
