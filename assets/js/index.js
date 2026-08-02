@@ -20,8 +20,8 @@ const toggleTheme = () => {
 // ==========================================
 const translations = {
   en: {
-    'nav.platform': 'PLATFORM',
-    'nav.events': 'EVENTS',
+    'nav.problem': 'THE FIGHT',
+    'nav.platform': 'THE PLATFORM',
     'nav.record': 'THE RECORD',
     'intro.headline': '<span class="hover-cyan">PROMISES KEPT.</span><br><span class="hover-yellow">THE FIGHT CONTINUES.</span><br><span class="hover-red">FINISH WHAT WE STARTED.</span>',
     'intro.subtext': 'Governor Henrik Vasmer. The independent voice for all of Cambria. Re-election 2062.',
@@ -96,8 +96,8 @@ const translations = {
     'modal.date.loc': 'Date | Location'
   },
   es: {
-    'nav.platform': 'PLATAFORMA',
-    'nav.events': 'EVENTOS',
+    'nav.problem': 'LA LUCHA',
+    'nav.platform': 'LA PLATAFORMA',
     'nav.record': 'EL REGISTRO',
     'intro.headline': '<span class="hover-cyan">PROMESAS CUMPLIDAS.</span><br><span class="hover-yellow">LA LUCHA CONTINÚA.</span><br><span class="hover-red">TERMINEMOS LO QUE EMPEZAMOS.</span>',
     'intro.subtext': 'Gobernador Henrik Vasmer. La voz independiente de toda Cambria. Reelección 2062.',
@@ -172,9 +172,9 @@ const translations = {
     'modal.date.loc': 'Fecha | Ubicación'
   },
   fr: {
-    'nav.platform': 'PLATEFORME',
-    'nav.events': 'ÉVÉNEMENTS',
-    'nav.record': 'LE BILAN',
+    'nav.problem': 'LE COMBAT',
+    'nav.platform': 'LA PLATEFORME',
+    'nav.record': 'LE DOSSIER',
     'intro.headline': '<span class="hover-cyan">PROMESSES TENUES.</span><br><span class="hover-yellow">LE COMBAT CONTINUE.</span><br><span class="hover-red">FINISSONS CE QUE NOUS AVONS COMMENCÉ.</span>',
     'intro.subtext': 'Gouverneur Henrik Vasmer. La voix indépendante de toute la Cambria. Réélection 2062.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un politicien indépendant de Caprica originaire d\'Alto, une ville portuaire du sud de la Cambria. Rejetant le métier qui définissait sa famille au profit du monde universitaire, il a obtenu un doctorat en rhétorique et culture de la persuasion. Aujourd\'hui, il met ses décennies d\'expérience locale, universitaire et pratique au premier plan pour lutter pour les communautés côtières et ouvrières de Cambria.',
@@ -389,8 +389,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Platform Card Tick Logic
   const platformCards = document.querySelectorAll('.platform-card');
+  const tickObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add a small delay so they see it animate after scrolling
+        setTimeout(() => {
+          entry.target.classList.add('is-ticked');
+        }, 150);
+        tickObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
   platformCards.forEach(card => {
     if (card.querySelector('.giant-tick')) {
+      tickObserver.observe(card);
+      // Fallback manual trigger
       card.addEventListener('mouseenter', () => {
         card.classList.add('is-ticked');
       });

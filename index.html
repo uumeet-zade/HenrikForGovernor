@@ -18,336 +18,172 @@
   <meta name="twitter:image" content="https://uumeet-zade.github.io/HenrikForGovernor/assets/images/og-image.png">
 
   <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
-  <link rel="stylesheet" href="./assets/css/index.css?v=5.28">
+  <link rel="stylesheet" href="./assets/css/index.css?v=5.31">
 </head>
 
 <body>
 
-  <!-- Language Selector -->
-  <nav class="lang-nav">
-    <button class="lang-btn display-text" data-lang="en">ALANIAN</button>
-    <button class="lang-btn display-text" data-lang="es">ALCAMERIAN</button>
-    <button class="lang-btn display-text" data-lang="fr">GALLIC</button>
-  </nav>
-
-  <!-- Section 1: Introduction -->
-  <section id="intro" class="section">
-    <div class="container">
-      <div class="intro-content">
-        <h1 class="display-text" data-i18n="intro.headline"><span class="hover-cyan">NO PARTY.</span><br><span class="hover-yellow">NO HANDLERS.</span><br><span class="hover-magenta">JUST CAMBRIA.</span></h1>
-        <p data-i18n="intro.subtext">Henrik Vasmer. Independent representation for all of Cambria.</p>
-
-        <div class="intro-bio" data-i18n="intro.bio">
-          <strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port
-          town in southern Cambria. Rejecting the trade that defined his family in favour of academia, he earned a PhD
-          in Rhetoric and Persuasion Culture. Now, he brings decades of local, academic, and practical experience to the
-          forefront to fight for Cambria's coastal and working communities.
-        </div>
+  <div class="manifesto-wrapper">
+    
+    <!-- Top Nav -->
+    <header class="grid-nav">
+      <div class="nav-brand display-text">VASMER '62</div>
+      <div class="nav-lang">
+        <button class="lang-btn display-text" data-lang="en">AL</button>
+        <button class="lang-btn display-text" data-lang="es">AC</button>
+        <button class="lang-btn display-text" data-lang="fr">GA</button>
       </div>
-      <div class="intro-visual brutalist-border brutalist-shadow combat-ready">
-        <img src="./assets/images/portraits/henrikvasmer.jpg" alt="Portrait of Henrik Vasmer" class="duotone-img">
+    </header>
+
+    <!-- Hero Row -->
+    <section class="grid-hero">
+      <div class="hero-text-box">
+        <h1 class="display-text hero-title" data-i18n="intro.headline">
+          <span class="hover-cyan">PROMISES KEPT.</span><br>
+          <span class="hover-yellow">THE FIGHT CONTINUES.</span><br>
+          <span class="hover-red">FINISH WHAT WE STARTED.</span>
+        </h1>
       </div>
+      <div class="hero-image-box combat-ready">
+        <img src="./assets/images/portraits/henrikvasmer.jpg" alt="Henrik Vasmer" class="duotone-img">
+      </div>
+    </section>
+
+    <!-- Marquee Divider -->
+    <div class="grid-marquee combat-ready">
+      <div class="marquee-text" data-i18n="marquee.hero">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
     </div>
-  </section>
 
-  <!-- Section 1.5: The Problem -->
-  <section id="problem" class="section combat-ready">
-    <div class="container">
-      <h2 class="section-title display-text" data-i18n="problem.title">WHO ACTUALLY RUNS IT</h2>
-      <div class="problem-content brutalist-border brutalist-shadow">
-        <h3 class="display-text" data-i18n="problem.monopoly">THE HONEST ANSWER</h3>
-        <p data-i18n="problem.desc1">Cambria suffers from a severe lack of enforcement. When a single buyer dictates
-          prices on the docks or a merger threatens freight lines, the crisis is an immediate failure of executive
-          action. A governor sits in Cambria. Right now, regional board seats are filled by whoever is convenient for
-          the national parties. This leaves our anti-monopoly enforcement toothless and our administrative offices
-          painfully understaffed.</p>
-        <p data-i18n="problem.desc2">I am Henrik Vasmer, and I am here to offer you the truth. A legislator writes the
-          tool. A governor decides whether it gets picked up. The power to enforce the law depends entirely on the
-          person holding the office. I will use the governor's enforcement referral authority to scrutinize monopolies.
-          I will fill Cambria's regional boards with people who know the docks and the soil. I will reallocate the
-          administrative budget to clear the permitting backlog. That is the actual job.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 2: Platform -->
-  <section id="platform" class="section">
-    <div class="container">
-      <h2 class="section-title display-text" data-i18n="platform.promises_title">PROMISES KEPT</h2>
-      <h3 class="display-text" style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center; color: var(--color-cyan);" data-i18n="platform.slogan">HENRIK ALWAYS KEEPS HIS WORD.</h3>
-      <div class="platform-grid">
-
-        <div class="platform-card combat-ready card-cyan">
+    <!-- Promises Kept Section -->
+    <section class="grid-promises" style="padding: 4rem 2rem; border-bottom: var(--border-thick); background-color: var(--bg-primary);">
+      <h2 class="display-text section-title" data-i18n="platform.promises_title" style="margin-bottom: 0;">PROMISES KEPT</h2>
+      <h3 class="display-text" style="font-size: 2.5rem; margin-bottom: 3rem; color: var(--color-cyan);" data-i18n="platform.slogan">HENRIK ALWAYS KEEPS HIS WORD.</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        
+        <div class="feed-card platform-card combat-ready card-cyan">
           <svg class="giant-tick" viewBox="0 0 100 100">
-            <polyline class="tick-border" points="20,50 45,70 90,20"></polyline>
-            <polyline class="tick-fill" points="20,50 45,70 90,20"></polyline>
+            <polyline class="tick-border" points="20,50 45,70 90,20" pathLength="100"></polyline>
+            <polyline class="tick-fill" points="20,50 45,70 90,20" pathLength="100"></polyline>
           </svg>
           <h3 class="display-text" data-i18n="platform.maritime.title">Enforcement & Referrals</h3>
-          <p data-i18n="platform.maritime.desc">Using the governor's enforcement referral authority to challenge
-            monopolistic mergers and protect local freight contracts.</p>
+          <p data-i18n="platform.maritime.desc">Using the governor's enforcement referral authority to challenge monopolistic mergers and protect local freight contracts.</p>
         </div>
 
-        <div class="platform-card combat-ready card-yellow">
+        <div class="feed-card platform-card combat-ready card-yellow">
           <svg class="giant-tick" viewBox="0 0 100 100">
-            <polyline class="tick-border" points="20,50 45,70 90,20"></polyline>
-            <polyline class="tick-fill" points="20,50 45,70 90,20"></polyline>
+            <polyline class="tick-border" points="20,50 45,70 90,20" pathLength="100"></polyline>
+            <polyline class="tick-fill" points="20,50 45,70 90,20" pathLength="100"></polyline>
           </svg>
           <h3 class="display-text" data-i18n="platform.education.title">Statutory Appointments</h3>
-          <p data-i18n="platform.education.desc">Filling regional anti-monopoly and freight timetabling boards with
-            actual workers and local stakeholders.</p>
+          <p data-i18n="platform.education.desc">Filling regional anti-monopoly and freight timetabling boards with actual workers and local stakeholders.</p>
         </div>
 
-        <div class="platform-card combat-ready card-magenta">
+        <div class="feed-card platform-card combat-ready card-magenta">
           <svg class="giant-tick" viewBox="0 0 100 100">
-            <polyline class="tick-border" points="20,50 45,70 90,20"></polyline>
-            <polyline class="tick-fill" points="20,50 45,70 90,20"></polyline>
+            <polyline class="tick-border" points="20,50 45,70 90,20" pathLength="100"></polyline>
+            <polyline class="tick-fill" points="20,50 45,70 90,20" pathLength="100"></polyline>
           </svg>
           <h3 class="display-text" data-i18n="platform.reform.title">Administrative Reallocation</h3>
-          <p data-i18n="platform.reform.desc">Auditing and restaffing provincial offices to eliminate permit backlogs
-            and actively support small businesses.</p>
+          <p data-i18n="platform.reform.desc">Auditing and restaffing provincial offices to eliminate permit backlogs and actively support small businesses.</p>
         </div>
 
-        <div class="platform-card combat-ready card-red">
+        <div class="feed-card platform-card combat-ready card-red">
           <svg class="giant-tick" viewBox="0 0 100 100">
-            <polyline class="tick-border" points="20,50 45,70 90,20"></polyline>
-            <polyline class="tick-fill" points="20,50 45,70 90,20"></polyline>
+            <polyline class="tick-border" points="20,50 45,70 90,20" pathLength="100"></polyline>
+            <polyline class="tick-fill" points="20,50 45,70 90,20" pathLength="100"></polyline>
           </svg>
           <h3 class="display-text" data-i18n="platform.cmc.title">CMC Pipeline Act</h3>
           <p data-i18n="platform.cmc.desc">Establishing a jointly-owned Southern Water Corridor with Mezata and Costa Blanca to secure regional water independence.</p>
         </div>
 
-        <div class="platform-card combat-ready card-green">
+        <div class="feed-card platform-card combat-ready card-green">
           <svg class="giant-tick" viewBox="0 0 100 100">
-            <polyline class="tick-border" points="20,50 45,70 90,20"></polyline>
-            <polyline class="tick-fill" points="20,50 45,70 90,20"></polyline>
+            <polyline class="tick-border" points="20,50 45,70 90,20" pathLength="100"></polyline>
+            <polyline class="tick-fill" points="20,50 45,70 90,20" pathLength="100"></polyline>
           </svg>
           <h3 class="display-text" data-i18n="platform.firearms.title">Civil Defense & Firearms Act</h3>
           <p data-i18n="platform.firearms.desc">Establishing the Office of Civil Defense and enacting licensing reforms to ensure our rural and coastal communities have the means to protect themselves in an emergency.</p>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section 2.5: The 2062 Platform -->
-  <section id="platform-2062" class="section">
-    <div class="container">
-      <h2 class="section-title display-text" data-i18n="platform2.title">THE 2062 PLATFORM</h2>
-      <div class="platform-grid">
+    <!-- The Feed (3 Columns) -->
+    <section class="grid-feed">
+      
+      <!-- Column 1: The Problem -->
+      <div class="feed-col col-problem combat-ready">
+        <h2 class="display-text section-title" data-i18n="problem.title">WHO ACTUALLY RUNS IT</h2>
+        <h3 class="display-text" data-i18n="problem.monopoly">THE HONEST ANSWER</h3>
+        <p data-i18n="problem.desc1">...</p>
+        <p data-i18n="problem.desc2">...</p>
+      </div>
 
-        <div class="platform-card combat-ready card-cyan">
+      <!-- Column 2: 2062 Platform -->
+      <div class="feed-col col-platform-new">
+        <h2 class="display-text section-title" data-i18n="platform2.title">THE 2062 PLATFORM</h2>
+        
+        <div class="feed-card combat-ready card-red">
           <h3 class="display-text" data-i18n="platform2.item1.title">I. Finish the Southern Water Corridor</h3>
-          <p data-i18n="platform2.item1.desc">The CMC Pipeline Act is passed. Now it gets built. I will see the joint pipeline with Mezata and Costa Blanca completed, hub by hub, so that no Cambrian community faces a drought season on its own ever again. This is not a temporary fix — it is the permanent end of a crisis that has defined this region for a generation.</p>
+          <p data-i18n="platform2.item1.desc">...</p>
         </div>
 
-        <div class="platform-card combat-ready card-yellow">
+        <div class="feed-card combat-ready card-magenta">
           <h3 class="display-text" data-i18n="platform2.item2.title">II. Deepen Southern Cooperation</h3>
-          <p data-i18n="platform2.item2.desc">The Joint Water Authority proved that Cambria, Mezata, and Costa Blanca can govern shared resources together, as equals, without surrendering to anyone. I will expand that model of cooperation — shared infrastructure, shared investment, shared authority — into freight corridors and coastal trade, so the south grows stronger by working together.</p>
+          <p data-i18n="platform2.item2.desc">...</p>
         </div>
+      </div>
 
-        <div class="platform-card combat-ready card-magenta">
+      <!-- Column 3: 2062 Platform (cont) -->
+      <div class="feed-col col-platform-cont">
+        <div class="feed-card combat-ready card-cyan">
           <h3 class="display-text" data-i18n="platform2.item3.title">III. Grow What We Protected</h3>
-          <p data-i18n="platform2.item3.desc">We stopped the monopolies from strangling small business. Now we build. Expanded support for independent fishing fleets and cooperative housing, continued investment in rural health access, and a Cambria where a family business can compete against consolidated capital and win.</p>
+          <p data-i18n="platform2.item3.desc">...</p>
         </div>
 
-        <div class="platform-card combat-ready card-red">
+        <div class="feed-card combat-ready card-yellow">
           <h3 class="display-text" data-i18n="platform2.item4.title">IV. Finish What We Started</h3>
-          <p data-i18n="platform2.item4.desc">Every commission we seated, every office we reformed, every board we handed back to workers and stakeholders — the establishment wants it undone the moment we look away. A 75% mandate does not just re-elect a governor. It tells the conservative establishment and every entrenched interest still fighting these reforms in the courts and in the Legislature: Cambria is not going back.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 4: Ultimatum -->
-  <section id="ultimatum" class="section combat-ready">
-    <div class="container ultimatum-container">
-      <div class="posters-wrapper">
-        <img src="./assets/images/henrikposter.png" alt="Campaign Platform Poster"
-          class="campaign-poster brutalist-border brutalist-shadow">
-        <img src="./assets/images/poster4.png" alt="Campaign CTA Poster"
-          class="campaign-poster brutalist-border brutalist-shadow">
-      </div>
-      <div class="ultimatum-action">
-        <h2 class="display-text" style="font-size: 3rem; margin-bottom: 2rem;" data-i18n="ultimatum.title">THE TIME IS
-          NOW</h2>
-        <button id="btn-join-fight" class="ultimatum-btn" data-i18n="ultimatum.btn">
-          JOIN THE FIGHT
-        </button>
-        <a id="btn-download-docx" class="small-download-btn"
-          href="https://docs.google.com/document/d/18i_zgRk6YISJSjcpd7JKTX-MZl1aDDbZ-karEDlMdnQ/edit?usp=sharing"
-          target="_blank" rel="noopener noreferrer" data-i18n="ultimatum.download_docx">
-          LINK TO THE CAMPAIGNING MATERIAL (docx)
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 2.5: Voices of Cambria -->
-  <section id="voices" class="section">
-    <div class="container">
-      <h2 class="section-title display-text" data-i18n="voices.title">THE VOICES OF CAMBRIA</h2>
-      <div class="voices-grid">
-        <div class="voice-card brutalist-border brutalist-shadow">
-          <p class="quote" data-i18n="voices.quote1">"That is the first honest thing a politician has said to me in this
-            harbor in a decade. Walk me through it."</p>
-          <p class="author" data-i18n="voices.author1">Alto Harbor Cooperative Treasurer</p>
-        </div>
-        <div class="voice-card brutalist-border brutalist-shadow">
-          <p class="quote" data-i18n="voices.quote2">"Most candidates want credit for passing the law. You are asking
-            for credit for using it."</p>
-          <p class="author" data-i18n="voices.author2">Osric Bellamy, Dockworkers' Union Chairman</p>
+          <p data-i18n="platform2.item4.desc">...</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Section 3: Events -->
-  <section id="events" class="section">
-    <div class="marquee-container">
-      <div class="marquee" data-i18n="events.marquee">
-        ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; /
-        &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp;
-      </div>
-    </div>
-    <div class="container">
-      <div class="events-list">
+    </section>
 
-        <div class="event-row combat-ready" data-event-id="alto-port" style="cursor: pointer;">
-          <div class="event-date" data-i18n="event.alto.date">SEP 15</div>
-          <div class="event-details">
-            <h4 class="display-text" data-i18n="event.alto.title">Alto Harbor Visit</h4>
-            <p data-i18n="event.alto.loc">Main Docks, Alto</p>
-          </div>
-        </div>
+    <!-- Posters Section (Placeholders) -->
+    <section class="grid-posters combat-ready" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; padding: 4rem 2rem; border-bottom: var(--border-thick); background-color: var(--color-black);">
+      <img src="./assets/images/henrikposter.png" alt="Poster 1" class="campaign-poster" style="border: var(--border-thick); border-color: var(--color-white);">
+      <img src="./assets/images/poster4.png" alt="Poster 2" class="campaign-poster" style="border: var(--border-thick); border-color: var(--color-white);">
+    </section>
 
-        <div class="event-row combat-ready" data-event-id="union-hall" style="cursor: pointer;">
-          <div class="event-date" data-i18n="event.union.date">OCT 02</div>
-          <div class="event-details">
-            <h4 class="display-text" data-i18n="event.union.title">Union Hall Address</h4>
-            <p data-i18n="event.union.loc">Freight District, Cambria</p>
-          </div>
-        </div>
-
-        <div class="event-row combat-ready" data-event-id="permit-office" style="cursor: pointer;">
-          <div class="event-date" data-i18n="event.permit.date">OCT 18</div>
-          <div class="event-details">
-            <h4 class="display-text" data-i18n="event.permit.title">Permit Office Audit</h4>
-            <p data-i18n="event.permit.loc">District Office, Cambria</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 3.5: The Record -->
-  <section id="timeline" class="section">
-    <div class="container">
-      <h2 class="section-title display-text" style="text-align: center;" data-i18n="timeline.title">THE RECORD</h2>
-      <div class="timeline-container">
-        <div class="timeline-line"></div>
-
-        <div class="timeline-item left">
-          <div class="timeline-dot brutalist-border"></div>
-          <div class="timeline-content brutalist-border brutalist-shadow">
-            <h4 class="display-text">2018</h4>
-            <p data-i18n="timeline.item1">Born to a family of fishermen in Alto Port. Learned the cost of a broken
-              system on the docks.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item right">
-          <div class="timeline-dot brutalist-border"></div>
-          <div class="timeline-content brutalist-border brutalist-shadow">
-            <h4 class="display-text">2043</h4>
-            <p data-i18n="timeline.item2">Rejected the trade to understand the system. Earned a PhD in Rhetoric and
-              Persuasion Culture.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item left">
-          <div class="timeline-dot brutalist-border"></div>
-          <div class="timeline-content brutalist-border brutalist-shadow">
-            <h4 class="display-text">2050</h4>
-            <p data-i18n="timeline.item3">Served on the Alto Local Council. Fought for contract floor protections for
-              local workers.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item right">
-          <div class="timeline-dot brutalist-border"></div>
-          <div class="timeline-content brutalist-border brutalist-shadow">
-            <h4 class="display-text">2060</h4>
-            <p data-i18n="timeline.item4">Independent Run for Governor. Fighting the monopolies to reclaim Cambria for
-              the working class.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item left">
-          <div class="timeline-dot brutalist-border"></div>
-          <div class="timeline-content brutalist-border brutalist-shadow">
-            <h4 class="display-text">NOV 9, 2060</h4>
-            <p data-i18n="timeline.item5">Elected as the Governor of Cambria.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item right">
-          <div class="timeline-dot brutalist-border"></div>
-          <div class="timeline-content brutalist-border brutalist-shadow">
-            <h4 class="display-text">2061</h4>
-            <p data-i18n="timeline.item6">Promises Kept. Passed the CMC Pipeline Act, Civil Defense Act, and dismantled regional monopolies in a single year.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item left">
-          <div class="timeline-dot brutalist-border"></div>
-          <div class="timeline-content brutalist-border brutalist-shadow">
-            <h4 class="display-text">2062</h4>
-            <p data-i18n="timeline.item7">The Re-election Campaign. Fighting for a 75% mandate to finish what we started.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Section 5: Footer -->
-  <footer id="footer" class="section combat-ready">
-    <div class="container footer-grid">
-      <div class="footer-info">
+    <!-- Footer / Timeline -->
+    <footer class="grid-footer combat-ready">
+      <div class="footer-left">
         <h3 class="display-text" data-i18n="footer.title">STAY IN THE FIGHT</h3>
         <p data-i18n="footer.desc">Sign up for deployment orders and campaign updates.</p>
         <form id="footer-form" class="email-signup">
-          <input type="text" id="footer-email-input" placeholder="EMAIL ADDRESS" class="brutalist-border"
-            data-i18n-placeholder="footer.email.placeholder" required>
-          <button type="submit" id="footer-submit-btn" class="brutalist-border brutalist-shadow"
-            data-i18n="footer.subscribe">SUBMIT</button>
+          <input type="text" id="footer-email-input" placeholder="EMAIL ADDRESS" data-i18n-placeholder="footer.email.placeholder" required>
+          <button type="submit" id="footer-submit-btn" data-i18n="footer.subscribe">SUBMIT</button>
         </form>
-        <div class="footer-legal">
-          <p data-i18n="footer.legal">PAID FOR BY HENRIK VASMER HIMSELF. WE NEED YOUR VOTE, NOT YOUR MONEY.</p>
+        <p class="legal" data-i18n="footer.legal">PAID FOR BY HENRIK VASMER HIMSELF.</p>
+      </div>
+      <div class="footer-right">
+        <h2 class="display-text" data-i18n="timeline.title">THE RECORD</h2>
+        <div class="timeline-ticker" style="display: flex; flex-direction: column; gap: 1.5rem; max-height: 400px; overflow-y: auto;">
+           <div class="ticker-content" style="border-left: 4px solid var(--color-red); padding-left: 1rem;"><strong style="color: var(--color-red);">2018</strong> <span data-i18n="timeline.item1">...</span></div>
+           <div class="ticker-content" style="border-left: 4px solid var(--color-cyan); padding-left: 1rem;"><strong style="color: var(--color-cyan);">2040</strong> <span data-i18n="timeline.item2">...</span></div>
+           <div class="ticker-content" style="border-left: 4px solid var(--color-yellow); padding-left: 1rem;"><strong style="color: var(--color-yellow);">2050</strong> <span data-i18n="timeline.item3">...</span></div>
+           <div class="ticker-content" style="border-left: 4px solid var(--color-magenta); padding-left: 1rem;"><strong style="color: var(--color-magenta);">2058</strong> <span data-i18n="timeline.item4">...</span></div>
+           <div class="ticker-content" style="border-left: 4px solid var(--color-white); padding-left: 1rem;"><strong style="color: var(--color-white);">2060</strong> <span data-i18n="timeline.item5">...</span></div>
+           <div class="ticker-content" style="border-left: 4px solid var(--color-green); padding-left: 1rem;"><strong style="color: var(--color-green);">2061</strong> <span data-i18n="timeline.item6">...</span></div>
+           <div class="ticker-content" style="border-left: 4px solid var(--color-orange); padding-left: 1rem;"><strong style="color: var(--color-orange);">2062</strong> <span data-i18n="timeline.item7">...</span></div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Event Modal -->
-  <div id="event-modal" class="modal-overlay">
-    <div class="modal-content brutalist-border brutalist-shadow">
-      <button class="modal-close display-text">X</button>
-      <div class="modal-header">
-        <h2 id="modal-title" class="display-text">Title</h2>
-        <p id="modal-meta" data-i18n="modal.date.loc">Date | Location</p>
-      </div>
-      <div id="modal-body" class="modal-body">
-        <!-- Content injected via JS -->
-      </div>
-    </div>
   </div>
 
   <script src="./assets/js/eventsData.js?v=5.8"></script>
-  <script src="./assets/js/index.js?v=5.8"></script>
+  <script src="./assets/js/index.js?v=5.31"></script>
 </body>
 
 </html>
