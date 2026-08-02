@@ -277,13 +277,15 @@ a {
 }
 
 /* Section 2: Platform (Combat State) */
-#platform {
+#platform,
+#platform-2062 {
   background-color: var(--bg-inverted);
   color: var(--text-inverted);
   border-bottom: 2px solid var(--text-inverted);
 }
 
-#platform .section-title {
+#platform .section-title,
+#platform-2062 .section-title {
   color: var(--text-inverted);
   font-size: 4rem;
   margin-bottom: 3rem;

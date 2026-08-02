@@ -27,7 +27,7 @@ const translations = {
     'intro.subtext': 'Governor Henrik Vasmer. The independent voice for all of Cambria. Re-election 2062.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. Rejecting the trade that defined his family in favour of academia, he earned a PhD in Rhetoric and Persuasion Culture. Now, he brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.',
 
-    'platform.title': 'THE PLATFORM',
+    'platform.promises_title': 'PROMISES KEPT',
     'platform.slogan': 'HENRIK ALWAYS KEEPS HIS WORD.',
     'platform.maritime.title': 'Enforcement & Referrals',
     'platform.maritime.desc': 'Using the governor\'s enforcement referral authority to challenge monopolistic mergers and protect local freight contracts.',
@@ -40,6 +40,16 @@ const translations = {
     'platform.cmc.desc': 'Establishing a jointly-owned Southern Water Corridor with Mezata and Costa Blanca to secure regional water independence.',
     'platform.firearms.title': 'Civil Defense & Firearms Act',
     'platform.firearms.desc': 'Establishing the Office of Civil Defense and enacting licensing reforms to ensure our rural and coastal communities have the means to protect themselves in an emergency.',
+
+    'platform2.title': 'THE 2062 PLATFORM',
+    'platform2.item1.title': 'I. Finish the Southern Water Corridor',
+    'platform2.item1.desc': 'The CMC Pipeline Act is passed. Now it gets built. I will see the joint pipeline with Mezata and Costa Blanca completed, hub by hub, so that no Cambrian community faces a drought season on its own ever again. This is not a temporary fix — it is the permanent end of a crisis that has defined this region for a generation.',
+    'platform2.item2.title': 'II. Deepen Southern Cooperation',
+    'platform2.item2.desc': 'The Joint Water Authority proved that Cambria, Mezata, and Costa Blanca can govern shared resources together, as equals, without surrendering to anyone. I will expand that model of cooperation — shared infrastructure, shared investment, shared authority — into freight corridors and coastal trade, so the south grows stronger by working together.',
+    'platform2.item3.title': 'III. Grow What We Protected',
+    'platform2.item3.desc': 'We stopped the monopolies from strangling small business. Now we build. Expanded support for independent fishing fleets and cooperative housing, continued investment in rural health access, and a Cambria where a family business can compete against consolidated capital and win.',
+    'platform2.item4.title': 'IV. Finish What We Started',
+    'platform2.item4.desc': 'Every commission we seated, every office we reformed, every board we handed back to workers and stakeholders — the establishment wants it undone the moment we look away. A 75% mandate does not just re-elect a governor. It tells the conservative establishment and every entrenched interest still fighting these reforms in the courts and in the Legislature: Cambria is not going back.',
 
     'events.marquee': 'ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ',
     'event.alto.title': 'Alto Harbor Visit',
@@ -54,7 +64,7 @@ const translations = {
 
     'problem.title': 'WHO ACTUALLY RUNS IT',
     'problem.monopoly': 'THE HONEST ANSWER',
-    'problem.desc1': 'Cambria suffers from a severe lack of enforcement. When a single buyer dictates the price of a catch, when one shipping firm controls the timetable, and when basic utilities are strangled by bureaucratic delay, the working class bleeds.',
+    'problem.desc1': 'When we took office, the establishment told us that reforming the docks, the pipelines, and the administrative state was impossible. They were wrong. But the monopolies haven\'t surrendered—they have simply retreated to the courts and the backrooms of the Legislature, waiting for us to lose our resolve.',
     'problem.desc2': 'In 2060, you delivered a historic 73.63% mandate to break the monopolies. We\'ve kept our promises and passed landmark reforms, but the establishment still fights us at every turn. A 75% mandate permanently secures our progress and proves that Cambria belongs to its people, not its politicians.',
 
     'voices.title': 'THE VOICES OF CAMBRIA',
@@ -93,7 +103,7 @@ const translations = {
     'intro.subtext': 'Gobernador Henrik Vasmer. La voz independiente de toda Cambria. Reelección 2062.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazando el oficio que definía a su familia a favor de la academia, obtuvo un doctorado en Retórica y Cultura de la Persuasión. Ahora, aporta décadas de experiencia local, académica y práctica a la vanguardia para luchar por las comunidades costeras y trabajadoras de Cambria.',
 
-    'platform.title': 'LA PLATAFORMA',
+    'platform.promises_title': 'PROMESAS CUMPLIDAS',
     'platform.slogan': 'HENRIK SIEMPRE CUMPLE SU PALABRA.',
     'platform.maritime.title': 'Aplicación y Remisiones',
     'platform.maritime.desc': 'Uso de la autoridad de remisión de aplicación del gobernador para desafiar fusiones monopolísticas y proteger los contratos de carga locales.',
@@ -105,7 +115,17 @@ const translations = {
     'platform.cmc.title': 'Ley del Oleoducto CMC',
     'platform.cmc.desc': 'Estableciendo un Corredor de Agua del Sur de propiedad conjunta con Mezata y Costa Blanca para asegurar la independencia hídrica regional.',
     'platform.firearms.title': 'Ley de Defensa Civil y Armas de Fuego',
-    'platform.firearms.desc': 'Estableciendo la Oficina de Defensa Civil y promulgando reformas de licencias para asegurar que nuestras comunidades rurales y costeras tengan los medios para protegerse en caso de emergencia.',
+    'platform.firearms.desc': 'Establecer la Oficina de Defensa Civil y promulgar reformas de licencias para asegurar que nuestras comunidades rurales y costeras tengan los medios para protegerse en una emergencia.',
+
+    'platform2.title': 'LA PLATAFORMA 2062',
+    'platform2.item1.title': 'I. Terminar el Corredor de Agua del Sur',
+    'platform2.item1.desc': 'La Ley del Oleoducto CMC ha sido aprobada. Ahora se construye. Me aseguraré de que el oleoducto conjunto con Mezata y Costa Blanca se complete, centro por centro, para que ninguna comunidad cambriana vuelva a enfrentar una temporada de sequía sola. Esto no es una solución temporal — es el fin permanente de una crisis que ha definido esta región por una generación.',
+    'platform2.item2.title': 'II. Profundizar la Cooperación del Sur',
+    'platform2.item2.desc': 'La Autoridad Conjunta de Agua demostró que Cambria, Mezata y Costa Blanca pueden gobernar recursos compartidos juntos, como iguales, sin rendirse ante nadie. Expandiré ese modelo de cooperación — infraestructura compartida, inversión compartida, autoridad compartida — hacia los corredores de carga y comercio costero, para que el sur crezca más fuerte trabajando juntos.',
+    'platform2.item3.title': 'III. Crecer lo que Protegimos',
+    'platform2.item3.desc': 'Detuvimos a los monopolios para que no asfixiaran a las pequeñas empresas. Ahora construimos. Mayor apoyo para flotas pesqueras independientes y viviendas cooperativas, inversión continua en acceso a salud rural, y una Cambria donde un negocio familiar pueda competir contra el capital consolidado y ganar.',
+    'platform2.item4.title': 'IV. Terminar lo que Empezamos',
+    'platform2.item4.desc': 'Cada comisión que sentamos, cada oficina que reformamos, cada junta que devolvimos a los trabajadores y las partes interesadas — el establishment quiere deshacerlo en el momento en que miramos a otro lado. Un mandato del 75% no solo reelige a un gobernador. Le dice al establishment conservador y a todos los intereses arraigados que todavía luchan contra estas reformas en los tribunales y en la Legislatura: Cambria no volverá atrás.',
 
     'events.marquee': 'SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; ',
     'event.alto.title': 'Visita al Puerto de Alto',
@@ -114,13 +134,13 @@ const translations = {
     'event.union.title': 'Discurso en el Sindicato',
     'event.union.loc': 'Distrito de Carga, Cambria',
     'event.union.date': 'OCT 02',
-    'event.permit.title': 'Auditoría a la Oficina de Permisos',
+    'event.permit.title': 'Foro de Reasignación de Permisos',
     'event.permit.loc': 'Oficina de Distrito, Cambria',
     'event.permit.date': 'OCT 18',
 
     'problem.title': 'QUIÉN LO MANEJA REALMENTE',
     'problem.monopoly': 'LA RESPUESTA HONESTA',
-    'problem.desc1': 'Cambria sufre de una grave falta de aplicación. Cuando un solo comprador dicta el precio de una captura, cuando una empresa naviera controla los horarios y cuando los servicios básicos son estrangulados por el retraso burocrático, la clase trabajadora sangra.',
+    'problem.desc1': 'Cuando asumimos el cargo, el establishment nos dijo que reformar los muelles, los oleoductos y el estado administrativo era imposible. Se equivocaron. Pero los monopolios no se han rendido—simplemente se han retirado a los tribunales y a las trastiendas de la Legislatura, esperando a que perdamos nuestra determinación.',
     'problem.desc2': 'En 2060, ustedes entregaron un mandato histórico del 73.63% para romper los monopolios. Hemos cumplido nuestras promesas y aprobado reformas históricas, pero el establishment todavía nos combate en cada oportunidad. Un mandato del 75% asegura permanentemente nuestro progreso y demuestra que Cambria pertenece a su pueblo, no a sus políticos.',
 
     'voices.title': 'LAS VOCES DE CAMBRIA',
@@ -159,7 +179,7 @@ const translations = {
     'intro.subtext': 'Gouverneur Henrik Vasmer. La voix indépendante de toute la Cambria. Réélection 2062.',
     'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un politicien indépendant de Caprica originaire d\'Alto, une ville portuaire du sud de la Cambria. Rejetant le métier qui définissait sa famille au profit du monde universitaire, il a obtenu un doctorat en rhétorique et culture de la persuasion. Aujourd\'hui, il met ses décennies d\'expérience locale, universitaire et pratique au premier plan pour lutter pour les communautés côtières et ouvrières de Cambria.',
 
-    'platform.title': 'LA PLATEFORME',
+    'platform.promises_title': 'PROMESSES TENUES',
     'platform.slogan': 'HENRIK TIENT TOUJOURS PAROLE.',
     'platform.maritime.title': 'Application et Renvois',
     'platform.maritime.desc': 'Utilisation de l\'autorité de renvoi d\'application du gouverneur pour contester les fusions monopolistiques et protéger les contrats de fret locaux.',
@@ -171,7 +191,17 @@ const translations = {
     'platform.cmc.title': 'Loi sur le Pipeline CMC',
     'platform.cmc.desc': 'Établissement d\'un Corridor d\'Eau du Sud détenu conjointement avec Mezata et Costa Blanca pour garantir l\'indépendance hydrique régionale.',
     'platform.firearms.title': 'Loi sur la Défense Civile et les Armes à Feu',
-    'platform.firearms.desc': 'Établissement du Bureau de la Défense Civile et promulgation de réformes des licences pour garantir que nos communautés rurales et côtières aient les moyens de se protéger en cas d\'urgence.',
+    'platform.firearms.desc': 'Établir le Bureau de la Défense Civile et promulguer des réformes des licences pour s\'assurer que nos communautés rurales et côtières ont les moyens de se protéger en cas d\'urgence.',
+
+    'platform2.title': 'LA PLATEFORME 2062',
+    'platform2.item1.title': 'I. Achever le Corridor d\'Eau du Sud',
+    'platform2.item1.desc': 'La loi sur le pipeline CMC est adoptée. Maintenant, il faut la construire. Je veillerai à ce que le pipeline commun avec Mezata et Costa Blanca soit achevé, pôle par pôle, afin qu\'aucune communauté cambrienne ne soit plus jamais confrontée seule à une saison de sécheresse. Ce n\'est pas une solution temporaire — c\'est la fin définitive d\'une crise qui a défini cette région depuis une génération.',
+    'platform2.item2.title': 'II. Approfondir la Coopération du Sud',
+    'platform2.item2.desc': 'L\'Autorité Conjointe de l\'Eau a prouvé que Cambria, Mezata et Costa Blanca peuvent gouverner ensemble des ressources partagées, d\'égal à égal, sans se soumettre à personne. J\'étendrai ce modèle de coopération — infrastructures partagées, investissements partagés, autorité partagée — aux corridors de fret et au commerce côtier, afin que le sud se renforce en travaillant ensemble.',
+    'platform2.item3.title': 'III. Faire Croître ce que Nous Avons Protégé',
+    'platform2.item3.desc': 'Nous avons empêché les monopoles d\'étouffer les petites entreprises. Maintenant, nous construisons. Un soutien accru aux flottes de pêche indépendantes et au logement coopératif, des investissements continus dans l\'accès à la santé en milieu rural, et une Cambria où une entreprise familiale peut rivaliser avec le capital consolidé et gagner.',
+    'platform2.item4.title': 'IV. Finir ce que Nous Avons Commencé',
+    'platform2.item4.desc': 'Chaque commission que nous avons siégée, chaque bureau que nous avons réformé, chaque conseil que nous avons rendu aux travailleurs et aux parties prenantes — l\'establishment veut tout défaire dès que nous détournons le regard. Un mandat de 75 % ne réélit pas seulement un gouverneur. Il dit à l\'establishment conservateur et à tous les intérêts bien ancrés qui combattent encore ces réformes devant les tribunaux et à l\'Assemblée : Cambria ne reculera pas.',
 
     'events.marquee': 'SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; ',
     'event.alto.title': 'Visite au Port d\'Alto',
@@ -186,7 +216,7 @@ const translations = {
 
     'problem.title': 'QUI DIRIGE RÉELLEMENT',
     'problem.monopoly': 'LA RÉPONSE HONNÊTE',
-    'problem.desc1': 'La Cambria souffre d\'un grave manque d\'application des lois. Lorsqu\'un seul acheteur dicte le prix d\'une pêche, lorsqu\'une compagnie maritime contrôle les horaires, et lorsque les services de base sont étranglés par les retards bureaucratiques, la classe ouvrière saigne.',
+    'problem.desc1': 'Lorsque nous avons pris nos fonctions, l\'establishment nous a dit que réformer les quais, les pipelines et l\'état administratif était impossible. Ils avaient tort. Mais les monopoles ne se sont pas rendus—ils se sont simplement repliés devant les tribunaux et dans les arrière-salles de l\'Assemblée, attendant que nous perdions notre détermination.',
     'problem.desc2': 'En 2060, vous avez délivré un mandat historique de 73,63 % pour briser les monopoles. Nous avons tenu nos promesses et adopté des réformes historiques, mais l\'establishment nous combat toujours à chaque instant. Un mandat de 75 % garantit définitivement nos progrès et prouve que Cambria appartient à son peuple et non à ses politiciens.',
 
     'voices.title': 'LES VOIX DE CAMBRIA',
@@ -360,8 +390,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Platform Card Tick Logic
   const platformCards = document.querySelectorAll('.platform-card');
   platformCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      card.classList.add('is-ticked');
-    });
+    if (card.querySelector('.giant-tick')) {
+      card.addEventListener('mouseenter', () => {
+        card.classList.add('is-ticked');
+      });
+    }
   });
 });
