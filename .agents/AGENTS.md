@@ -23,3 +23,7 @@ Never use soft gradients or muted pastels. Colors must be fully saturated and hi
 *   **HTML Structure:** Any translatable text must be placed inside an element with a `data-i18n="namespace.key"` attribute. Do not hardcode text without this attribute.
 *   **JavaScript Dictionary:** All translations must be stored inside the `translations` dictionary object in `assets/js/index.js`.
 *   **Caprican Languages:** In the UI, English is "Alanian", Spanish is "Alcamerian", and French is "Gallic". When adding new text, always provide translations for all three (`en`, `es`, `fr`).
+
+## Copywriting & Tone Rules
+*   **No Em Dashes:** Do not use em dashes (—). Use parentheses, colons, or separate sentences instead.
+*   **Direct Phrasing:** Avoid negative-contrast phrasings such as "is not X, but Y". State exactly what things are directly and assertively.

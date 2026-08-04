@@ -43,13 +43,13 @@ const translations = {
 
     'platform2.title': 'THE 2062 PLATFORM',
     'platform2.item1.title': 'I. Finish the Southern Water Corridor',
-    'platform2.item1.desc': 'The CMC Pipeline Act is passed. Now it gets built. I will see the joint pipeline with Mezata and Costa Blanca completed, hub by hub, so that no Cambrian community faces a drought season on its own ever again. This is not a temporary fix — it is the permanent end of a crisis that has defined this region for a generation.',
+    'platform2.item1.desc': 'The CMC Pipeline Act is passed. Now it gets built. I will see the joint pipeline with Mezata and Costa Blanca completed, hub by hub, so that no Cambrian community faces a drought season on its own ever again. This is the permanent end of a crisis that has defined this region for a generation.',
     'platform2.item2.title': 'II. Deepen Southern Cooperation',
-    'platform2.item2.desc': 'The Joint Water Authority proved that Cambria, Mezata, and Costa Blanca can govern shared resources together, as equals, without surrendering to anyone. I will expand that model of cooperation — shared infrastructure, shared investment, shared authority — into freight corridors and coastal trade, so the south grows stronger by working together.',
+    'platform2.item2.desc': 'The Joint Water Authority proved that Cambria, Mezata, and Costa Blanca can govern shared resources together, as equals, without surrendering to anyone. I will expand that model of cooperation (shared infrastructure, shared investment, shared authority) into freight corridors and coastal trade, so the south grows stronger by working together.',
     'platform2.item3.title': 'III. Grow What We Protected',
     'platform2.item3.desc': 'We stopped the monopolies from strangling small business. Now we build. Expanded support for independent fishing fleets and cooperative housing, continued investment in rural health access, and a Cambria where a family business can compete against consolidated capital and win.',
     'platform2.item4.title': 'IV. Finish What We Started',
-    'platform2.item4.desc': 'Every commission we seated, every office we reformed, every board we handed back to workers and stakeholders — the establishment wants it undone the moment we look away. A 75% mandate does not just re-elect a governor. It tells the conservative establishment and every entrenched interest still fighting these reforms in the courts and in the Legislature: Cambria is not going back.',
+    'platform2.item4.desc': 'Every commission we seated, every office we reformed, every board we handed back to workers and stakeholders is under attack. The establishment wants it undone the moment we look away. A 75% mandate is a decisive warning. It tells the conservative establishment and every entrenched interest still fighting these reforms in the courts and in the Legislature: Cambria is not going back.',
 
     'marquee.hero': '/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///',
     'events.marquee': 'ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ',
@@ -65,8 +65,8 @@ const translations = {
 
     'problem.title': 'WHO ACTUALLY RUNS IT',
     'problem.monopoly': 'THE HONEST ANSWER',
-    'problem.desc1': 'When we took office, the establishment told us that reforming the docks, the pipelines, and the administrative state was impossible. They were wrong. But the monopolies haven\'t surrendered—they have simply retreated to the courts and the backrooms of the Legislature, waiting for us to lose our resolve.',
-    'problem.desc2': 'In 2060, you delivered a historic 73.63% mandate to break the monopolies. We\'ve kept our promises and passed landmark reforms, but the establishment still fights us at every turn. A 75% mandate permanently secures our progress and proves that Cambria belongs to its people, not its politicians.',
+    'problem.desc1': 'When we took office, the establishment told us that reforming the docks, the pipelines, and the administrative state was impossible. They were wrong. But the monopolies haven\'t surrendered. They have retreated to the courts and the backrooms of the Legislature, waiting for us to lose our resolve.',
+    'problem.desc2': 'In 2060, you delivered a historic 73.63% mandate to break the monopolies. We\'ve kept our promises and passed landmark reforms, but the establishment still fights us at every turn. A 75% mandate permanently secures our progress and proves that Cambria belongs exclusively to its people.',
 
     'voices.title': 'THE VOICES OF CAMBRIA',
     'voices.quote1': '"That is the first honest thing a politician has said to me in this harbor in a decade. Walk me through it."',
@@ -120,13 +120,13 @@ const translations = {
 
     'platform2.title': 'LA PLATAFORMA 2062',
     'platform2.item1.title': 'I. Terminar el Corredor de Agua del Sur',
-    'platform2.item1.desc': 'La Ley del Oleoducto CMC ha sido aprobada. Ahora se construye. Me aseguraré de que el oleoducto conjunto con Mezata y Costa Blanca se complete, centro por centro, para que ninguna comunidad cambriana vuelva a enfrentar una temporada de sequía sola. Esto no es una solución temporal — es el fin permanente de una crisis que ha definido esta región por una generación.',
+    'platform2.item1.desc': 'La Ley del Oleoducto CMC ha sido aprobada. Ahora se construye. Me aseguraré de que el oleoducto conjunto con Mezata y Costa Blanca se complete, centro por centro, para que ninguna comunidad cambriana vuelva a enfrentar una temporada de sequía sola. Este es el fin permanente de una crisis que ha definido esta región por una generación.',
     'platform2.item2.title': 'II. Profundizar la Cooperación del Sur',
-    'platform2.item2.desc': 'La Autoridad Conjunta de Agua demostró que Cambria, Mezata y Costa Blanca pueden gobernar recursos compartidos juntos, como iguales, sin rendirse ante nadie. Expandiré ese modelo de cooperación — infraestructura compartida, inversión compartida, autoridad compartida — hacia los corredores de carga y comercio costero, para que el sur crezca más fuerte trabajando juntos.',
+    'platform2.item2.desc': 'La Autoridad Conjunta de Agua demostró que Cambria, Mezata y Costa Blanca pueden gobernar recursos compartidos juntos, como iguales, sin rendirse ante nadie. Expandiré ese modelo de cooperación (infraestructura compartida, inversión compartida, autoridad compartida) hacia los corredores de carga y comercio costero, para que el sur crezca más fuerte trabajando juntos.',
     'platform2.item3.title': 'III. Crecer lo que Protegimos',
     'platform2.item3.desc': 'Detuvimos a los monopolios para que no asfixiaran a las pequeñas empresas. Ahora construimos. Mayor apoyo para flotas pesqueras independientes y viviendas cooperativas, inversión continua en acceso a salud rural, y una Cambria donde un negocio familiar pueda competir contra el capital consolidado y ganar.',
     'platform2.item4.title': 'IV. Terminar lo que Empezamos',
-    'platform2.item4.desc': 'Cada comisión que sentamos, cada oficina que reformamos, cada junta que devolvimos a los trabajadores y las partes interesadas — el establishment quiere deshacerlo en el momento en que miramos a otro lado. Un mandato del 75% no solo reelige a un gobernador. Le dice al establishment conservador y a todos los intereses arraigados que todavía luchan contra estas reformas en los tribunales y en la Legislatura: Cambria no volverá atrás.',
+    'platform2.item4.desc': 'Cada comisión que sentamos, cada oficina que reformamos, cada junta que devolvimos a los trabajadores y las partes interesadas está bajo ataque. El establishment quiere deshacerlo en el momento en que miramos a otro lado. Un mandato del 75% es una advertencia decisiva. Le dice al establishment conservador y a todos los intereses arraigados que todavía luchan contra estas reformas en los tribunales y en la Legislatura: Cambria no volverá atrás.',
 
     'marquee.hero': '/// EL MANDATO /// 2062 /// EL MANDATO /// 2062 /// EL MANDATO ///',
     'events.marquee': 'SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; ',
@@ -142,8 +142,8 @@ const translations = {
 
     'problem.title': 'QUIÉN LO MANEJA REALMENTE',
     'problem.monopoly': 'LA RESPUESTA HONESTA',
-    'problem.desc1': 'Cuando asumimos el cargo, el establishment nos dijo que reformar los muelles, los oleoductos y el estado administrativo era imposible. Se equivocaron. Pero los monopolios no se han rendido—simplemente se han retirado a los tribunales y a las trastiendas de la Legislatura, esperando a que perdamos nuestra determinación.',
-    'problem.desc2': 'En 2060, ustedes entregaron un mandato histórico del 73.63% para romper los monopolios. Hemos cumplido nuestras promesas y aprobado reformas históricas, pero el establishment todavía nos combate en cada oportunidad. Un mandato del 75% asegura permanentemente nuestro progreso y demuestra que Cambria pertenece a su pueblo, no a sus políticos.',
+    'problem.desc1': 'Cuando asumimos el cargo, el establishment nos dijo que reformar los muelles, los oleoductos y el estado administrativo era imposible. Se equivocaron. Pero los monopolios no se han rendido. Simplemente se han retirado a los tribunales y a las trastiendas de la Legislatura, esperando a que perdamos nuestra determinación.',
+    'problem.desc2': 'En 2060, ustedes entregaron un mandato histórico del 73.63% para romper los monopolios. Hemos cumplido nuestras promesas y aprobado reformas históricas, pero el establishment todavía nos combate en cada oportunidad. Un mandato del 75% asegura permanentemente nuestro progreso y demuestra que Cambria pertenece exclusivamente a su pueblo.',
 
     'voices.title': 'LAS VOCES DE CAMBRIA',
     'voices.quote1': '"Esa es la primera cosa honesta que un político me ha dicho en este puerto en una década. Explícamelo."',
@@ -197,13 +197,13 @@ const translations = {
 
     'platform2.title': 'LA PLATEFORME 2062',
     'platform2.item1.title': 'I. Achever le Corridor d\'Eau du Sud',
-    'platform2.item1.desc': 'La loi sur le pipeline CMC est adoptée. Maintenant, il faut la construire. Je veillerai à ce que le pipeline commun avec Mezata et Costa Blanca soit achevé, pôle par pôle, afin qu\'aucune communauté cambrienne ne soit plus jamais confrontée seule à une saison de sécheresse. Ce n\'est pas une solution temporaire — c\'est la fin définitive d\'une crise qui a défini cette région depuis une génération.',
+    'platform2.item1.desc': 'La loi sur le pipeline CMC est adoptée. Maintenant, il faut la construire. Je veillerai à ce que le pipeline commun avec Mezata et Costa Blanca soit achevé, pôle par pôle, afin qu\'aucune communauté cambrienne ne soit plus jamais confrontée seule à une saison de sécheresse. C\'est la fin définitive d\'une crise qui a défini cette région depuis une génération.',
     'platform2.item2.title': 'II. Approfondir la Coopération du Sud',
-    'platform2.item2.desc': 'L\'Autorité Conjointe de l\'Eau a prouvé que Cambria, Mezata et Costa Blanca peuvent gouverner ensemble des ressources partagées, d\'égal à égal, sans se soumettre à personne. J\'étendrai ce modèle de coopération — infrastructures partagées, investissements partagés, autorité partagée — aux corridors de fret et au commerce côtier, afin que le sud se renforce en travaillant ensemble.',
+    'platform2.item2.desc': 'L\'Autorité Conjointe de l\'Eau a prouvé que Cambria, Mezata et Costa Blanca peuvent gouverner ensemble des ressources partagées, d\'égal à égal, sans se soumettre à personne. J\'étendrai ce modèle de coopération (infrastructures partagées, investissements partagés, autorité partagée) aux corridors de fret et au commerce côtier, afin que le sud se renforce en travaillant ensemble.',
     'platform2.item3.title': 'III. Faire Croître ce que Nous Avons Protégé',
     'platform2.item3.desc': 'Nous avons empêché les monopoles d\'étouffer les petites entreprises. Maintenant, nous construisons. Un soutien accru aux flottes de pêche indépendantes et au logement coopératif, des investissements continus dans l\'accès à la santé en milieu rural, et une Cambria où une entreprise familiale peut rivaliser avec le capital consolidé et gagner.',
     'platform2.item4.title': 'IV. Finir ce que Nous Avons Commencé',
-    'platform2.item4.desc': 'Chaque commission que nous avons siégée, chaque bureau que nous avons réformé, chaque conseil que nous avons rendu aux travailleurs et aux parties prenantes — l\'establishment veut tout défaire dès que nous détournons le regard. Un mandat de 75 % ne réélit pas seulement un gouverneur. Il dit à l\'establishment conservateur et à tous les intérêts bien ancrés qui combattent encore ces réformes devant les tribunaux et à l\'Assemblée : Cambria ne reculera pas.',
+    'platform2.item4.desc': 'Chaque commission que nous avons siégée, chaque bureau que nous avons réformé, chaque conseil que nous avons rendu aux travailleurs et aux parties prenantes est menacée. L\'establishment veut tout défaire dès que nous détournons le regard. Un mandat de 75 % est un avertissement décisif. Il dit à l\'establishment conservateur et à tous les intérêts bien ancrés qui combattent encore ces réformes devant les tribunaux et à l\'Assemblée : Cambria ne reculera pas.',
 
     'marquee.hero': '/// LE MANDAT /// 2062 /// LE MANDAT /// 2062 /// LE MANDAT ///',
     'events.marquee': 'SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; ',
@@ -219,8 +219,8 @@ const translations = {
 
     'problem.title': 'QUI DIRIGE RÉELLEMENT',
     'problem.monopoly': 'LA RÉPONSE HONNÊTE',
-    'problem.desc1': 'Lorsque nous avons pris nos fonctions, l\'establishment nous a dit que réformer les quais, les pipelines et l\'état administratif était impossible. Ils avaient tort. Mais les monopoles ne se sont pas rendus—ils se sont simplement repliés devant les tribunaux et dans les arrière-salles de l\'Assemblée, attendant que nous perdions notre détermination.',
-    'problem.desc2': 'En 2060, vous avez délivré un mandat historique de 73,63 % pour briser les monopoles. Nous avons tenu nos promesses et adopté des réformes historiques, mais l\'establishment nous combat toujours à chaque instant. Un mandat de 75 % garantit définitivement nos progrès et prouve que Cambria appartient à son peuple et non à ses politiciens.',
+    'problem.desc1': 'Lorsque nous avons pris nos fonctions, l\'establishment nous a dit que réformer les quais, les pipelines et l\'état administratif était impossible. Ils avaient tort. Mais les monopoles ne se sont pas rendus. Ils se sont simplement repliés devant les tribunaux et dans les arrière-salles de l\'Assemblée, attendant que nous perdions notre détermination.',
+    'problem.desc2': 'En 2060, vous avez délivré un mandat historique de 73,63 % pour briser les monopoles. Nous avons tenu nos promesses et adopté des réformes historiques, mais l\'establishment nous combat toujours à chaque instant. Un mandat de 75 % garantit définitivement nos progrès et prouve que Cambria appartient exclusivement à son peuple.',
 
     'voices.title': 'LES VOIX DE CAMBRIA',
     'voices.quote1': '"C\'est la première chose honnête qu\'un politicien m\'ait dite dans ce port depuis une décennie. Expliquez-moi."',

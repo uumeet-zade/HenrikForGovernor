@@ -27,7 +27,10 @@
     
     <!-- Top Nav -->
     <header class="grid-nav">
-      <div class="nav-brand display-text">VASMER '62</div>
+      <div class="nav-brand display-text" style="display: flex; align-items: center; gap: 1rem;">
+        <img src="./assets/images/logos/logo.svg" alt="HV Logo" style="height: 64px; filter: invert(1);">
+        VASMER '62
+      </div>
       <div class="nav-lang">
         <button class="lang-btn display-text" data-lang="en">AL</button>
         <button class="lang-btn display-text" data-lang="es">AC</button>
@@ -51,7 +54,16 @@
 
     <!-- Marquee Divider -->
     <div class="grid-marquee combat-ready">
-      <div class="marquee-text" data-i18n="marquee.hero">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
+      <div class="marquee-inner">
+        <div class="marquee-text" data-i18n="marquee.hero">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
+        <div class="marquee-text" data-i18n="marquee.hero" aria-hidden="true">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
+        <div class="marquee-text" data-i18n="marquee.hero" aria-hidden="true">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
+        <div class="marquee-text" data-i18n="marquee.hero" aria-hidden="true">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
+        <div class="marquee-text" data-i18n="marquee.hero" aria-hidden="true">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
+        <div class="marquee-text" data-i18n="marquee.hero" aria-hidden="true">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
+        <div class="marquee-text" data-i18n="marquee.hero" aria-hidden="true">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
+        <div class="marquee-text" data-i18n="marquee.hero" aria-hidden="true">/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///</div>
+      </div>
     </div>
 
     <!-- Promises Kept Section -->
@@ -152,7 +164,16 @@
     <!-- Events Section -->
     <section class="grid-events">
       <div class="grid-marquee combat-ready">
-        <div class="marquee-text" data-i18n="events.marquee">ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; </div>
+        <div class="marquee-inner">
+          <div class="marquee-text" data-i18n="events.marquee">ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; </div>
+          <div class="marquee-text" data-i18n="events.marquee" aria-hidden="true">ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; </div>
+          <div class="marquee-text" data-i18n="events.marquee" aria-hidden="true">ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; </div>
+          <div class="marquee-text" data-i18n="events.marquee" aria-hidden="true">ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; </div>
+          <div class="marquee-text" data-i18n="events.marquee" aria-hidden="true">ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; </div>
+          <div class="marquee-text" data-i18n="events.marquee" aria-hidden="true">ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; </div>
+          <div class="marquee-text" data-i18n="events.marquee" aria-hidden="true">ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; </div>
+          <div class="marquee-text" data-i18n="events.marquee" aria-hidden="true">ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; </div>
+        </div>
       </div>
       <div class="events-list">
         <div class="event-row combat-ready" data-event-id="alto-port" style="cursor: pointer;">
@@ -181,14 +202,24 @@
       </div>
     </section>
 
-    <!-- Posters Section (Placeholders) -->
-    <section class="grid-posters combat-ready" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; padding: 4rem 2rem; border-bottom: var(--border-thick); background-color: var(--color-black);">
-      <img src="./assets/images/henrikposter.png" alt="Poster 1" class="campaign-poster" style="border: var(--border-thick); border-color: var(--color-white);">
-      <img src="./assets/images/poster4.png" alt="Poster 2" class="campaign-poster" style="border: var(--border-thick); border-color: var(--color-white);">
+    <!-- Posters Section -->
+    <section class="grid-posters combat-ready" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 4rem 8rem; border-bottom: var(--border-thick); background-color: var(--color-black); justify-items: center; align-items: center;">
+      <!-- Poster 1: Combat State -->
+      <div class="wheatpaste-wrapper">
+        <img src="./assets/images/poster2062.png?v=2" alt="Campaign Poster 2062 - Combat State" class="campaign-poster" style="border: 4px solid var(--color-white); width: 100%; cursor: zoom-in; display: block;">
+      </div>
+      <!-- Poster 2: Resting State -->
+      <div class="wheatpaste-wrapper">
+        <img src="./assets/images/poster2062_academic.png?v=16" alt="Campaign Poster 2062 - Resting State" class="campaign-poster" style="border: 4px solid var(--color-white); width: 100%; cursor: zoom-in; display: block;">
+      </div>
     </section>
 
     <!-- Footer / Timeline -->
-    <footer class="grid-footer combat-ready">
+    <footer class="footer-timeline combat-ready" style="padding: 4rem 2rem; border-top: var(--border-thick); background-color: var(--color-white); color: var(--color-black);">
+      <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+        <img src="./assets/images/logos/logo.svg" alt="HV Logo" style="height: 160px;">
+        <h2 style="font-size: 2.5rem; text-transform: uppercase; margin: 0;">Cambria is not going back.</h2>
+      </div>
       <div class="footer-left">
         <h3 class="display-text" data-i18n="footer.title">STAY IN THE FIGHT</h3>
         <p data-i18n="footer.desc">Sign up for deployment orders and campaign updates.</p>
