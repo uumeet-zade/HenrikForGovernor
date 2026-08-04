@@ -5,15 +5,7 @@
       <circle cx="2" cy="2" r="2" fill="#333333" />
     </pattern>
 
-    <!-- Slash Mask for HV -->
-    <mask id="ogSlash">
-      <rect width="1200" height="630" fill="white" />
-      <g transform="rotate(30, 340, 335)">
-        <rect x="190" y="-80" width="40" height="800" fill="black" />
-        <rect x="270" y="-80" width="40" height="800" fill="black" />
-        <rect x="350" y="-80" width="40" height="800" fill="black" />
-      </g>
-    </mask>
+    <!-- Slash Mask removed for rasterizer compatibility -->
   </defs>
 
   <!-- Dark Background -->
@@ -22,13 +14,21 @@
   <!-- Subtle Texture -->
   <rect width="1200" height="630" fill="url(#dotPattern)" opacity="0.3" />
   
+
+
+  <!-- Left Side: Massive Logo (No Mask) -->
+  <g>
+    <text x="340" y="490" fill="#FFFFFF" font-family="Impact, Arial Black, system-ui, sans-serif" font-size="450" font-weight="900" letter-spacing="-30" text-anchor="middle">HV</text>
+    <!-- Overdrawn black rectangles to simulate the cutouts (compatible with sips) -->
+    <g transform="rotate(30, 340, 335)">
+      <rect x="210" y="-80" width="40" height="800" fill="#000000" />
+      <rect x="290" y="-80" width="40" height="800" fill="#000000" />
+      <rect x="370" y="-80" width="40" height="800" fill="#000000" />
+    </g>
+  </g>
+  
   <!-- Heavy Brutalist Frame -->
   <rect x="30" y="30" width="1140" height="570" fill="none" stroke="#FFFFFF" stroke-width="12" />
-
-  <!-- Left Side: Massive Logo -->
-  <g mask="url(#ogSlash)">
-    <text x="340" y="490" fill="#FFFFFF" font-family="Impact, Arial Black, system-ui, sans-serif" font-size="450" font-weight="900" letter-spacing="-30" text-anchor="middle">HV</text>
-  </g>
   
   <!-- Divider -->
   <line x1="700" y1="30" x2="700" y2="600" stroke="#FFFFFF" stroke-width="12" />
