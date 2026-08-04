@@ -268,6 +268,7 @@ button, a { cursor: pointer; }
 .feed-card.card-cyan:hover { box-shadow: 8px 8px 0px var(--color-cyan); border-color: var(--color-cyan); color: var(--color-cyan); }
 .feed-card.card-yellow:hover { box-shadow: 8px 8px 0px var(--color-yellow); border-color: var(--color-yellow); color: var(--color-yellow); }
 .feed-card.card-green:hover { box-shadow: 8px 8px 0px var(--color-green); border-color: var(--color-green); color: var(--color-green); }
+.feed-card.card-orange:hover { box-shadow: 8px 8px 0px var(--color-orange); border-color: var(--color-orange); color: var(--color-orange); }
 .feed-card:hover { transform: translate(-2px, -2px); }
 .feed-card:hover p { color: var(--color-white); } /* Keep paragraph text white */
 
@@ -278,15 +279,9 @@ button, a { cursor: pointer; }
   background-color: var(--color-black);
   color: var(--color-white);
 }
-@media (min-width: 1024px) {
-  .grid-footer { grid-template-columns: 40% 60%; }
-}
 .footer-left {
   padding: 3rem 2rem;
   border-bottom: var(--border-thick);
-}
-@media (min-width: 1024px) {
-  .footer-left { border-right: var(--border-thick); border-bottom: none; }
 }
 .footer-left h3 { font-size: 2rem; margin-bottom: 1rem; }
 .email-signup {
@@ -326,6 +321,7 @@ button, a { cursor: pointer; }
   border-color: var(--color-white);
   padding: 2rem;
   background-color: var(--color-black);
+  color: var(--color-white);
 }
 .ticker-content {
   font-size: 1.2rem;
@@ -385,6 +381,7 @@ button, a { cursor: pointer; }
 .feed-card.card-magenta.is-ticked .tick-fill { stroke: var(--color-magenta); }
 .feed-card.card-red.is-ticked .tick-fill { stroke: var(--color-red); }
 .feed-card.card-green.is-ticked .tick-fill { stroke: var(--color-green); }
+.feed-card.card-orange.is-ticked .tick-fill { stroke: var(--color-orange); }
 
 /* Events Section */
 .grid-events {

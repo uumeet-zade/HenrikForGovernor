@@ -25,7 +25,7 @@ const translations = {
     'nav.record': 'THE RECORD',
     'intro.headline': '<span class="hover-cyan">PROMISES KEPT.</span><br><span class="hover-yellow">THE FIGHT CONTINUES.</span><br><span class="hover-red">FINISH WHAT WE STARTED.</span>',
     'intro.subtext': 'Governor Henrik Vasmer. The independent voice for all of Cambria. Re-election 2062.',
-    'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. Rejecting the trade that defined his family in favour of academia, he earned a PhD in Rhetoric and Persuasion Culture. Now, he brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.',
+    'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. He rejected the trade that defined his family and earned a PhD in Rhetoric and Persuasion Culture. He brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.',
 
     'platform.promises_title': 'PROMISES KEPT',
     'platform.slogan': 'HENRIK ALWAYS KEEPS HIS WORD.',
@@ -40,12 +40,14 @@ const translations = {
     'platform.cmc.desc': 'Establishing a jointly-owned Southern Water Corridor with Mezata and Costa Blanca to secure regional water independence.',
     'platform.firearms.title': 'Civil Defense & Firearms Act',
     'platform.firearms.desc': 'Establishing the Office of Civil Defense and enacting licensing reforms to ensure our rural and coastal communities have the means to protect themselves in an emergency.',
+    'platform.foundations.title': 'Cambria Foundations Act',
+    'platform.foundations.desc': 'MORE HOUSES, MORE BUSINESSES, LOWER PRICES. Enacting strategic tax relief to incentivize developers to build family housing and small business premises using local labor. This relief is drawn exclusively from regional revenue.',
 
     'platform2.title': 'THE 2062 PLATFORM',
     'platform2.item1.title': 'I. Finish the Southern Water Corridor',
     'platform2.item1.desc': 'The CMC Pipeline Act is passed. Now it gets built. I will see the joint pipeline with Mezata and Costa Blanca completed, hub by hub, so that no Cambrian community faces a drought season on its own ever again. This is the permanent end of a crisis that has defined this region for a generation.',
     'platform2.item2.title': 'II. Deepen Southern Cooperation',
-    'platform2.item2.desc': 'The Joint Water Authority proved that Cambria, Mezata, and Costa Blanca can govern shared resources together, as equals, without surrendering to anyone. I will expand that model of cooperation (shared infrastructure, shared investment, shared authority) into freight corridors and coastal trade, so the south grows stronger by working together.',
+    'platform2.item2.desc': 'The Joint Water Authority proved that Cambria, Mezata, and Costa Blanca can govern shared resources together, as equals, and retain full sovereignty. I will expand that model of cooperation (shared infrastructure, shared investment, shared authority) into freight corridors and coastal trade, so the south grows stronger by working together.',
     'platform2.item3.title': 'III. Grow What We Protected',
     'platform2.item3.desc': 'We stopped the monopolies from strangling small business. Now we build. Expanded support for independent fishing fleets and cooperative housing, continued investment in rural health access, and a Cambria where a family business can compete against consolidated capital and win.',
     'platform2.item4.title': 'IV. Finish What We Started',
@@ -80,19 +82,20 @@ const translations = {
     'timeline.item3': 'Served on the Alto Local Council. Fought for contract floor protections for local workers.',
     'timeline.item4': 'Independent Run for Governor. Fighting the monopolies to reclaim Cambria for the working class.',
     'timeline.item5': 'Elected Governor of Cambria with a historic 73.63% of the vote. A crushing defeat for the conservative establishment and a clear mandate from the people to take back our region.',
-    'timeline.item6': 'Promises Kept. Passed the CMC Pipeline Act, Civil Defense Act, and dismantled regional monopolies in a single year.',
+    'timeline.item6': 'Promises Kept. Passed the CMC Pipeline Act, Civil Defense Act, Cambria Foundations Act, and dismantled regional monopolies in a single year.',
     'timeline.item7': 'The Re-election Campaign. Fighting for a 75% mandate to finish what we started.',
 
     'ultimatum.title': 'THE TIME IS NOW',
     'ultimatum.btn': 'JOIN THE FIGHT',
     'ultimatum.download_docx': 'LINK TO THE CAMPAIGNING MATERIAL (docx)',
 
+    'footer.slogan': 'Cambria is not going back.',
     'footer.poster': '[ CAMPAIGN POSTER ASSET HERE ]',
     'footer.title': 'STAY IN THE FIGHT',
     'footer.desc': 'Sign up for deployment orders and campaign updates.',
     'footer.email.placeholder': 'EMAIL ADDRESS',
     'footer.subscribe': 'SUBMIT',
-    'footer.legal': 'PAID FOR BY HENRIK VASMER HIMSELF. WE NEED YOUR VOTE, NOT YOUR MONEY.',
+    'footer.legal': 'PAID FOR BY HENRIK VASMER HIMSELF. KEEP YOUR MONEY. WE ONLY NEED YOUR VOTE.',
 
     'modal.date.loc': 'Date | Location'
   },
@@ -102,7 +105,7 @@ const translations = {
     'nav.record': 'EL REGISTRO',
     'intro.headline': '<span class="hover-cyan">PROMESAS CUMPLIDAS.</span><br><span class="hover-yellow">LA LUCHA CONTINÚA.</span><br><span class="hover-red">TERMINEMOS EL TRABAJO.</span>',
     'intro.subtext': 'Gobernador Henrik Vasmer. La voz independiente de toda Cambria. Reelección 2062.',
-    'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazando el oficio que definía a su familia a favor de la academia, obtuvo un doctorado en Retórica y Cultura de la Persuasión. Ahora, aporta décadas de experiencia local, académica y práctica a la vanguardia para luchar por las comunidades costeras y trabajadoras de Cambria.',
+    'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazó el oficio que definía a su familia y obtuvo un doctorado en Retórica y Cultura de la Persuasión. Aporta décadas de experiencia local, académica y práctica a la vanguardia para luchar por las comunidades costeras y trabajadoras de Cambria.',
 
     'platform.promises_title': 'PROMESAS CUMPLIDAS',
     'platform.slogan': 'HENRIK SIEMPRE CUMPLE SU PALABRA.',
@@ -117,12 +120,14 @@ const translations = {
     'platform.cmc.desc': 'Estableciendo un Corredor de Agua del Sur de propiedad conjunta con Mezata y Costa Blanca para asegurar la independencia hídrica regional.',
     'platform.firearms.title': 'Ley de Defensa Civil y Armas de Fuego',
     'platform.firearms.desc': 'Establecer la Oficina de Defensa Civil y promulgar reformas de licencias para asegurar que nuestras comunidades rurales y costeras tengan los medios para protegerse en una emergencia.',
+    'platform.foundations.title': 'Ley de Fundaciones de Cambria',
+    'platform.foundations.desc': 'MÁS CASAS, MÁS NEGOCIOS, PRECIOS MÁS BAJOS. Promulgando desgravaciones fiscales estratégicas para incentivar a los desarrolladores a construir viviendas familiares y locales para pequeñas empresas utilizando mano de obra local. Este alivio se extrae exclusivamente de los ingresos regionales.',
 
     'platform2.title': 'LA PLATAFORMA 2062',
     'platform2.item1.title': 'I. Terminar el Corredor de Agua del Sur',
     'platform2.item1.desc': 'La Ley del Oleoducto CMC ha sido aprobada. Ahora se construye. Me aseguraré de que el oleoducto conjunto con Mezata y Costa Blanca se complete, centro por centro, para que ninguna comunidad cambriana vuelva a enfrentar una temporada de sequía sola. Este es el fin permanente de una crisis que ha definido esta región por una generación.',
     'platform2.item2.title': 'II. Profundizar la Cooperación del Sur',
-    'platform2.item2.desc': 'La Autoridad Conjunta de Agua demostró que Cambria, Mezata y Costa Blanca pueden gobernar recursos compartidos juntos, como iguales, sin rendirse ante nadie. Expandiré ese modelo de cooperación (infraestructura compartida, inversión compartida, autoridad compartida) hacia los corredores de carga y comercio costero, para que el sur crezca más fuerte trabajando juntos.',
+    'platform2.item2.desc': 'La Autoridad Conjunta de Agua demostró que Cambria, Mezata y Costa Blanca pueden gobernar recursos compartidos juntos, como iguales, y mantener plena soberanía. Expandiré ese modelo de cooperación (infraestructura compartida, inversión compartida, autoridad compartida) hacia los corredores de carga y comercio costero, para que el sur crezca más fuerte trabajando juntos.',
     'platform2.item3.title': 'III. Crecer lo que Protegimos',
     'platform2.item3.desc': 'Detuvimos a los monopolios para que no asfixiaran a las pequeñas empresas. Ahora construimos. Mayor apoyo para flotas pesqueras independientes y viviendas cooperativas, inversión continua en acceso a salud rural, y una Cambria donde un negocio familiar pueda competir contra el capital consolidado y ganar.',
     'platform2.item4.title': 'IV. Terminar lo que Empezamos',
@@ -157,19 +162,20 @@ const translations = {
     'timeline.item3': 'Sirvió en el Consejo Local de Alto. Luchó por protecciones de contratos base para los trabajadores locales.',
     'timeline.item4': 'Candidatura Independiente a Gobernador. Luchando contra los monopolios para reclamar Cambria para la clase trabajadora.',
     'timeline.item5': 'Elegido Gobernador de Cambria con un histórico 73.63% de los votos. Una derrota aplastante para el establishment conservador y un mandato claro del pueblo para recuperar nuestra región.',
-    'timeline.item6': 'Promesas Cumplidas. Aprobó la Ley del Oleoducto CMC, la Ley de Defensa Civil y desmanteló los monopolios regionales en un solo año.',
+    'timeline.item6': 'Promesas Cumplidas. Aprobó la Ley del Oleoducto CMC, la Ley de Defensa Civil, la Ley de Fundaciones de Cambria, y desmanteló los monopolios regionales en un solo año.',
     'timeline.item7': 'La Campaña de Reelección. Luchando por un mandato del 75% para terminar lo que empezamos.',
 
     'ultimatum.title': 'EL MOMENTO ES AHORA',
     'ultimatum.btn': 'ÚNETE A LA LUCHA',
     'ultimatum.download_docx': 'ENLACE AL MATERIAL DE CAMPAÑA (docx)',
 
+    'footer.slogan': 'Cambria no da marcha atrás.',
     'footer.poster': '[ RECURSO DE CARTEL DE CAMPAÑA AQUÍ ]',
     'footer.title': 'MANTENTE EN LA LUCHA',
     'footer.desc': 'Regístrate para órdenes de despliegue y actualizaciones de la campaña.',
     'footer.email.placeholder': 'DIRECCIÓN DE CORREO',
     'footer.subscribe': 'ENVIAR',
-    'footer.legal': 'PAGADO POR EL PROPIO HENRIK VASMER. NECESITAMOS TU VOTO, NO TU DINERO.',
+    'footer.legal': 'PAGADO POR EL PROPIO HENRIK VASMER. QUÉDATE CON TU DINERO. SOLO NECESITAMOS TU VOTO.',
 
     'modal.date.loc': 'Fecha | Ubicación'
   },
@@ -179,7 +185,7 @@ const translations = {
     'nav.record': 'LE DOSSIER',
     'intro.headline': '<span class="hover-cyan">PROMESSES TENUES.</span><br><span class="hover-yellow">LE COMBAT CONTINUE.</span><br><span class="hover-red">ACHEVONS LE TRAVAIL.</span>',
     'intro.subtext': 'Gouverneur Henrik Vasmer. La voix indépendante de toute la Cambria. Réélection 2062.',
-    'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un politicien indépendant de Caprica originaire d\'Alto, une ville portuaire du sud de la Cambria. Rejetant le métier qui définissait sa famille au profit du monde universitaire, il a obtenu un doctorat en rhétorique et culture de la persuasion. Aujourd\'hui, il met ses décennies d\'expérience locale, universitaire et pratique au premier plan pour lutter pour les communautés côtières et ouvrières de Cambria.',
+    'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un politicien indépendant de Caprica originaire d\'Alto, une ville portuaire du sud de la Cambria. Il a rejeté le métier qui définissait sa famille et a obtenu un doctorat en rhétorique et culture de la persuasion. Il met ses décennies d\'expérience locale, universitaire et pratique au premier plan pour lutter pour les communautés côtières et ouvrières de Cambria.',
 
     'platform.promises_title': 'PROMESSES TENUES',
     'platform.slogan': 'HENRIK TIENT TOUJOURS PAROLE.',
@@ -194,12 +200,14 @@ const translations = {
     'platform.cmc.desc': 'Établissement d\'un Corridor d\'Eau du Sud détenu conjointement avec Mezata et Costa Blanca pour garantir l\'indépendance hydrique régionale.',
     'platform.firearms.title': 'Loi sur la Défense Civile et les Armes à Feu',
     'platform.firearms.desc': 'Établir le Bureau de la Défense Civile et promulguer des réformes des licences pour s\'assurer que nos communautés rurales et côtières ont les moyens de se protéger en cas d\'urgence.',
+    'platform.foundations.title': 'Loi sur les Fondations de Cambria',
+    'platform.foundations.desc': 'PLUS DE MAISONS, PLUS D\'ENTREPRISES, DES PRIX PLUS BAS. Promulgation d\'allégements fiscaux stratégiques pour inciter les promoteurs à construire des logements familiaux et des locaux pour petites entreprises en utilisant la main-d\'œuvre locale. Cet allégement est tiré exclusivement des revenus régionaux.',
 
     'platform2.title': 'LA PLATEFORME 2062',
     'platform2.item1.title': 'I. Achever le Corridor d\'Eau du Sud',
     'platform2.item1.desc': 'La loi sur le pipeline CMC est adoptée. Maintenant, il faut la construire. Je veillerai à ce que le pipeline commun avec Mezata et Costa Blanca soit achevé, pôle par pôle, afin qu\'aucune communauté cambrienne ne soit plus jamais confrontée seule à une saison de sécheresse. C\'est la fin définitive d\'une crise qui a défini cette région depuis une génération.',
     'platform2.item2.title': 'II. Approfondir la Coopération du Sud',
-    'platform2.item2.desc': 'L\'Autorité Conjointe de l\'Eau a prouvé que Cambria, Mezata et Costa Blanca peuvent gouverner ensemble des ressources partagées, d\'égal à égal, sans se soumettre à personne. J\'étendrai ce modèle de coopération (infrastructures partagées, investissements partagés, autorité partagée) aux corridors de fret et au commerce côtier, afin que le sud se renforce en travaillant ensemble.',
+    'platform2.item2.desc': 'L\'Autorité Conjointe de l\'Eau a prouvé que Cambria, Mezata et Costa Blanca peuvent gouverner ensemble des ressources partagées, d\'égal à égal, et conserver leur pleine souveraineté. J\'étendrai ce modèle de coopération (infrastructures partagées, investissements partagés, autorité partagée) aux corridors de fret et au commerce côtier, afin que le sud se renforce en travaillant ensemble.',
     'platform2.item3.title': 'III. Faire Croître ce que Nous Avons Protégé',
     'platform2.item3.desc': 'Nous avons empêché les monopoles d\'étouffer les petites entreprises. Maintenant, nous construisons. Un soutien accru aux flottes de pêche indépendantes et au logement coopératif, des investissements continus dans l\'accès à la santé en milieu rural, et une Cambria où une entreprise familiale peut rivaliser avec le capital consolidé et gagner.',
     'platform2.item4.title': 'IV. Finir ce que Nous Avons Commencé',
@@ -234,19 +242,20 @@ const translations = {
     'timeline.item3': 'A siégé au Conseil Local d\'Alto. S\'est battu pour des protections de plancher de contrat pour les travailleurs locaux.',
     'timeline.item4': 'Course Indépendante pour le poste de Gouverneur. Lutte contre les monopoles pour reconquérir la Cambria pour la classe ouvrière.',
     'timeline.item5': 'Élu Gouverneur de Cambria avec un score historique de 73.63% des voix. Une défaite écrasante pour l\'establishment conservateur et un mandat clair du peuple pour reprendre notre région.',
-    'timeline.item6': 'Promesses Tenues. A adopté la loi sur le pipeline CMC, la loi sur la défense civile et a démantelé les monopoles régionaux en une seule année.',
+    'timeline.item6': 'Promesses Tenues. A adopté la loi sur le pipeline CMC, la loi sur la défense civile, la loi sur les fondations de Cambria, et a démantelé les monopoles régionaux en une seule année.',
     'timeline.item7': 'La Campagne de Réélection. Lutter pour un mandat de 75 % afin de terminer ce que nous avons commencé.',
 
     'ultimatum.title': 'LE MOMENT EST VENU',
     'ultimatum.btn': 'REJOIGNEZ LE COMBAT',
     'ultimatum.download_docx': 'LIEN VERS LE MATÉRIEL DE CAMPAGNE (docx)',
 
+    'footer.slogan': 'Cambria ne reculera pas.',
     'footer.poster': '[ RESSOURCE DE L\'AFFICHE DE CAMPAGNE ICI ]',
     'footer.title': 'RESTEZ DANS LE COMBAT',
     'footer.desc': 'Inscrivez-vous pour les ordres de déploiement et les mises à jour de la campagne.',
     'footer.email.placeholder': 'ADRESSE E-MAIL',
     'footer.subscribe': 'SOUMETTRE',
-    'footer.legal': 'PAYÉ PAR HENRIK VASMER LUI-MÊME. NOUS AVONS BESOIN DE VOTRE VOTE, PAS DE VOTRE ARGENT.',
+    'footer.legal': 'PAYÉ PAR HENRIK VASMER LUI-MÊME. GARDEZ VOTRE ARGENT. NOUS N\'AVONS BESOIN QUE DE VOTRE VOTE.',
 
     'modal.date.loc': 'Date | Emplacement'
   }
