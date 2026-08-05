@@ -9,7 +9,7 @@
 * **Founder & Leader:** Henrik Vasmer (Incumbent Governor of Cambria, former academic)
 * **Region of Origin:** Cambria, Republic of Caprica
 * **Primary Slogan:** "Progress by Mandate. Sovereignty by Law."
-* **Official Colors:** *To be decided.*
+* **Official Colors:** Hero Crimson Red (#E60000), Pitch Black, and Pristine White.
 * **Nature of the Party:** A highly disciplined, top-down "Civic Instrument" built to enforce regional progress, defend constitutional boundaries against federal overreach, and structure the free market to serve the working class.
 
 **2. CORE IDEOLOGICAL PLATFORM**
@@ -40,3 +40,9 @@ To prevent the Bloc from becoming a traditional, corrupt political party, it is 
 * **Sector-Based Leadership:** The Bloc's inner councils are reserved for actual tradespeople and professionals—logistics workers, extraction/miners, defense/veterans, and agrarian/coastal workers.
 * **Technocratic Requirements:** Individuals appointed to regulatory boards must have actual experience in the field (e.g., engineers running infrastructure, labor attorneys running monopoly boards).
 * **Open Audits:** The Bloc operates with radical transparency regarding its funding, decision-making, and budget allocation, functioning more like a militant labor union or civic cooperative than a shadow-funded political campaign.
+
+**6. VISUAL IDENTITY & THE LOGO**
+The visual identity of The Cambrian Bloc is defined by the "Duality Principle," representing both Henrik Vasmer's academic composure (clean, stark black and white) and his aggressive political action (pitch black with flashes of Hero Crimson Red).
+
+* **The Logo:** The official logo departs from rigid, corporate geometric shapes in favor of a fluid, calligraphic "Bloc" lettering with a subtle, stylized "C" integrated into the background. 
+* **Symbolism:** This calligraphic approach draws heavy inspiration from populist and working-class European political movements, symbolizing a human-driven, grassroots movement rather than a sterile corporate entity. The sweeping curves of the logo are intentionally juxtaposed against the uncompromising, neobrutalist borders of the party's campaign materials, visually representing the Bloc's core philosophy: humanity and progress protected by rigid, unyielding mandates.
