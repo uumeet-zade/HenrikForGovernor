@@ -17,15 +17,7 @@
 
 
   <!-- Left Side: Massive Logo (No Mask) -->
-  <g>
-    <text x="340" y="490" fill="#FFFFFF" font-family="Impact, Arial Black, system-ui, sans-serif" font-size="450" font-weight="900" letter-spacing="-30" text-anchor="middle">HV</text>
-    <!-- Overdrawn black rectangles to simulate the cutouts (compatible with sips) -->
-    <g transform="rotate(30, 340, 335)">
-      <rect x="210" y="-80" width="40" height="800" fill="#000000" />
-      <rect x="290" y="-80" width="40" height="800" fill="#000000" />
-      <rect x="370" y="-80" width="40" height="800" fill="#000000" />
-    </g>
-  </g>
+  <image href="logos/bloc_logo.svg" x="200" y="150" width="320" height="320" />
   
   <!-- Heavy Brutalist Frame -->
   <rect x="30" y="30" width="1140" height="570" fill="none" stroke="#FFFFFF" stroke-width="12" />
