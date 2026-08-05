@@ -30,10 +30,8 @@
     <line x1="360" y1="40" x2="360" y2="300" stroke="#000000" stroke-width="6" />
     <line x1="360" y1="300" x2="360" y2="960" stroke="#000000" stroke-width="6" />
 
-    <!-- Top Left: HV Logo -->
-    <g mask="url(#strikeMask)">
-      <text x="190" y="255" fill="#000000" font-family="Impact, Arial Black, system-ui, sans-serif" font-size="220" font-weight="900" letter-spacing="-15" text-anchor="middle">HV</text>
-    </g>
+    <!-- Top Left: The Cambrian Bloc Logo -->
+    <image href="logos/bloc_logo_bw.svg" x="80" y="50" width="220" height="220" />
 
     <!-- Top Right: Header Text -->
     <text x="420" y="160" fill="#000000" font-family="Impact, Arial Black, system-ui, sans-serif" font-size="80" font-weight="900" letter-spacing="-2" text-anchor="start">THE 2062</text>
@@ -48,8 +46,8 @@
     
     <!-- Candidate 1 (Henrik Vasmer) -->
     <rect x="60" y="520" width="280" height="120" fill="none" stroke="#000000" stroke-width="8" />
-    <text x="75" y="575" fill="#000000" font-family="Arial Black, system-ui, sans-serif" font-size="20" font-weight="900" text-anchor="start" textLength="180" lengthAdjust="spacingAndGlyphs">HENRIK VASMER</text>
-    <text x="75" y="600" fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="start" textLength="180" lengthAdjust="spacingAndGlyphs">INCUMBENT | CAMBRIANS ENDORSED</text>
+    <text x="75" y="575" fill="#000000" font-family="Arial Black, system-ui, sans-serif" font-size="20" font-weight="900" text-anchor="start" textLength="160" lengthAdjust="spacingAndGlyphs">HENRIK VASMER</text>
+    <text x="75" y="600" fill="#000000" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="start" textLength="160" lengthAdjust="spacingAndGlyphs">INCUMBENT | THE CAMBRIAN BLOC</text>
     <!-- Checkbox with Scratchy Handwritten Marker X -->
     <rect x="270" y="555" width="50" height="50" fill="none" stroke="#000000" stroke-width="4" />
     <g transform="translate(0, -160)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" fill="none">
@@ -65,7 +63,7 @@
 
     <!-- Candidate 2 (Conservative) -->
     <rect x="60" y="680" width="280" height="120" fill="none" stroke="#000000" stroke-width="4" />
-    <text x="75" y="735" fill="#000000" font-family="Arial Black, system-ui, sans-serif" font-size="14" font-weight="900" letter-spacing="-0.5" text-anchor="start" textLength="180" lengthAdjust="spacingAndGlyphs">CONSERVATIVE CANDIDATE</text>
+    <text x="75" y="735" fill="#000000" font-family="Arial Black, system-ui, sans-serif" font-size="12" font-weight="900" letter-spacing="-0.5" text-anchor="start" textLength="160" lengthAdjust="spacingAndGlyphs">CONSERVATIVE CANDIDATE</text>
     <text x="75" y="760" fill="#000000" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="start" textLength="180" lengthAdjust="spacingAndGlyphs">Establishment Endorsed</text>
     <!-- Empty Checkbox -->
     <rect x="270" y="715" width="50" height="50" fill="none" stroke="#000000" stroke-width="4" />

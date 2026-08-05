@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../../assets/images/logos/bloc_logo_bw.svg" width="200" />
+</p>
+
 '''Henrik Vasmer''' (born 4 March 2018) is a Caprican politician from [[Alto]], a port town in southern [[Cambria]]. Though ideologically aligned with the [[Social Democratic Alliance]] (SDA), Vasmer campaigns as an [[Independent]]. He has built his political career through decades of local and academic work in Cambria.
 
 == Early Life ==

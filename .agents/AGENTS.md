@@ -27,3 +27,6 @@ Never use soft gradients or muted pastels. Colors must be fully saturated and hi
 ## Copywriting & Tone Rules
 *   **No Em Dashes:** Do not use em dashes (—). Use parentheses, colons, or separate sentences instead.
 *   **Direct Phrasing:** Avoid negative-contrast phrasings such as "is not X, but Y". State exactly what things are directly and assertively.
+
+## Campaigning Documents & Media
+*   **Dynamic Document Logos:** When embedding the campaign logo into markdown documents (like those in the `campaigning/` directory), always use the dynamic monochrome version (`bloc_logo_bw.svg`). This SVG is built with a `prefers-color-scheme` media query to automatically fill the logo with either pure black or pure white depending on the reader's background, ensuring perfect visibility in both light and dark document viewers.

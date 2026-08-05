@@ -24,8 +24,8 @@ const translations = {
     'nav.platform': 'THE PLATFORM',
     'nav.record': 'THE RECORD',
     'intro.headline': '<span class="hover-cyan">PROMISES KEPT.</span><br><span class="hover-yellow">THE FIGHT CONTINUES.</span><br><span class="hover-red">FINISH WHAT WE STARTED.</span>',
-    'intro.subtext': 'Governor Henrik Vasmer. The independent voice for all of Cambria. Re-election 2062.',
-    'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is an Independent Caprican politician from Alto, a port town in southern Cambria. He rejected the trade that defined his family and earned a PhD in Rhetoric and Persuasion Culture. He brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.',
+    'intro.subtext': 'Leader of The Cambrian Bloc. Progress by Mandate. Sovereignty by Law.',
+    'intro.bio': '<strong>Henrik Vasmer</strong> (born 4 March 2018) is the Founder of <strong>The Cambrian Bloc</strong> and a Caprican politician from Alto, a port town in southern Cambria. He rejected the trade that defined his family and earned a PhD in Rhetoric and Persuasion Culture. He brings decades of local, academic, and practical experience to the forefront to fight for Cambria\'s coastal and working communities.<br><br>The Cambrian Bloc was forged not as a traditional party, but as a defensive fortress against the federal machine and entrenched monopolies. It serves as the unyielding political weapon of the working class.',
 
     'platform.promises_title': 'PROMISES KEPT',
     'platform.slogan': 'HENRIK ALWAYS KEEPS HIS WORD.',
@@ -83,7 +83,7 @@ const translations = {
     'timeline.item4': 'Independent Run for Governor. Fighting the monopolies to reclaim Cambria for the working class.',
     'timeline.item5': 'Elected Governor of Cambria with a historic 73.63% of the vote. A crushing defeat for the conservative establishment and a clear mandate from the people to take back our region.',
     'timeline.item6': 'Promises Kept. Passed the CMC Pipeline Act, Civil Defense Act, Cambria Foundations Act, and dismantled regional monopolies in a single year.',
-    'timeline.item7': 'The Re-election Campaign. Fighting for a 75% mandate to finish what we started.',
+    'timeline.item7': 'The Cambrian Bloc Era. Fighting for a 75% mandate to finish what we started as a unified political fortress.',
 
     'ultimatum.title': 'THE TIME IS NOW',
     'ultimatum.btn': 'JOIN THE FIGHT',
@@ -104,8 +104,8 @@ const translations = {
     'nav.platform': 'LA PLATAFORMA',
     'nav.record': 'EL REGISTRO',
     'intro.headline': '<span class="hover-cyan">PROMESAS CUMPLIDAS.</span><br><span class="hover-yellow">LA LUCHA CONTINÚA.</span><br><span class="hover-red">TERMINEMOS EL TRABAJO.</span>',
-    'intro.subtext': 'Gobernador Henrik Vasmer. La voz independiente de toda Cambria. Reelección 2062.',
-    'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es un político capricano independiente de Alto, una ciudad portuaria en el sur de Cambria. Rechazó el oficio que definía a su familia y obtuvo un doctorado en Retórica y Cultura de la Persuasión. Aporta décadas de experiencia local, académica y práctica a la vanguardia para luchar por las comunidades costeras y trabajadoras de Cambria.',
+    'intro.subtext': 'Líder del Bloque Cambriano. Progreso por Mandato. Soberanía por Ley.',
+    'intro.bio': '<strong>Henrik Vasmer</strong> (nacido el 4 de marzo de 2018) es el Fundador del <strong>Bloque Cambriano</strong> y un político capricano de Alto, una ciudad portuaria en el sur de Cambria. Rechazó el oficio que definía a su familia y obtuvo un doctorado en Retórica y Cultura de la Persuasión. Aporta décadas de experiencia local, académica y práctica a la vanguardia para luchar por las comunidades costeras y trabajadoras de Cambria.<br><br>El Bloque Cambriano se forjó no como un partido tradicional, sino como una fortaleza defensiva contra la maquinaria federal y los monopolios arraigados. Sirve como el arma política inquebrantable de la clase trabajadora.',
 
     'platform.promises_title': 'PROMESAS CUMPLIDAS',
     'platform.slogan': 'HENRIK SIEMPRE CUMPLE SU PALABRA.',
@@ -163,7 +163,7 @@ const translations = {
     'timeline.item4': 'Candidatura Independiente a Gobernador. Luchando contra los monopolios para reclamar Cambria para la clase trabajadora.',
     'timeline.item5': 'Elegido Gobernador de Cambria con un histórico 73.63% de los votos. Una derrota aplastante para el establishment conservador y un mandato claro del pueblo para recuperar nuestra región.',
     'timeline.item6': 'Promesas Cumplidas. Aprobó la Ley del Oleoducto CMC, la Ley de Defensa Civil, la Ley de Fundaciones de Cambria, y desmanteló los monopolios regionales en un solo año.',
-    'timeline.item7': 'La Campaña de Reelección. Luchando por un mandato del 75% para terminar lo que empezamos.',
+    'timeline.item7': 'La Era del Bloque Cambriano. Luchando por un mandato del 75% para terminar lo que empezamos como una fortaleza política unificada.',
 
     'ultimatum.title': 'EL MOMENTO ES AHORA',
     'ultimatum.btn': 'ÚNETE A LA LUCHA',
@@ -184,8 +184,8 @@ const translations = {
     'nav.platform': 'LA PLATEFORME',
     'nav.record': 'LE DOSSIER',
     'intro.headline': '<span class="hover-cyan">PROMESSES TENUES.</span><br><span class="hover-yellow">LE COMBAT CONTINUE.</span><br><span class="hover-red">ACHEVONS LE TRAVAIL.</span>',
-    'intro.subtext': 'Gouverneur Henrik Vasmer. La voix indépendante de toute la Cambria. Réélection 2062.',
-    'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est un politicien indépendant de Caprica originaire d\'Alto, une ville portuaire du sud de la Cambria. Il a rejeté le métier qui définissait sa famille et a obtenu un doctorat en rhétorique et culture de la persuasion. Il met ses décennies d\'expérience locale, universitaire et pratique au premier plan pour lutter pour les communautés côtières et ouvrières de Cambria.',
+    'intro.subtext': 'Chef du Bloc Cambrien. Progrès par Mandat. Souveraineté par la Loi.',
+    'intro.bio': '<strong>Henrik Vasmer</strong> (né le 4 mars 2018) est le Fondateur du <strong>Bloc Cambrien</strong> et un politicien de Caprica originaire d\'Alto, une ville portuaire du sud de la Cambria. Il a rejeté le métier qui définissait sa famille et a obtenu un doctorat en rhétorique et culture de la persuasion. Il met ses décennies d\'expérience locale, universitaire et pratique au premier plan pour lutter pour les communautés côtières et ouvrières de Cambria.<br><br>Le Bloc Cambrien a été forgé non pas comme un parti traditionnel, mais comme une forteresse défensive contre la machine fédérale et les monopoles bien ancrés. Il sert d\'arme politique inflexible de la classe ouvrière.',
 
     'platform.promises_title': 'PROMESSES TENUES',
     'platform.slogan': 'HENRIK TIENT TOUJOURS PAROLE.',
@@ -243,7 +243,7 @@ const translations = {
     'timeline.item4': 'Course Indépendante pour le poste de Gouverneur. Lutte contre les monopoles pour reconquérir la Cambria pour la classe ouvrière.',
     'timeline.item5': 'Élu Gouverneur de Cambria avec un score historique de 73.63% des voix. Une défaite écrasante pour l\'establishment conservateur et un mandat clair du peuple pour reprendre notre région.',
     'timeline.item6': 'Promesses Tenues. A adopté la loi sur le pipeline CMC, la loi sur la défense civile, la loi sur les fondations de Cambria, et a démantelé les monopoles régionaux en une seule année.',
-    'timeline.item7': 'La Campagne de Réélection. Lutter pour un mandat de 75 % afin de terminer ce que nous avons commencé.',
+    'timeline.item7': 'L\'Ère du Bloc Cambrien. Lutter pour un mandat de 75 % afin de terminer ce que nous avons commencé comme une forteresse politique unifiée.',
 
     'ultimatum.title': 'LE MOMENT EST VENU',
     'ultimatum.btn': 'REJOIGNEZ LE COMBAT',

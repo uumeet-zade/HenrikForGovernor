@@ -58,7 +58,8 @@
     <!-- Top Header Box -->
     <rect x="52" y="52" width="696" height="120" fill="#E60000" />
     <rect x="40" y="40" width="720" height="120" fill="#FFFFFF" stroke="#000000" stroke-width="8" />
-    <text x="400" y="130" fill="#000000" font-family="Impact, Arial Black, system-ui, sans-serif" font-size="85" font-weight="900" letter-spacing="-2" text-anchor="middle">HENRIK VASMER</text>
+    <image href="logos/bloc_logo_bw.svg" x="50" y="45" width="110" height="110" />
+    <text x="440" y="130" fill="#000000" font-family="Impact, Arial Black, system-ui, sans-serif" font-size="85" font-weight="900" letter-spacing="-2" text-anchor="middle">HENRIK VASMER</text>
 
     <!-- Bottom CTA -->
     <rect x="40" y="1040" width="720" height="100" fill="#000000" stroke="#FFFFFF" stroke-width="8" />
