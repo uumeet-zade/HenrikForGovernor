@@ -55,15 +55,16 @@ const translations = {
 
     'marquee.hero': '/// THE MANDATE /// 2062 /// THE MANDATE /// 2062 /// THE MANDATE ///',
     'events.marquee': 'ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ON THE GROUND &nbsp; / &nbsp; ',
-    'event.alto.title': 'Alto Harbor Visit',
-    'event.alto.loc': 'Main Docks, Alto',
+    'event.alto.title': 'The Pipe Reaches Alto',
+    'event.alto.loc': 'CMC Pipeline & FTTB, Alto',
     'event.alto.date': 'SEP 15',
-    'event.union.title': 'Union Hall Address',
-    'event.union.loc': 'Freight District, Cambria',
+    'event.union.title': 'Sionaq Springs Session',
+    'event.union.loc': 'Sionaq Springs',
     'event.union.date': 'OCT 02',
-    'event.permit.title': 'Permit Office Audit',
-    'event.permit.loc': 'District Office, Cambria',
+    'event.permit.title': 'Closing Rally',
+    'event.permit.loc': 'Founders\' Row & Alto',
     'event.permit.date': 'OCT 18',
+    'event.read_more': 'READ EVENT',
 
     'problem.title': 'WHO ACTUALLY RUNS IT',
     'problem.monopoly': 'THE HONEST ANSWER',
@@ -87,7 +88,7 @@ const translations = {
 
     'ultimatum.title': 'THE TIME IS NOW',
     'ultimatum.btn': 'JOIN THE FIGHT',
-    'ultimatum.download_docx': 'LINK TO THE CAMPAIGNING MATERIAL (docx)',
+    'ultimatum.download_docx': 'ACCESS OUR CAMPAIGNING MATERIAL (docx)',
 
     'footer.slogan': 'Cambria is not going back.',
     'footer.poster': '[ CAMPAIGN POSTER ASSET HERE ]',
@@ -135,15 +136,16 @@ const translations = {
 
     'marquee.hero': '/// EL MANDATO /// 2062 /// EL MANDATO /// 2062 /// EL MANDATO ///',
     'events.marquee': 'SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; SOBRE EL TERRENO &nbsp; / &nbsp; ',
-    'event.alto.title': 'Visita al Puerto de Alto',
-    'event.alto.loc': 'Muelles Principales, Alto',
+    'event.alto.title': 'La Tubería Llega a Alto',
+    'event.alto.loc': 'Oleoducto CMC y FTTB, Alto',
     'event.alto.date': 'SEP 15',
-    'event.union.title': 'Discurso en el Sindicato',
-    'event.union.loc': 'Distrito de Carga, Cambria',
+    'event.union.title': 'Sesión en Sionaq Springs',
+    'event.union.loc': 'Sionaq Springs',
     'event.union.date': 'OCT 02',
-    'event.permit.title': 'Foro de Reasignación de Permisos',
-    'event.permit.loc': 'Oficina de Distrito, Cambria',
+    'event.permit.title': 'Mitin de Cierre',
+    'event.permit.loc': 'Founders\' Row y Alto',
     'event.permit.date': 'OCT 18',
+    'event.read_more': 'LEER EVENTO',
 
     'problem.title': 'QUIÉN LO MANEJA REALMENTE',
     'problem.monopoly': 'LA RESPUESTA HONESTA',
@@ -167,7 +169,7 @@ const translations = {
 
     'ultimatum.title': 'EL MOMENTO ES AHORA',
     'ultimatum.btn': 'ÚNETE A LA LUCHA',
-    'ultimatum.download_docx': 'ENLACE AL MATERIAL DE CAMPAÑA (docx)',
+    'ultimatum.download_docx': 'ACCEDER A NUESTRO MATERIAL DE CAMPAÑA (docx)',
 
     'footer.slogan': 'Cambria no da marcha atrás.',
     'footer.poster': '[ RECURSO DE CARTEL DE CAMPAÑA AQUÍ ]',
@@ -215,15 +217,16 @@ const translations = {
 
     'marquee.hero': '/// LE MANDAT /// 2062 /// LE MANDAT /// 2062 /// LE MANDAT ///',
     'events.marquee': 'SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; SUR LE TERRAIN &nbsp; / &nbsp; ',
-    'event.alto.title': 'Visite au Port d\'Alto',
-    'event.alto.loc': 'Quais Principaux, Alto',
+    'event.alto.title': 'Le Pipeline Atteint Alto',
+    'event.alto.loc': 'Pipeline CMC & FTTB, Alto',
     'event.alto.date': 'SEP 15',
-    'event.union.title': 'Discours au Syndicat',
-    'event.union.loc': 'Quartier du Fret, Cambria',
+    'event.union.title': 'Session de Sionaq Springs',
+    'event.union.loc': 'Sionaq Springs',
     'event.union.date': 'OCT 02',
-    'event.permit.title': 'Audit du Bureau des Permis',
-    'event.permit.loc': 'Bureau de District, Cambria',
+    'event.permit.title': 'Rassemblement de Clôture',
+    'event.permit.loc': 'Founders\' Row & Alto',
     'event.permit.date': 'OCT 18',
+    'event.read_more': 'LIRE L\'ÉVÉNEMENT',
 
     'problem.title': 'QUI DIRIGE RÉELLEMENT',
     'problem.monopoly': 'LA RÉPONSE HONNÊTE',
@@ -247,7 +250,7 @@ const translations = {
 
     'ultimatum.title': 'LE MOMENT EST VENU',
     'ultimatum.btn': 'REJOIGNEZ LE COMBAT',
-    'ultimatum.download_docx': 'LIEN VERS LE MATÉRIEL DE CAMPAGNE (docx)',
+    'ultimatum.download_docx': 'ACCÉDER À NOTRE MATÉRIEL DE CAMPAGNE (docx)',
 
     'footer.slogan': 'Cambria ne reculera pas.',
     'footer.poster': '[ RESSOURCE DE L\'AFFICHE DE CAMPAGNE ICI ]',
@@ -311,52 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Event Modal Logic
-  const eventModal = document.getElementById('event-modal');
-  const modalTitle = document.getElementById('modal-title');
-  const modalMeta = document.getElementById('modal-meta');
-  const modalBody = document.getElementById('modal-body');
-  const eventCloseBtn = eventModal ? eventModal.querySelector('.modal-close') : null;
 
-  // Open modal on event click
-  document.querySelectorAll('.event-row').forEach(row => {
-    row.addEventListener('click', () => {
-      const eventId = row.getAttribute('data-event-id');
-
-      // Extract already-translated text from the clicked DOM element
-      const titleText = row.querySelector('h4').textContent;
-      const dateText = row.querySelector('.event-date').textContent;
-      const locText = row.querySelector('p').textContent;
-
-      if (eventId && typeof eventsData !== 'undefined' && eventsData[eventId] && eventModal) {
-        const data = eventsData[eventId];
-
-        if (modalTitle) modalTitle.textContent = titleText;
-        if (modalMeta) modalMeta.textContent = `${dateText} | ${locText}`;
-        
-        const lang = document.documentElement.getAttribute('lang') || 'en';
-        const contentBlock = data[lang] ? data[lang].content : (data.en ? data.en.content : data.content);
-        if (modalBody) modalBody.innerHTML = contentBlock;
-
-        eventModal.classList.add('active');
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
-      }
-    });
-  });
-
-  const closeEventModal = () => {
-    if (eventModal) {
-      eventModal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  };
-
-  if (eventCloseBtn) eventCloseBtn.addEventListener('click', closeEventModal);
-  if (eventModal) {
-    eventModal.addEventListener('click', (e) => {
-      if (e.target === eventModal) closeEventModal();
-    });
-  }
 
   // Image Modal Logic for Posters
   const imageModal = document.getElementById('image-modal');
