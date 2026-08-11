@@ -139,8 +139,10 @@ document.querySelector('#app').innerHTML = `
   <main>
     <section id="hero" class="brutalist-panel mt-4">
       <div class="hero-content">
-        <h1 data-i18n="hero_title">Progress by Mandate.</h1>
-        <h2 class="subtitle"><span data-i18n="hero_subtitle">Sovereignty by Law.</span><span class="cursor">_</span></h2>
+        <div class="hero-title-group">
+          <h1 data-i18n="hero_title">Progress by Mandate.</h1>
+          <h2 class="subtitle"><span data-i18n="hero_subtitle">Sovereignty by Law.</span><span class="cursor">_</span></h2>
+        </div>
         <p class="hero-desc" data-i18n="hero_desc">Re-elect Governor Henrik Vasmer. Built by working people, for working people.</p>
         <div class="capture-form mt-2">
           <input type="email" placeholder="Email..." class="input-dark" />
@@ -260,20 +262,7 @@ if (langSelect) {
   });
 }
 
-// CRT Toggle Logic
-const crtOverlay = document.getElementById('crt-overlay');
-const crtToggleBtn = document.getElementById('crt-toggle');
 
-if(crtToggleBtn) {
-  crtToggleBtn.addEventListener('click', () => {
-    crtOverlay.classList.toggle('disabled');
-    if (crtOverlay.classList.contains('disabled')) {
-      crtToggleBtn.textContent = 'CRT: OFF';
-    } else {
-      crtToggleBtn.textContent = 'CRT: ON';
-    }
-  });
-}
 
 // Promise Ticks Logic
 const tickColors = ['#00FFFF', '#FFD700', '#FF00FF', '#FF0000', '#00FF00', '#FFA500'];
@@ -300,15 +289,84 @@ promiseCards.forEach((card, index) => {
   });
 });
 
-// Theme Toggle Logic
+// --- Preferences & Onboarding Logic ---
+const crtToggle = document.getElementById('crt-toggle');
+const crtOverlay = document.getElementById('crt-overlay');
 const themeToggleBtn = document.getElementById('theme-toggle');
-if (themeToggleBtn) {
-  themeToggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('day-shift');
-    if (document.body.classList.contains('day-shift')) {
-      themeToggleBtn.textContent = 'Night Shift';
-    } else {
-      themeToggleBtn.textContent = 'Day Shift';
-    }
+const onboardingModal = document.getElementById('onboarding-modal');
+const btnConfirmPrefs = document.getElementById('btn-confirm-prefs');
+
+function applyTheme(shift) {
+  if (shift === 'day') {
+    document.body.classList.add('day-shift');
+  } else {
+    document.body.classList.remove('day-shift');
+  }
+}
+
+function applyCRT(enabled) {
+  if (enabled) {
+    crtOverlay.classList.remove('disabled');
+  } else {
+    crtOverlay.classList.add('disabled');
+  }
+}
+
+function updateToggleButtons() {
+  if (themeToggleBtn) {
+    themeToggleBtn.textContent = document.body.classList.contains('day-shift') ? 'Night Shift' : 'Day Shift';
+  }
+  if (crtToggle) {
+    crtToggle.textContent = crtOverlay.classList.contains('disabled') ? 'CRT: OFF' : 'CRT: ON';
+  }
+}
+
+function initPreferences() {
+  const hasOnboarded = localStorage.getItem('hv2066-onboarded');
+  if (hasOnboarded) {
+    onboardingModal.classList.add('hidden');
+    applyTheme(localStorage.getItem('hv2066-theme') || 'night');
+    applyCRT(localStorage.getItem('hv2066-crt') !== 'off');
+    updateToggleButtons();
+  } else {
+    onboardingModal.classList.remove('hidden');
+  }
+}
+
+if (btnConfirmPrefs) {
+  btnConfirmPrefs.addEventListener('click', () => {
+    const themePref = document.querySelector('input[name="theme-pref"]:checked').value;
+    const crtPref = document.querySelector('input[name="crt-pref"]:checked').value;
+    
+    localStorage.setItem('hv2066-onboarded', 'true');
+    localStorage.setItem('hv2066-theme', themePref);
+    localStorage.setItem('hv2066-crt', crtPref);
+    
+    applyTheme(themePref);
+    applyCRT(crtPref === 'on');
+    updateToggleButtons();
+    
+    onboardingModal.classList.add('hidden');
   });
 }
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', () => {
+    const newShift = document.body.classList.contains('day-shift') ? 'night' : 'day';
+    applyTheme(newShift);
+    localStorage.setItem('hv2066-theme', newShift);
+    updateToggleButtons();
+  });
+}
+
+if (crtToggle) {
+  crtToggle.addEventListener('click', () => {
+    const newCrt = crtOverlay.classList.contains('disabled') ? 'on' : 'off';
+    applyCRT(newCrt === 'on');
+    localStorage.setItem('hv2066-crt', newCrt);
+    updateToggleButtons();
+  });
+}
+
+// Run initialization
+initPreferences();

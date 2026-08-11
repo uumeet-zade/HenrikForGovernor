@@ -82,7 +82,13 @@ body {
 }
 
 /* Base Utility Classes */
-h1 { font-size: 4rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 0px var(--tertiary); line-height: 1.1; text-transform: uppercase; }
+h1 { 
+  font-size: 4rem; 
+  margin-bottom: 0.5rem; 
+  text-shadow: 2px 2px 0px var(--tertiary); 
+  line-height: 1.1; 
+  text-transform: uppercase; 
+}
 h2 { font-size: 2.5rem; }
 h3 { font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--secondary); text-transform: uppercase; }
 h4 { margin: 0; font-size: 1.2rem; text-transform: uppercase; }
@@ -232,6 +238,32 @@ nav a:nth-of-type(4):hover::after { background-color: var(--neon-green); }
   padding: 3rem;
 }
 .hero-content { flex: 1; position: relative; z-index: 2; }
+
+/* Brutalist Hover for Titles */
+.hero-title-group {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.hero-title-group h1,
+.hero-title-group .subtitle {
+  transition: text-shadow 0.2s ease;
+}
+.hero-title-group:hover {
+  transform: translate(-4px, -4px);
+}
+.hero-title-group:hover h1 {
+  text-shadow: 
+    -2px -2px 0 var(--bg-color), 2px -2px 0 var(--bg-color), 
+    -2px 2px 0 var(--bg-color), 2px 2px 0 var(--bg-color), 
+    10px 10px 0px var(--neon-cyan);
+}
+.hero-title-group:hover .subtitle {
+  text-shadow: 
+    -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color), 
+    -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color), 
+    8px 8px 0px var(--neon-cyan);
+}
+
 .hero-image { flex: 1; text-align: right; position: relative; }
 .subtitle { color: var(--secondary); margin-bottom: 1.5rem; text-transform: uppercase; }
 .hero-desc { font-size: 1.4rem; margin-bottom: 2rem; color: var(--text-main); font-weight: 600;}
@@ -492,14 +524,67 @@ body.day-shift .btn-secondary:hover {
 }
 
 body.day-shift h1 {
-  text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+  text-shadow: 3px 3px 0px #FFFFFF;
 }
 
 body.day-shift .logo-text, 
 body.day-shift .footer-brand {
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 0px #FFFFFF;
+}
+
+body.day-shift .hero-title-group:hover h1 {
+  text-shadow: 
+    -2px -2px 0 var(--bg-color), 2px -2px 0 var(--bg-color), 
+    -2px 2px 0 var(--bg-color), 2px 2px 0 var(--bg-color), 
+    10px 10px 0px var(--neon-red);
+}
+body.day-shift .hero-title-group:hover .subtitle {
+  text-shadow: 
+    -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color), 
+    -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color), 
+    8px 8px 0px var(--neon-red);
 }
 
 body.day-shift .input-dark {
   background: #FFFFFF;
+}
+
+/* Onboarding Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.modal-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-content {
+  max-width: 450px;
+  width: 90%;
+  padding: 2.5rem;
+  background: var(--bg-color);
+}
+.modal-content h2 { margin-top: 0; margin-bottom: 0.5rem; color: var(--primary); }
+.modal-content p { margin-bottom: 2rem; font-size: 1.1rem; }
+.pref-group { margin-bottom: 1.5rem; }
+.pref-group h4 { color: var(--secondary); margin-bottom: 0.75rem; letter-spacing: 2px; }
+.pref-group label { 
+  display: inline-block; 
+  margin-bottom: 0.5rem; 
+  cursor: pointer; 
+  font-weight: 600; 
+  color: var(--text-main);
+}
+.pref-group input[type="radio"] {
+  accent-color: var(--primary);
+  transform: scale(1.2);
+  margin-right: 10px;
 }
