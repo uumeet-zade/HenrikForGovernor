@@ -1,4 +1,4 @@
-import './style.css';
+
 
 const i18n = {
   en: {
