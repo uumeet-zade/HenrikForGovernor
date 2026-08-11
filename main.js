@@ -118,10 +118,11 @@ document.querySelector('#app').innerHTML = `
   <div class="synth-grid"></div>
 
   <header class="sticky-header">
-    <div class="logo">
+    <a href="#" class="logo" style="text-decoration: none;">
       <span class="logo-text">VASMER <span class="logo-year">2066</span></span>
-    </div>
+    </a>
     <nav style="display: flex; align-items: center;">
+      <button id="theme-toggle" class="lang-selector">Day Shift</button>
       <select id="lang-select" class="lang-selector">
         <option value="en">Alanian</option>
         <option value="es">Alcamerian</option>
@@ -148,7 +149,7 @@ document.querySelector('#app').innerHTML = `
       </div>
       <div class="hero-image">
         <div class="synth-sun"></div>
-        <img src="https://placehold.co/400x500/0F111A/3B828E.png?text=Placeholder+for+Henrik+Vasmer" alt="Governor Henrik Vasmer" class="styled-img">
+        <img src="https://placehold.co/400x500/111111/FFFFFF.png?text=Placeholder+for+Henrik+Vasmer" alt="Governor Henrik Vasmer" class="styled-img">
       </div>
     </section>
 
@@ -209,11 +210,11 @@ document.querySelector('#app').innerHTML = `
       <h2 class="section-title"><span data-i18n="posters_title">Campaign Posters</span><span class="cursor">_</span></h2>
       <div class="poster-grid">
         <div class="poster brutalist-panel p-2">
-          <img src="https://placehold.co/400x600/CC2936/0F111A.png?text=Placeholder+for+Poster+1" alt="Poster 1" class="styled-img">
+          <img src="https://placehold.co/400x600/333333/FFFFFF.png?text=Placeholder+for+Poster+1" alt="Poster 1" class="styled-img">
           <button class="btn-secondary mt-1 w-full" data-i18n="btn_download">Download</button>
         </div>
         <div class="poster brutalist-panel p-2">
-          <img src="https://placehold.co/400x600/3B828E/0F111A.png?text=Placeholder+for+Poster+2" alt="Poster 2" class="styled-img">
+          <img src="https://placehold.co/400x600/333333/FFFFFF.png?text=Placeholder+for+Poster+2" alt="Poster 2" class="styled-img">
           <button class="btn-secondary mt-1 w-full" data-i18n="btn_download">Download</button>
         </div>
       </div>
@@ -226,7 +227,7 @@ document.querySelector('#app').innerHTML = `
         <p class="mt-1" data-i18n="about_p2">Our cabinet is composed of working people—independent haulers, cooperative architects, and rural physicians—not career politicians.</p>
       </div>
       <div class="hero-image">
-         <img src="https://placehold.co/400x300/534666/EAEAEA.png?text=Placeholder+for+Cabinet+Photo" alt="The Team" class="styled-img">
+         <img src="https://placehold.co/400x300/111111/FFFFFF.png?text=Placeholder+for+Cabinet+Photo" alt="The Team" class="styled-img">
       </div>
     </section>
   </main>
@@ -291,9 +292,23 @@ promiseCards.forEach((card, index) => {
   polyline.setAttribute("points", "20 6 9 17 4 12");
   svg.appendChild(polyline);
   
+  card.style.setProperty('--card-accent', tickColors[index % tickColors.length]);
   card.appendChild(svg);
 
   card.addEventListener('mouseenter', () => {
     card.classList.add('ticked');
   });
 });
+
+// Theme Toggle Logic
+const themeToggleBtn = document.getElementById('theme-toggle');
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('day-shift');
+    if (document.body.classList.contains('day-shift')) {
+      themeToggleBtn.textContent = 'Night Shift';
+    } else {
+      themeToggleBtn.textContent = 'Day Shift';
+    }
+  });
+}
