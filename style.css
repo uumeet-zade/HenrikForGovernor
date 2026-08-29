@@ -316,10 +316,61 @@ body.day-shift .theme-toggle {
 .promise-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 @media (max-width: 1000px) { .promise-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 700px) { .promise-grid { grid-template-columns: 1fr; } }
+
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.platform-grid > div {
+  border: 4px solid var(--border-color);
+  padding: 2rem;
+  position: relative;
+  transition: all 0.2s cubic-bezier(0, 0, 0, 1);
+  overflow: hidden;
+  background-color: var(--bg-color);
+  z-index: 1;
+}
+
+/* Massive Typographic Number Watermark */
+.platform-grid > div::before {
+  content: attr(data-index);
+  position: absolute;
+  bottom: -2.5rem;
+  right: -1rem;
+  font-size: 12rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--border-color);
+  opacity: 0.05;
+  z-index: -1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.platform-grid > div:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0px var(--border-color);
+}
+.platform-grid > div:hover::before {
+  transform: scale(1.1) translate(-1rem, -1rem);
+  opacity: 0.1;
+}
+
+/* DGC colored borders on hover */
+.platform-grid > div.platform-red:hover { box-shadow: 8px 8px 0px var(--dgc-red); border-color: var(--dgc-red); }
+.platform-grid > div.platform-green:hover { box-shadow: 8px 8px 0px var(--dgc-green); border-color: var(--dgc-green); }
+
+@media (max-width: 800px) {
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .promise-card {
   border: 4px solid var(--border-color);
@@ -343,11 +394,6 @@ body.day-shift .theme-toggle {
 .promise-card:hover h3,
 .promise-card:hover p {
   color: var(--bg-color) !important;
-}
-
-/* Newsprint Registration Shift on the headline */
-.promise-card:hover .headline {
-  text-shadow: 3px 0 0 var(--dgc-red), -3px 0 0 var(--dgc-green);
 }
 
 .kept-stamp {

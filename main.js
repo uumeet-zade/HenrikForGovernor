@@ -3,13 +3,14 @@ const shellHTML = `
   <header class="masthead">
     <h1 class="masthead-title">VASMER <span class="text-red">20</span><span class="text-green">66</span></h1>
     <div class="masthead-sub">
-      <span>Vol. IV — The Working Class Mandate</span>
+      <span>Vol. III — One Cambria, Under the Sun</span>
       <span>Official Campaign Dossier</span>
       <span>Cambrian Bloc / DGC</span>
     </div>
     <nav class="nav-container">
       <div class="nav-links">
         <a href="#home" class="nav-link" data-target="home">Front Page</a>
+        <a href="#record" class="nav-link" data-target="record">Track Record</a>
         <a href="#platform" class="nav-link" data-target="platform">Platform</a>
         <a href="#events" class="nav-link" data-target="events">Schedule</a>
         <a href="#about" class="nav-link" data-target="about">Dossier</a>
@@ -63,7 +64,7 @@ const pages = {
         <article class="minor-story">
           <h4 class="headline">Promises Kept</h4>
           <p>A comprehensive record of delivery for the working people of Cambria.</p>
-          <a href="#platform" class="read-more">Read Platform &rarr;</a>
+          <a href="#record" class="read-more">View Track Record &rarr;</a>
         </article>
         <article class="minor-story">
           <h4 class="headline text-red">On the Ground</h4>
@@ -72,14 +73,43 @@ const pages = {
         </article>
         <article class="minor-story">
           <h4 class="headline text-green">The Cambrian Future</h4>
-          <p>Upcoming structural plans for the region. Awaiting official campaign dispatch.</p>
-          <a href="#" class="read-more">Awaiting Transmission &rarr;</a>
+          <p>Upcoming structural plans for the region. A working-class vision for the next four years.</p>
+          <a href="#platform" class="read-more">Read Platform &rarr;</a>
         </article>
       </div>
 
     </div>
   `,
   platform: `
+    <h2 style="border-bottom: 8px solid var(--dgc-green); padding-bottom: 1rem; margin-bottom: 1rem;">The Cambrian Future: Our Platform</h2>
+    <div class="platform-grid">
+      <div class="platform-red" data-index="01">
+        <h3 class="text-red">Municipal Energy Sovereignty & Community Co-ops</h3>
+        <p>We will utilize Cambria’s regional economic development powers to directly fund, license, and establish community-owned renewable microgrids and municipal energy cooperatives. By bypassing centralized national corporate grids, we will guarantee cheap, reliable, and clean power managed entirely by local Cambrian communities.</p>
+      </div>
+      <div class="platform-green" data-index="02">
+        <h3 class="text-green">Cambrian Land Value Taxation (LVT) & Municipal Wealth Retention</h3>
+        <p>We will exercise our devolved regional taxation authority to transition Cambria's property tax system to a Land Value Tax (LVT), penalizing speculative land-hoarding. This shift will lower the tax burden on productive homeowners and small businesses while ensuring all generated land revenues remain directly within Cambrian municipalities to fund local services.</p>
+      </div>
+      <div class="platform-green" data-index="03">
+        <h3 class="text-green">Cooperative Procurement & Small Business Preference</h3>
+        <p>We will reform the regional procurement framework to legally mandate that Cambrian government contracts prioritize local worker-owned cooperatives and independent small businesses. By locking out multinational conglomerates from local public tenders, we keep taxpayer money circulating within the regional economy to support Cambrian workers.</p>
+      </div>
+      <div class="platform-red" data-index="04">
+        <h3 class="text-red">Cambrian Regional Transit & Freight Integration</h3>
+        <p>We will fund the expansion and electrification of the Cambrian regional rail network and municipal transit systems, facilitating seamless green transit across the region. Additionally, we will support regional transport and agricultural cooperatives with local logistics hubs to ensure efficient, low-emission distribution of Cambrian goods.</p>
+      </div>
+      <div class="platform-red" data-index="05">
+        <h3 class="text-red">Regional Ecological Stewardship & Coastal Preservation</h3>
+        <p>We will implement strict regional environmental planning and zoning laws to protect Cambria’s fragile coastlines, forests, and fisheries from corporate exploitation and speculative development. This local stewardship will guarantee that Cambria’s natural beauty and resources are preserved for future generations without relying on slow, top-down federal agencies.</p>
+      </div>
+      <div class="platform-green" data-index="06">
+        <h3 class="text-green">Regional Open Ledger & Public Procurement Transparency</h3>
+        <p>We will establish a comprehensive, mandatory lobbying register for all regional officials and transition Cambria's public finances to a transparent, real-time open ledger. Every single regional government expenditure and procurement contract will be publicly trackable to ensure complete accountability and eliminate backroom corporate deals.</p>
+      </div>
+    </div>
+  `,
+  record: `
     <h2 style="border-bottom: 8px solid var(--dgc-green); padding-bottom: 1rem; margin-bottom: 1rem;">Promises Kept: A Record of Delivery</h2>
     <p style="font-weight: 800; font-size: 1.2rem; text-transform: uppercase; color: var(--dgc-red); margin-bottom: 3rem; letter-spacing: 1px;">[ Interactive Record: Click any module to verify ]</p>
     <div class="promise-grid">
@@ -212,72 +242,81 @@ if (themeToggleBtn) {
   });
 }
 
-// Sound Effect Synthesizer for the Stamp
+// Sound Effect Synthesizer for the Stamp (Mechanical "Ka-Chunk")
+// Sound Effect: Tough, Deep Mechanical "Ka-Chunk"
 function playStampSound() {
   const AudioContext = window.AudioContext || window.webkitAudioContext;
   if (!AudioContext) return;
   const ctx = new AudioContext();
+  const now = ctx.currentTime;
   
-  // 1. The mechanical "spring/clunk"
-  const osc = ctx.createOscillator();
-  const oscGain = ctx.createGain();
-  osc.type = 'square'; // Harsher, mechanical tone
-  osc.connect(oscGain);
-  oscGain.connect(ctx.destination);
+  // --- 1. THE SLIDE (Spring sliding down) ---
+  const slideNoise = ctx.createBuffer(1, ctx.sampleRate * 0.05, ctx.sampleRate);
+  const slideData = slideNoise.getChannelData(0);
+  for (let i = 0; i < slideData.length; i++) slideData[i] = Math.random() * 2 - 1;
+  const slideSrc = ctx.createBufferSource();
+  slideSrc.buffer = slideNoise;
+  const slideFilter = ctx.createBiquadFilter();
+  slideFilter.type = 'highpass';
+  slideFilter.frequency.value = 3000; // Sharp metal scrape
+  const slideGain = ctx.createGain();
+  slideGain.gain.setValueAtTime(0.08, now); // Reduced from 0.2
+  slideGain.gain.exponentialRampToValueAtTime(0.01, now + 0.04);
+  slideSrc.connect(slideFilter).connect(slideGain).connect(ctx.destination);
+  slideSrc.start(now);
   
-  osc.frequency.setValueAtTime(300, ctx.currentTime);
-  osc.frequency.exponentialRampToValueAtTime(50, ctx.currentTime + 0.05);
+  // --- 2. THE THUD (Heavy, tough bass impact) ---
+  const impactTime = now + 0.05; // 50ms delay for the Ka-Chunk!
   
-  oscGain.gain.setValueAtTime(0.15, ctx.currentTime); // Much quieter
-  oscGain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.05);
+  const thudOsc = ctx.createOscillator();
+  thudOsc.type = 'sine';
+  const thudGain = ctx.createGain();
+  thudOsc.frequency.setValueAtTime(120, impactTime);
+  thudOsc.frequency.exponentialRampToValueAtTime(30, impactTime + 0.1);
+  thudGain.gain.setValueAtTime(0.5, impactTime); // Reduced from 1.2
+  thudGain.gain.exponentialRampToValueAtTime(0.01, impactTime + 0.15);
+  thudOsc.connect(thudGain).connect(ctx.destination);
+  thudOsc.start(impactTime);
+  thudOsc.stop(impactTime + 0.15);
   
-  osc.start(ctx.currentTime);
-  osc.stop(ctx.currentTime + 0.05);
-  
-  // 2. The paper "slap" (Filtered white noise)
-  const bufferSize = ctx.sampleRate * 0.05; // 50ms short transient
-  const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-  const data = buffer.getChannelData(0);
-  for (let i = 0; i < bufferSize; i++) {
-    data[i] = Math.random() * 2 - 1;
-  }
-  const noise = ctx.createBufferSource();
-  noise.buffer = buffer;
-  
-  const filter = ctx.createBiquadFilter();
-  filter.type = 'bandpass';
-  filter.frequency.value = 800; // Woody/plastic range
-  filter.Q.value = 1;
-  
-  const noiseGain = ctx.createGain();
-  noiseGain.gain.setValueAtTime(0.3, ctx.currentTime); // Lower volume
-  noiseGain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.05);
-  
-  noise.connect(filter);
-  filter.connect(noiseGain);
-  noiseGain.connect(ctx.destination);
-  
-  noise.start(ctx.currentTime);
+  // --- 3. THE CRUNCH (The physical paper/metal hit) ---
+  const crunchNoise = ctx.createBuffer(1, ctx.sampleRate * 0.1, ctx.sampleRate);
+  const crunchData = crunchNoise.getChannelData(0);
+  for (let i = 0; i < crunchData.length; i++) crunchData[i] = Math.random() * 2 - 1;
+  const crunchSrc = ctx.createBufferSource();
+  crunchSrc.buffer = crunchNoise;
+  const crunchFilter = ctx.createBiquadFilter();
+  crunchFilter.type = 'lowpass';
+  crunchFilter.frequency.value = 800; // Deep, muffled crunch
+  const crunchGain = ctx.createGain();
+  crunchGain.gain.setValueAtTime(0.25, impactTime); // Reduced from 0.6
+  crunchGain.gain.exponentialRampToValueAtTime(0.01, impactTime + 0.1);
+  crunchSrc.connect(crunchFilter).connect(crunchGain).connect(ctx.destination);
+  crunchSrc.start(impactTime);
 }
 
 // Promises Kept Click Stamp
 document.addEventListener('click', (e) => {
   const card = e.target.closest('.promise-card');
+  
+  // Only stamp if it hasn't been stamped yet
   if (card && !card.querySelector('.kept-stamp')) {
     const stamp = document.createElement('div');
     stamp.className = 'kept-stamp';
     stamp.innerHTML = 'DELIVERED';
     card.appendChild(stamp);
+    
+    // Play the tough, deep synthetic sound once
     playStampSound();
     
-    // Imperative Web Animations API guarantees it fires immediately
+    // Animate the stamp dropping in
     stamp.animate([
-      { opacity: 0, transform: 'scale(5) rotate(-35deg)' },
+      { opacity: 0, transform: 'scale(2.5) rotate(-35deg)' },
       { opacity: 1, offset: 0.3 },
       { transform: 'scale(0.85) rotate(-10deg)', offset: 0.7 },
       { transform: 'scale(1) rotate(-10deg)', opacity: 1 }
     ], {
-      duration: 400,
+      duration: 300,
       easing: 'cubic-bezier(0, 0, 0.2, 1)',
       fill: 'forwards'
     });
