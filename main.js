@@ -1,7 +1,7 @@
 // Layout Shell (Masthead and Footer remain constant)
 const shellHTML = `
   <header class="masthead">
-    <h1 class="masthead-title">VASMER <span class="text-red">20</span><span class="text-green">66</span></h1>
+    <h1 class="masthead-title"><a href="#home" style="text-decoration: none; color: inherit;">VASMER <span class="text-red">20</span><span class="text-green">66</span></a></h1>
     <div class="masthead-sub">
       <span>Vol. III — One Cambria, Under the Sun</span>
       <span>Official Campaign Dossier</span>
