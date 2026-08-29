@@ -15,9 +15,9 @@ const shellHTML = `
         <a href="#events" class="nav-link" data-target="events">Schedule</a>
         <a href="#about" class="nav-link" data-target="about">Dossier</a>
       </div>
-      <div style="display: flex; gap: 1rem;">
+      <div style="display: flex; gap: 1rem; align-items: center;">
         <button id="theme-toggle" class="theme-toggle">Day Shift</button>
-        <button class="btn-primary">Join the Bloc</button>
+        <a href="#join" class="btn-primary nav-link" data-target="join" style="text-decoration: none; display: inline-block;">Volunteer</a>
       </div>
     </nav>
   </header>
@@ -176,7 +176,7 @@ const pages = {
   `,
   about: `
     <h2 style="border-bottom: 8px solid var(--dgc-green); padding-bottom: 1rem; margin-bottom: 3rem;">Candidate Dossier</h2>
-    <div class="dossier-columns-2">
+    <div class="split-grid">
       <div>
         <img src="https://placehold.co/600x400/000000/03753D.png?text=DGC+RALLY" alt="DGC Rally" class="styled-img">
       </div>
@@ -186,6 +186,45 @@ const pages = {
         <p>Born in Alto, his approach to governance is entirely empirical and empathetic. The son of a fishing family, he understands that environmental policy is not an abstraction—it is the direct management of the resources that working families rely on to survive.</p>
         <p>He demands that institutions earn back the trust of the people through decisive, sustainable action. No parties. No handlers. Just the working class mandate.</p>
       </div>
+    </div>
+  `,
+  join: `
+    <h2 style="border-bottom: 8px solid var(--dgc-red); padding-bottom: 1rem; margin-bottom: 3rem;">Join the Campaign</h2>
+    <div class="split-grid">
+      <div>
+        <h3 class="headline text-red" style="font-size: 3rem; line-height: 1; margin-bottom: 2rem;">GET INVOLVED TODAY.</h3>
+        <p style="font-size: 1.4rem; font-weight: 700; line-height: 1.4;">Our campaign is proudly powered by everyday working families across Cambria, not corporate PACs. Together, we can build a stronger, fairer region for everyone.</p>
+        <p>Whether your focus is on strengthening local labor or protecting our shared environment, there is a place for you in this movement. Your time and energy are essential to winning this election.</p>
+        <p>Sign up below to receive regular campaign updates, invitations to local townhalls, and opportunities to volunteer in your community.</p>
+      </div>
+      <form id="join-form" style="background: var(--bg-color); border: 4px solid var(--border-color); padding: 3rem; box-shadow: 8px 8px 0px var(--border-color);">
+        <h3 style="margin-bottom: 2rem;">Volunteer Sign-Up</h3>
+        
+        <div id="join-error" style="color: var(--dgc-red); font-weight: 700; margin-bottom: 1.5rem; display: none; font-family: var(--font-headline);"></div>
+        
+        <input type="text" id="join-name" placeholder="Full Name *" required />
+        <input type="email" id="join-email" placeholder="Email Address *" required />
+        <input type="text" id="join-affiliation" placeholder="Union / Local Affiliation (Optional)" />
+        
+        <p style="margin-bottom: 1rem; font-weight: 700; font-family: var(--font-headline);">I am most interested in:</p>
+        <label class="checkbox-group" style="margin-bottom: 1rem;">
+          <input type="checkbox" name="interest" value="bloc" />
+          <span><strong>The Cambrian Bloc</strong> (Labor & Community Co-ops)</span>
+        </label>
+        <label class="checkbox-group">
+          <input type="checkbox" name="interest" value="greens" />
+          <span><strong>Democratic Greens</strong> (Ecological Preservation)</span>
+        </label>
+        
+        <hr style="border: none; border-bottom: 2px dashed var(--border-color); margin: 2rem 0;" />
+        
+        <label class="checkbox-group">
+          <input type="checkbox" id="join-pledge" required />
+          <span>Yes, I want to volunteer and support Henrik Vasmer for Governor of Cambria! *</span>
+        </label>
+        
+        <button type="submit" id="join-submit" class="btn-primary-alt" style="width: 100%;">Sign Up</button>
+      </form>
     </div>
   `
 };
@@ -324,5 +363,58 @@ document.addEventListener('click', (e) => {
     // Hide the affordance box
     const zone = card.querySelector('.stamp-zone');
     if (zone) zone.style.display = 'none';
+  }
+});
+
+// Form Submission Logic
+document.addEventListener('submit', (e) => {
+  if (e.target && e.target.id === 'join-form') {
+    e.preventDefault(); // Prevent page reload
+    
+    const form = e.target;
+    const name = document.getElementById('join-name').value.trim();
+    const email = document.getElementById('join-email').value.trim();
+    const pledge = document.getElementById('join-pledge').checked;
+    const interests = form.querySelectorAll('input[name="interest"]:checked');
+    const errorDiv = document.getElementById('join-error');
+    const submitBtn = document.getElementById('join-submit');
+    
+    // Custom Validation
+    if (!name || !email || !pledge) {
+      errorDiv.textContent = "Please fill in all required fields and check the volunteer box.";
+      errorDiv.style.display = "block";
+      return;
+    }
+    
+    if (interests.length === 0) {
+      errorDiv.textContent = "Please select at least one organization you are interested in.";
+      errorDiv.style.display = "block";
+      return;
+    }
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      errorDiv.textContent = "Please enter a valid email address.";
+      errorDiv.style.display = "block";
+      return;
+    }
+    
+    // Hide error if valid
+    errorDiv.style.display = "none";
+    
+    // Simulate Submission
+    submitBtn.textContent = "Submitting...";
+    submitBtn.style.opacity = "0.7";
+    submitBtn.disabled = true;
+    
+    setTimeout(() => {
+      form.innerHTML = `
+        <div style="text-align: center; padding: 2rem 0;">
+          <h3 class="text-green" style="font-size: 2.5rem; margin-bottom: 1rem; font-family: var(--font-masthead);">Welcome to the Campaign</h3>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem; font-family: var(--font-headline);">Thank you, ${name}. We've received your sign-up and will be in touch shortly.</p>
+          <p style="font-size: 1.4rem; font-family: var(--font-headline);"><strong>Together, we win.</strong></p>
+        </div>
+      `;
+    }, 1200);
   }
 });
