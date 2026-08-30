@@ -4,10 +4,10 @@
   --dgc-black: #000000;
   --dgc-white: #FFFFFF;
 
-  /* Night Shift Defaults (Dark Mode) */
-  --bg-color: var(--dgc-black);
-  --text-main: var(--dgc-white);
-  --border-color: var(--dgc-white);
+  /* Day Shift Defaults (Light Mode) */
+  --bg-color: var(--dgc-white);
+  --text-main: var(--dgc-black);
+  --border-color: var(--dgc-black);
   
   --font-masthead: 'Abril Fatface', serif;
   --font-headline: 'Lora', serif;
@@ -19,11 +19,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
-body.day-shift {
-  /* Day Shift Defaults (Light Mode) */
-  --bg-color: var(--dgc-white);
-  --text-main: var(--dgc-black);
-  --border-color: var(--dgc-black);
+body.night-shift {
+  /* Night Shift Defaults (Dark Mode) */
+  --bg-color: var(--dgc-black);
+  --text-main: var(--dgc-white);
+  --border-color: var(--dgc-white);
 }
 
 body {
@@ -85,7 +85,7 @@ p { font-family: var(--font-body); font-size: 1.1rem; line-height: 1.6; margin-b
   gap: 3rem;
 }
 .nav-links a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: none; /* Serifs look much better in natural casing for nav */
   text-decoration: none;
@@ -266,6 +266,10 @@ p { font-family: var(--font-body); font-size: 1.1rem; line-height: 1.6; margin-b
   letter-spacing: normal;
   transition: transform 0.2s, box-shadow 0.2s;
 }
+.nav-container .btn-primary {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
 .btn-primary:hover {
   transform: translate(-4px, -4px);
   box-shadow: 8px 8px 0px var(--dgc-red);
@@ -351,9 +355,9 @@ footer {
   transform: translate(-4px, -4px);
   box-shadow: 6px 6px 0px var(--dgc-red);
 }
-body.day-shift .theme-toggle {
-  background: var(--dgc-black);
-  color: var(--dgc-white);
+body.night-shift .theme-toggle {
+  background: var(--dgc-white);
+  color: var(--dgc-black);
 }
 
 /* Promises Kept Grid & Cards */
