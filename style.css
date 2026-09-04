@@ -495,7 +495,7 @@ body.night-shift .theme-toggle {
 .event-table td h4 { margin-bottom: 0.5rem; }
 
 .platform-nuclear {
-  background-image: url('/nuclear_plant.jpg');
+  background-image: url('./nuclear_plant.jpg');
   background-size: cover;
   background-position: center;
 }
