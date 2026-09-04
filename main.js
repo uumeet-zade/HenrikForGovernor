@@ -45,7 +45,7 @@ const pages = {
         <div class="dossier-columns-2">
           <p class="excerpt"><span data-i18n="home_lead_excerpt"><strong>Henrik Vasmer for Governor.</strong> Chairman of the Cambrian Bloc and Senior Counsel to the Democratic Greens of Caprica. Rooted in empirical evidence, empathetic governance, and environmental stewardship.</span></p>
           <p><span data-i18n="home_lead_p1">The time for incremental change has passed. We are facing a structural crisis, where corporate consolidation and Caprican federal overreach threaten Cambria's working class and our environment alike.</span></p>
-          <p><span data-i18n="home_lead_p2">As Governor of Cambria, Henrik Vasmer proved that a different path is possible. He proved that when working people take control of the institutions that govern them, they deliver unparalleled results. This campaign is not merely about re-election; it is about permanently cementing the power of the people against the monopolies.</span></p>
+          <p><span data-i18n="home_lead_p2">As Governor of Cambria, Henrik Vasmer proved that a different path is possible. He proved that when working people take control of the institutions that govern them, they deliver unparalleled results. This campaign is about permanently cementing the power of the people against the monopolies.</span></p>
         </div>
       </article>
 
@@ -88,27 +88,31 @@ const pages = {
   platform: `
     <h2 style="border-bottom: 8px solid var(--dgc-green); padding-bottom: 1rem; margin-bottom: 1rem;"><span data-i18n="plat_title">The Cambrian Future: Our Platform</span></h2>
     <div class="platform-grid">
-      <div class="platform-red" data-index="01">
+      <div class="platform-red platform-nuclear" data-index="01" style="grid-column: 1 / -1;">
+        <h3 class="text-red"><span data-i18n="plat_0_h">The Lothar Collins Nuclear Facility Act</span></h3>
+        <p><span data-i18n="plat_0_p">We will establish a regional nuclear generating facility in northern Cambria, creating the Collins Nuclear Authority to oversee its construction and operation. Financed through a private-partnership structure with strict cost accountability, this facility will ensure Cambria's energy independence and permanently reduce our reliance on federal and inter-regional power transfers.</span></p>
+      </div>
+      <div class="platform-red" data-index="02">
         <h3 class="text-red"><span data-i18n="plat_1_h">Municipal Energy Sovereignty & Community Co-ops</span></h3>
         <p><span data-i18n="plat_1_p">We will utilize Cambria’s regional economic development powers to directly fund, license, and establish community-owned renewable microgrids and municipal energy cooperatives. By bypassing centralized national corporate grids, we will guarantee cheap, reliable, and clean power managed entirely by local Cambrian communities.</span></p>
       </div>
-      <div class="platform-green" data-index="02">
+      <div class="platform-green" data-index="03">
         <h3 class="text-green"><span data-i18n="plat_2_h">Cambrian Land Value Taxation (LVT) & Municipal Wealth Retention</span></h3>
         <p><span data-i18n="plat_2_p">We will exercise our devolved regional taxation authority to transition Cambria's property tax system to a Land Value Tax (LVT), penalizing speculative land-hoarding. This shift will lower the tax burden on productive homeowners and small businesses while ensuring all generated land revenues remain directly within Cambrian municipalities to fund local services.</span></p>
       </div>
-      <div class="platform-green" data-index="03">
+      <div class="platform-green" data-index="04">
         <h3 class="text-green"><span data-i18n="plat_3_h">Cooperative Procurement & Small Business Preference</span></h3>
         <p><span data-i18n="plat_3_p">We will reform the regional procurement framework to legally mandate that Cambrian government contracts prioritize local worker-owned cooperatives and independent small businesses. By locking out multinational conglomerates from local public tenders, we keep taxpayer money circulating within the regional economy to support Cambrian workers.</span></p>
       </div>
-      <div class="platform-red" data-index="04">
+      <div class="platform-red" data-index="05">
         <h3 class="text-red"><span data-i18n="plat_4_h">Cambrian Regional Transit & Freight Integration</span></h3>
         <p><span data-i18n="plat_4_p">We will fund the expansion and electrification of the Cambrian regional rail network and municipal transit systems, facilitating seamless green transit across the region. Additionally, we will support regional transport and agricultural cooperatives with local logistics hubs to ensure efficient, low-emission distribution of Cambrian goods.</span></p>
       </div>
-      <div class="platform-red" data-index="05">
+      <div class="platform-red" data-index="06">
         <h3 class="text-red"><span data-i18n="plat_5_h">Regional Ecological Stewardship & Coastal Preservation</span></h3>
         <p><span data-i18n="plat_5_p">We will implement strict regional environmental planning and zoning laws to protect Cambria’s fragile coastlines, forests, and fisheries from corporate exploitation and speculative development. This local stewardship will guarantee that Cambria’s natural beauty and resources are preserved for future generations without relying on slow, top-down federal agencies.</span></p>
       </div>
-      <div class="platform-green" data-index="06">
+      <div class="platform-green" data-index="07">
         <h3 class="text-green"><span data-i18n="plat_6_h">Regional Open Ledger & Public Procurement Transparency</span></h3>
         <p><span data-i18n="plat_6_p">We will establish a comprehensive, mandatory lobbying register for all regional officials and transition Cambria's public finances to a transparent, real-time open ledger. Every single regional government expenditure and procurement contract will be publicly trackable to ensure complete accountability and eliminate backroom corporate deals.</span></p>
       </div>
@@ -189,7 +193,7 @@ const pages = {
         <h3 class="text-red" style="margin-bottom: 1.5rem;"><span data-i18n="about_h">Tested Leadership</span></h3>
         <p><span data-i18n="about_p1">As Chairman of the <strong>Cambrian Bloc</strong> and Senior Counsel for the Democratic Greens of Caprica, Henrik Vasmer represents the bridging of working-class labor movements with national eco-liberal policy.</span></p>
         <p><span data-i18n="about_p2">At a time of profound regional transition, the governor's office is not an entry-level position. While our opponent is a first-time candidate asking for on-the-job training, Henrik brings decades of rigorous, tested experience in governance and institutional reform.</span></p>
-        <p><span data-i18n="about_p3">Born in Alto to a fishing family, his approach is empirical and decisive. He doesn't just understand the abstract policies; he knows exactly how to pull the levers of regional power to deliver concrete results for working people.</span></p>
+        <p><span data-i18n="about_p3">Born in Alto to a fishing family, his approach is empirical and decisive. He combines a deep understanding of abstract policy with the practical expertise to pull the levers of regional power and deliver concrete results for working people.</span></p>
         <p><span data-i18n="about_p4">No handlers. No learning curve.</span></p>
       </div>
     </div>
@@ -199,7 +203,7 @@ const pages = {
     <div class="split-grid">
       <div>
         <h3 class="headline text-red" style="font-size: 3rem; line-height: 1; margin-bottom: 2rem;"><span data-i18n="join_h">GET INVOLVED TODAY.</span></h3>
-        <p style="font-size: 1.4rem; font-weight: 700; line-height: 1.4;"><span data-i18n="join_p1">Our campaign is proudly powered by everyday working families across Cambria, not corporate PACs. Together, we can build a stronger, fairer region for everyone.</span></p>
+        <p style="font-size: 1.4rem; font-weight: 700; line-height: 1.4;"><span data-i18n="join_p1">Our campaign is proudly powered by everyday working families across Cambria. Together, we can build a stronger, fairer region for everyone.</span></p>
         <p><span data-i18n="join_p2">Whether your focus is on strengthening local labor or protecting our shared environment, there is a place for you in this movement. Your time and energy are essential to winning this election.</span></p>
         <p><span data-i18n="join_p3">Sign up below to receive regular campaign updates, invitations to local townhalls, and opportunities to volunteer in your community.</span></p>
       </div>
@@ -270,7 +274,7 @@ const i18n = {
     home_lead_headline: `A BETTER CAMBRIA <br/><span class="text-red">IS POSSIBLE.</span>`,
     home_lead_excerpt: `<strong>Henrik Vasmer for Governor.</strong> Chairman of the Cambrian Bloc and Senior Counsel to the Democratic Greens of Caprica. Rooted in empirical evidence, empathetic governance, and environmental stewardship.`,
     home_lead_p1: `The time for incremental change has passed. We are facing a structural crisis, where corporate consolidation and Caprican federal overreach threaten Cambria's working class and our environment alike.`,
-    home_lead_p2: `As Governor of Cambria, Henrik Vasmer proved that a different path is possible. He proved that when working people take control of the institutions that govern them, they deliver unparalleled results. This campaign is not merely about re-election; it is about permanently cementing the power of the people against the monopolies.`,
+    home_lead_p2: `As Governor of Cambria, Henrik Vasmer proved that a different path is possible. He proved that when working people take control of the institutions that govern them, they deliver unparalleled results. This campaign is about permanently cementing the power of the people against the monopolies.`,
     home_sec_1_title: `The Working Class Mandate`,
     home_sec_1_p: `As Governor of Cambria, Henrik Vasmer proved that when working people take control of the institutions that govern them, they deliver unparalleled results. This campaign is about permanently cementing the power of the people against the monopolies.`,
     home_sec_2_title: `Endorse the Campaign`,
@@ -302,6 +306,8 @@ const i18n = {
     record_6_title: `Defending Our Mandate`,
     record_6_p: `A decisive warning to the conservative establishment fighting our reforms in the courts. Cambria is not going back. We build for the next century.`,
     plat_title: `The Cambrian Future: Our Platform`,
+    plat_0_h: `The Lothar Collins Nuclear Facility Act`,
+    plat_0_p: `We will establish a regional nuclear generating facility in northern Cambria, creating the Collins Nuclear Authority to oversee its construction and operation. Financed through a private-partnership structure with strict cost accountability, this facility will ensure Cambria's energy independence and permanently reduce our reliance on federal and inter-regional power transfers.`,
     plat_1_h: `Municipal Energy Sovereignty & Community Co-ops`,
     plat_1_p: `We will utilize Cambria’s regional economic development powers to directly fund, license, and establish community-owned renewable microgrids and municipal energy cooperatives. By bypassing centralized national corporate grids, we will guarantee cheap, reliable, and clean power managed entirely by local Cambrian communities.`,
     plat_2_h: `Cambrian Land Value Taxation (LVT) & Municipal Wealth Retention`,
@@ -331,11 +337,11 @@ const i18n = {
     about_h: `Tested Leadership`,
     about_p1: `As Chairman of the <strong>Cambrian Bloc</strong> and Senior Counsel for the Democratic Greens of Caprica, Henrik Vasmer represents the bridging of working-class labor movements with national eco-liberal policy.`,
     about_p2: `At a time of profound regional transition, the governor's office is not an entry-level position. While our opponent is a first-time candidate asking for on-the-job training, Henrik brings decades of rigorous, tested experience in governance and institutional reform.`,
-    about_p3: `Born in Alto to a fishing family, his approach is empirical and decisive. He doesn't just understand the abstract policies; he knows exactly how to pull the levers of regional power to deliver concrete results for working people.`,
+    about_p3: `Born in Alto to a fishing family, his approach is empirical and decisive. He combines a deep understanding of abstract policy with the practical expertise to pull the levers of regional power and deliver concrete results for working people.`,
     about_p4: `No handlers. No learning curve.`,
     join_title: `Join the Campaign`,
     join_h: `GET INVOLVED TODAY.`,
-    join_p1: `Our campaign is proudly powered by everyday working families across Cambria, not corporate PACs. Together, we can build a stronger, fairer region for everyone.`,
+    join_p1: `Our campaign is proudly powered by everyday working families across Cambria. Together, we can build a stronger, fairer region for everyone.`,
     join_p2: `Whether your focus is on strengthening local labor or protecting our shared environment, there is a place for you in this movement. Your time and energy are essential to winning this election.`,
     join_p3: `Sign up below to receive regular campaign updates, invitations to local townhalls, and opportunities to volunteer in your community.`,
     join_form_title: `Volunteer Sign-Up`,
@@ -365,7 +371,7 @@ const i18n = {
     home_lead_headline: `UNA CAMBRIA MEJOR <br/><span class="text-red">ES POSIBLE.</span>`,
     home_lead_excerpt: `<strong>Henrik Vasmer para Gobernador.</strong> Presidente del Bloque Cámbrico y Asesor Principal de los Verdes Democráticos de Caprica. Arraigado en la evidencia empírica, la gobernanza empática y la administración ambiental.`,
     home_lead_p1: `El tiempo para el cambio incremental ha pasado. Nos enfrentamos a una crisis estructural, donde la consolidación corporativa y la extralimitación federal de Caprica amenazan a la clase trabajadora de Cambria y a nuestro medio ambiente por igual.`,
-    home_lead_p2: `Como Gobernador de Cambria, Henrik Vasmer demostró que un camino diferente es posible. Demostró que cuando la gente trabajadora toma el control de las instituciones que los gobiernan, entregan resultados sin precedentes. Esta campaña no se trata simplemente de reelección; se trata de cimentar permanentemente el poder del pueblo contra los monopolios.`,
+    home_lead_p2: `Como Gobernador de Cambria, Henrik Vasmer demostró que un camino diferente es posible. Demostró que cuando la gente trabajadora toma el control de las instituciones que los gobiernan, entregan resultados sin precedentes. Esta campaña trata sobre cimentar permanentemente el poder del pueblo contra los monopolios.`,
     home_sec_1_title: `El Mandato de la Clase Trabajadora`,
     home_sec_1_p: `Como Gobernador de Cambria, Henrik Vasmer demostró que cuando la gente trabajadora toma el control de las instituciones que los gobiernan, entregan resultados sin precedentes. Esta campaña trata sobre cimentar permanentemente el poder del pueblo contra los monopolios.`,
     home_sec_2_title: `Respalda la Campaña`,
@@ -397,6 +403,8 @@ const i18n = {
     record_6_title: `Defendiendo Nuestro Mandato`,
     record_6_p: `Una advertencia decisiva a la clase dirigente conservadora que lucha contra nuestras reformas en los tribunales. Cambria no dará marcha atrás. Construimos para el próximo siglo.`,
     plat_title: `El Futuro Cámbrico: Nuestra Plataforma`,
+    plat_0_h: `La Ley de Instalaciones Nucleares Lothar Collins`,
+    plat_0_p: `Estableceremos una instalación de generación nuclear regional en el norte de Cambria, creando la Autoridad Nuclear Collins para supervisar su construcción y operación. Financiada a través de una estructura de asociación privada con estricta responsabilidad de costos, esta instalación garantizará la independencia energética de Cambria y reducirá permanentemente nuestra dependencia de las transferencias de energía federales e interregionales.`,
     plat_1_h: `Soberanía Energética Municipal y Cooperativas Comunitarias`,
     plat_1_p: `Utilizaremos los poderes de desarrollo económico regional de Cambria para financiar, autorizar y establecer directamente microrredes renovables de propiedad comunitaria y cooperativas energéticas municipales. Al eludir las redes corporativas nacionales centralizadas, garantizaremos energía barata, confiable y limpia administrada en su totalidad por las comunidades locales de Cambria.`,
     plat_2_h: `Impuestos sobre el Valor de la Tierra (LVT) Cámbrica y Retención de la Riqueza Municipal`,
@@ -426,11 +434,11 @@ const i18n = {
     about_h: `Liderazgo Probado`,
     about_p1: `Como Presidente del <strong>Bloque Cámbrico</strong> y Asesor Principal de los Verdes Democráticos de Caprica, Henrik Vasmer representa el puente entre los movimientos laborales de la clase trabajadora y la política ecoliberal nacional.`,
     about_p2: `En un momento de profunda transición regional, la oficina del gobernador no es un puesto de nivel de entrada. Mientras que nuestro oponente es un candidato por primera vez que pide capacitación en el trabajo, Henrik aporta décadas de experiencia rigurosa y probada en gobernanza y reforma institucional.`,
-    about_p3: `Nacido en Alto en una familia de pescadores, su enfoque es empírico y decisivo. No solo comprende las políticas abstractas; sabe exactamente cómo tirar de las palancas del poder regional para lograr resultados concretos para la clase trabajadora.`,
+    about_p3: `Nacido en Alto en una familia de pescadores, su enfoque es empírico y decisivo. Combina una profunda comprensión de la política abstracta con la experiencia práctica para mover las palancas del poder regional y ofrecer resultados concretos a los trabajadores.`,
     about_p4: `Sin intermediarios. Sin curva de aprendizaje.`,
     join_title: `Únete a la Campaña`,
     join_h: `INVOLÚCRATE HOY.`,
-    join_p1: `Nuestra campaña está impulsada con orgullo por las familias trabajadoras comunes de Cambria, no por PAC corporativos. Juntos, podemos construir una región más fuerte y justa para todos.`,
+    join_p1: `Nuestra campaña está impulsada con orgullo por las familias trabajadoras comunes de Cambria. Juntos, podemos construir una región más fuerte y justa para todos.`,
     join_p2: `Ya sea que tu enfoque sea fortalecer el trabajo local o proteger nuestro medio ambiente compartido, hay un lugar para ti en este movimiento. Tu tiempo y energía son esenciales para ganar esta elección.`,
     join_p3: `Regístrate a continuación para recibir actualizaciones periódicas de la campaña, invitaciones a asambleas locales y oportunidades para ser voluntario en tu comunidad.`,
     join_form_title: `Inscripción de Voluntarios`,
@@ -460,7 +468,7 @@ const i18n = {
     home_lead_headline: `UNE MEILLEURE CAMBRIA <br/><span class="text-red">EST POSSIBLE.</span>`,
     home_lead_excerpt: `<strong>Henrik Vasmer pour Gouverneur.</strong> Président du Bloc Cambrien et Conseiller Principal des Verts Démocratiques de Caprica. Enraciné dans des preuves empiriques, une gouvernance empathique et la gestion environnementale.`,
     home_lead_p1: `Le temps du changement incrémental est révolu. Nous sommes confrontés à une crise structurelle, où la consolidation corporative et l'ingérence fédérale de Caprica menacent la classe ouvrière de Cambria et notre environnement.`,
-    home_lead_p2: `En tant que Gouverneur de Cambria, Henrik Vasmer a prouvé qu'une voie différente est possible. Il a prouvé que lorsque les travailleurs prennent le contrôle des institutions qui les gouvernent, ils obtiennent des résultats sans précédent. Cette campagne ne concerne pas seulement la réélection; il s'agit de cimenter définitivement le pouvoir du peuple contre les monopoles.`,
+    home_lead_p2: `En tant que Gouverneur de Cambria, Henrik Vasmer a prouvé qu'une voie différente est possible. Il a prouvé que lorsque les travailleurs prennent le contrôle des institutions qui les gouvernent, ils obtiennent des résultats sans précédent. Cette campagne vise à cimenter définitivement le pouvoir du peuple contre les monopoles.`,
     home_sec_1_title: `Le Mandat de la Classe Ouvrière`,
     home_sec_1_p: `En tant que Gouverneur de Cambria, Henrik Vasmer a prouvé que lorsque les travailleurs prennent le contrôle des institutions qui les gouvernent, ils obtiennent des résultats sans précédent. Cette campagne vise à cimenter définitivement le pouvoir du peuple contre les monopoles.`,
     home_sec_2_title: `Soutenez la Campagne`,
@@ -492,6 +500,8 @@ const i18n = {
     record_6_title: `Défendre Notre Mandat`,
     record_6_p: `Un avertissement décisif à l'establishment conservateur qui combat nos réformes devant les tribunaux. Cambria ne reculera pas. Nous construisons pour le siècle prochain.`,
     plat_title: `L'Avenir Cambrien : Notre Plateforme`,
+    plat_0_h: `La Loi sur l'Installation Nucléaire Lothar Collins`,
+    plat_0_p: `Nous établirons une installation de production nucléaire régionale dans le nord de Cambria, en créant l'Autorité Nucléaire Collins pour superviser sa construction et son exploitation. Financée par une structure de partenariat privé avec une stricte responsabilité des coûts, cette installation garantira l'indépendance énergétique de Cambria et réduira définitivement notre dépendance aux transferts d'énergie fédéraux et interrégionaux.`,
     plat_1_h: `Souveraineté Énergétique Municipale et Coopératives Communautaires`,
     plat_1_p: `Nous utiliserons les pouvoirs de développement économique régional de Cambria pour financer, autoriser et établir directement des micro-réseaux renouvelables appartenant à la communauté et des coopératives énergétiques municipales. En contournant les réseaux d'entreprise nationaux centralisés, nous garantirons une électricité bon marché, fiable et propre entièrement gérée par les communautés cambriennes locales.`,
     plat_2_h: `Taxation de la Valeur Foncière (LVT) Cambrienne et Rétention de la Richesse Municipale`,
@@ -521,11 +531,11 @@ const i18n = {
     about_h: `Un Leadership Éprouvé`,
     about_p1: `En tant que Président du <strong>Bloc Cambrien</strong> et Conseiller Principal des Verts Démocratiques de Caprica, Henrik Vasmer représente le rapprochement entre les mouvements ouvriers et la politique éco-libérale nationale.`,
     about_p2: `À une époque de profonde transition régionale, le poste de gouverneur n'est pas un poste de débutant. Alors que notre adversaire est un candidat novice qui demande une formation sur le tas, Henrik apporte des décennies d'expérience rigoureuse et éprouvée en matière de gouvernance et de réforme institutionnelle.`,
-    about_p3: `Né à Alto dans une famille de pêcheurs, son approche est empirique et décisive. Il ne se contente pas de comprendre les politiques abstraites ; il sait exactement comment tirer les leviers du pouvoir régional pour obtenir des résultats concrets pour les travailleurs.`,
+    about_p3: `Né à Alto dans une famille de pêcheurs, son approche est empirique et décisive. Il associe une compréhension profonde de la politique abstraite à l'expertise pratique pour tirer les leviers du pouvoir régional et obtenir des résultats concrets pour les travailleurs.`,
     about_p4: `Pas d'intermédiaires. Pas de courbe d'apprentissage.`,
     join_title: `Rejoignez la Campagne`,
     join_h: `IMPLIQUEZ-VOUS AUJOURD'HUI.`,
-    join_p1: `Notre campagne est fièrement propulsée par les familles ouvrières ordinaires à travers Cambria, et non par des PAC corporatifs. Ensemble, nous pouvons construire une région plus forte et plus juste pour tous.`,
+    join_p1: `Notre campagne est fièrement propulsée par les familles ouvrières ordinaires à travers Cambria. Ensemble, nous pouvons construire une région plus forte et plus juste pour tous.`,
     join_p2: `Que votre objectif soit de renforcer le travail local ou de protéger notre environnement partagé, il y a une place pour vous dans ce mouvement. Votre temps et votre énergie sont essentiels pour remporter cette élection.`,
     join_p3: `Inscrivez-vous ci-dessous pour recevoir des mises à jour régulières de la campagne, des invitations aux assemblées locales et des opportunités de bénévolat dans votre communauté.`,
     join_form_title: `Inscription des Bénévoles`,

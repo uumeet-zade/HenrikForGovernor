@@ -396,7 +396,7 @@ body.night-shift .theme-toggle {
   font-weight: 800;
   line-height: 1;
   color: var(--border-color);
-  opacity: 0.05;
+  opacity: 0.12;
   z-index: -1;
   transition: transform 0.3s, opacity 0.3s;
 }
@@ -493,3 +493,46 @@ body.night-shift .theme-toggle {
   width: 15%;
 }
 .event-table td h4 { margin-bottom: 0.5rem; }
+
+.platform-nuclear {
+  background-image: url('./nuclear_plant.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.platform-nuclear::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--bg-color);
+  opacity: 0.85;
+  z-index: 1;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.platform-grid > div.platform-nuclear:hover::after {
+  background: var(--bg-color);
+  opacity: 0.4;
+}
+
+.platform-nuclear > h3,
+.platform-nuclear > p {
+  position: relative;
+  z-index: 2;
+  transition: text-shadow 0.3s ease;
+}
+
+.platform-nuclear > p {
+  font-weight: 700;
+}
+
+.platform-grid > div.platform-nuclear::before {
+  opacity: 0.12;
+  z-index: 2;
+  color: var(--text-main);
+}
+
+.platform-grid > div.platform-nuclear:hover > h3,
+.platform-grid > div.platform-nuclear:hover > p {
+  text-shadow: 0 0 8px var(--bg-color), 0 0 15px var(--bg-color), 0 0 25px var(--bg-color);
+}
