@@ -320,16 +320,19 @@ h1, h2, h3, h4 {
   gap: 4rem;
   padding: 3rem 0;
   border-bottom: 1px solid var(--color-black);
-  transition: padding 0.3s ease, background 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(0);
 }
 .manifesto-row:first-child {
   border-top: 1px solid var(--color-black);
 }
 .manifesto-row:hover {
-  background: var(--color-green);
+  background-color: var(--color-green);
   color: #FFF;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 153, 76, 0.3);
+  z-index: 10;
+  position: relative;
 }
 .manifesto-num {
   font-family: var(--font-mono);
@@ -384,7 +387,7 @@ h1, h2, h3, h4 {
   opacity: 1;
 }
 .record-row h3 {
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
 .record-row.checked-off h3 {
   text-decoration: line-through;
