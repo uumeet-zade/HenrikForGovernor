@@ -359,3 +359,34 @@ h1, h2, h3, h4 {
   .img-container { margin: 0 auto; }
   .manifesto-row { flex-direction: column; gap: 1rem; padding: 2rem 0; }
 }
+
+/* Record Row Persistent Check-off Effects */
+.record-row .record-num {
+  width: 3rem; /* Fixed width to prevent shifting when content changes */
+  display: inline-block;
+}
+.record-row .record-num::before {
+  content: attr(data-num);
+}
+.record-row.checked-off .record-num::before {
+  content: "✓";
+}
+.record-row .record-stamp {
+  display: inline-block;
+  margin-top: 1rem;
+  border: 1px solid var(--color-green);
+  padding: 0.25rem 0.5rem;
+  opacity: 0;
+  color: var(--color-green);
+  transition: opacity 0.3s ease;
+}
+.record-row.checked-off .record-stamp {
+  opacity: 1;
+}
+.record-row h3 {
+  transition: all 0.3s ease;
+}
+.record-row.checked-off h3 {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
