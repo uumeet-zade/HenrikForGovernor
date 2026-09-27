@@ -103,7 +103,7 @@ const pages = {
         </div>
         <div style="flex: 1; display: flex; justify-content: flex-end;">
           <div class="img-container">
-            <img src="public/assets/kaede_custom_1.jpeg" class="editorial-img" />
+            <img src="https://i.redd.it/webklw2desif1.jpeg" class="editorial-img" />
           </div>
         </div>
       </div>
@@ -207,7 +207,7 @@ const pages = {
         </div>
         <div style="flex: 1;">
           <div class="img-container" style="margin-left: auto;">
-            <img src="public/assets/kaede_custom_2.jpg" class="editorial-img" />
+            <img src="https://images.gamebanana.com/img/ss/mods/6289207c195c9.jpg" class="editorial-img" />
           </div>
         </div>
       </div>
