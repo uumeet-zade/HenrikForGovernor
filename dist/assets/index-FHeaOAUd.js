@@ -1,80 +1,4 @@
-const dict = {
-  en: {
-    nav_brand: "DALGAARD 2070",
-    nav_record: "Track Record",
-    nav_platform: "Platform",
-    nav_events: "Events",
-    nav_about: "Dossier",
-    nav_join: "Volunteer",
-
-    home_hero: "BACK<br/>THE BLOC",
-    home_sub: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    home_p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    home_p2: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.",
-    home_btn_primary: "Endorse",
-    home_btn_secondary: "Read Platform",
-
-    plat_title: "The Cambrian Mandate",
-    plat_0_h: "Alto Light Rail Network",
-    plat_0_p: "We will establish a comprehensive East-West and North-South Light Rail system intersecting at Alto Central, connecting key hubs like the Legislature, Stadiums, and Airport.",
-    plat_1_h: "Alto-Gryphon High-Speed Link",
-    plat_1_p: "We will build a new high-speed rail corridor connecting Cambria's two largest cities via Battle Mountain. We will aggressively lower bus fares region-wide to guarantee transit equity.",
-    plat_2_h: "Mass Public Housing",
-    plat_2_p: "We will construct vast corridors of public housing concentrated precisely where working people need them most: near railway stations, tram termini, and universities.",
-    plat_3_h: "Publicly Funded Supermarkets",
-    plat_3_p: "To combat food deserts and price gouging, we will establish publicly-owned and operated supermarkets in low-income zones to guarantee access to basic essentials for all Cambrians.",
-    plat_4_h: "Wealth Redistribution",
-    plat_4_p: "We will enact a strict pied-à-terre tax on non-resident, part-time homeowners hoarding properties worth over 3.25 million, redirecting that capital directly into public works and pothole repair.",
-    plat_5_h: "Civilian Safety & Education",
-    plat_5_p: "We will establish a dedicated Safety Department to handle community issues so police can focus purely on serious crimes. We will simultaneously surge investment into public schools and youth sports clubs.",
-
-    record_title: "Completed Mandates",
-    record_0_h: "The Lothar Collins Nuclear Facility Act",
-    record_0_p: "We will establish a regional nuclear generating facility in northern Cambria, creating the Collins Nuclear Authority to oversee its construction and operation. Financed through a private-partnership structure with strict cost accountability, this facility will ensure Cambria's energy independence and permanently reduce our reliance on federal and inter-regional power transfers.",
-    record_1_h: "Municipal Energy Sovereignty & Community Co-ops",
-    record_1_p: "We will utilize Cambria’s regional economic development powers to directly fund, license, and establish community-owned renewable microgrids and municipal energy cooperatives. By bypassing centralized national corporate grids, we will guarantee cheap, reliable, and clean power managed entirely by local Cambrian communities.",
-    record_2_h: "Cambrian Land Value Taxation & Wealth Retention",
-    record_2_p: "We will exercise our devolved regional taxation authority to transition Cambria's property tax system to a Land Value Tax (LVT), penalizing speculative land-hoarding. This shift will lower the tax burden on productive homeowners and small businesses while ensuring all generated land revenues remain directly within Cambrian municipalities to fund local services.",
-    record_3_h: "Cooperative Procurement & Small Business Preference",
-    record_3_p: "We will reform the regional procurement framework to legally mandate that Cambrian government contracts prioritize local worker-owned cooperatives and independent small businesses. By locking out multinational conglomerates from local public tenders, we keep taxpayer money circulating within the regional economy to support Cambrian workers.",
-    record_4_h: "Cambrian Regional Transit & Freight Integration",
-    record_4_p: "We will fund the expansion and electrification of the Cambrian regional rail network and municipal transit systems, facilitating seamless green transit across the region. Additionally, we will support regional transport and agricultural cooperatives with local logistics hubs to ensure efficient, low-emission distribution of Cambrian goods.",
-    record_5_h: "Regional Ecological Stewardship & Coastal Preservation",
-    record_5_p: "We will implement strict regional environmental planning and zoning laws to protect Cambria’s fragile coastlines, forests, and fisheries from corporate exploitation and speculative development. This local stewardship will guarantee that Cambria’s natural beauty and resources are preserved for future generations without relying on slow, top-down federal agencies.",
-    record_6_h: "Regional Open Ledger & Public Procurement Transparency",
-    record_6_p: "We will establish a comprehensive, mandatory lobbying register for all regional officials and transition Cambria's public finances to a transparent, real-time open ledger. Every single regional government expenditure and procurement contract will be publicly trackable to ensure complete accountability and eliminate backroom corporate deals.",
-
-    events_title: "Official Schedule",
-    events_1_date: "SEP 12",
-    events_1_h: "Alto, Cambrian Legislature",
-    events_1_p: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    events_2_date: "SEP 18",
-    events_2_h: "Gryphon, Town Hall",
-    events_2_p: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    events_3_date: "OCT 05",
-    events_3_h: "Battle Mountain, Railway Station",
-    events_3_p: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
-
-    about_title: "Candidate Dossier",
-    about_h: "Consectetur Adipiscing",
-    about_p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-    about_p2: "Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent.",
-    about_p3: "Per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.",
-    about_p4: "In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.",
-
-    join_title: "Get Involved Today",
-    join_sub: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    join_p: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    join_name: "Full Name",
-    join_email: "Email Address",
-    join_affil: "Union / Local Affiliation",
-    join_btn: "Sign Up"
-  }
-};
-
-let currentLang = 'en';
-
-const shellHTML = `
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))s(a);new MutationObserver(a=>{for(const i of a)if(i.type==="childList")for(const r of i.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&s(r)}).observe(document,{childList:!0,subtree:!0});function n(a){const i={};return a.integrity&&(i.integrity=a.integrity),a.referrerPolicy&&(i.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?i.credentials="include":a.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function s(a){if(a.ep)return;a.ep=!0;const i=n(a);fetch(a.href,i)}})();const c={en:{nav_brand:"DALGAARD 2070",nav_record:"Track Record",nav_platform:"Platform",nav_events:"Events",nav_about:"Dossier",nav_join:"Volunteer",home_hero:"BACK<br/>THE BLOC",home_sub:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",home_p1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",home_p2:"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.",home_btn_primary:"Endorse",home_btn_secondary:"Read Platform",plat_title:"The Cambrian Mandate",plat_0_h:"Alto Light Rail Network",plat_0_p:"We will establish a comprehensive East-West and North-South Light Rail system intersecting at Alto Central, connecting key hubs like the Legislature, Stadiums, and Airport.",plat_1_h:"Alto-Gryphon High-Speed Link",plat_1_p:"We will build a new high-speed rail corridor connecting Cambria's two largest cities via Battle Mountain. We will aggressively lower bus fares region-wide to guarantee transit equity.",plat_2_h:"Mass Public Housing",plat_2_p:"We will construct vast corridors of public housing concentrated precisely where working people need them most: near railway stations, tram termini, and universities.",plat_3_h:"Publicly Funded Supermarkets",plat_3_p:"To combat food deserts and price gouging, we will establish publicly-owned and operated supermarkets in low-income zones to guarantee access to basic essentials for all Cambrians.",plat_4_h:"Wealth Redistribution",plat_4_p:"We will enact a strict pied-à-terre tax on non-resident, part-time homeowners hoarding properties worth over 3.25 million, redirecting that capital directly into public works and pothole repair.",plat_5_h:"Civilian Safety & Education",plat_5_p:"We will establish a dedicated Safety Department to handle community issues so police can focus purely on serious crimes. We will simultaneously surge investment into public schools and youth sports clubs.",record_title:"Completed Mandates",record_0_h:"The Lothar Collins Nuclear Facility Act",record_0_p:"We will establish a regional nuclear generating facility in northern Cambria, creating the Collins Nuclear Authority to oversee its construction and operation. Financed through a private-partnership structure with strict cost accountability, this facility will ensure Cambria's energy independence and permanently reduce our reliance on federal and inter-regional power transfers.",record_1_h:"Municipal Energy Sovereignty & Community Co-ops",record_1_p:"We will utilize Cambria’s regional economic development powers to directly fund, license, and establish community-owned renewable microgrids and municipal energy cooperatives. By bypassing centralized national corporate grids, we will guarantee cheap, reliable, and clean power managed entirely by local Cambrian communities.",record_2_h:"Cambrian Land Value Taxation & Wealth Retention",record_2_p:"We will exercise our devolved regional taxation authority to transition Cambria's property tax system to a Land Value Tax (LVT), penalizing speculative land-hoarding. This shift will lower the tax burden on productive homeowners and small businesses while ensuring all generated land revenues remain directly within Cambrian municipalities to fund local services.",record_3_h:"Cooperative Procurement & Small Business Preference",record_3_p:"We will reform the regional procurement framework to legally mandate that Cambrian government contracts prioritize local worker-owned cooperatives and independent small businesses. By locking out multinational conglomerates from local public tenders, we keep taxpayer money circulating within the regional economy to support Cambrian workers.",record_4_h:"Cambrian Regional Transit & Freight Integration",record_4_p:"We will fund the expansion and electrification of the Cambrian regional rail network and municipal transit systems, facilitating seamless green transit across the region. Additionally, we will support regional transport and agricultural cooperatives with local logistics hubs to ensure efficient, low-emission distribution of Cambrian goods.",record_5_h:"Regional Ecological Stewardship & Coastal Preservation",record_5_p:"We will implement strict regional environmental planning and zoning laws to protect Cambria’s fragile coastlines, forests, and fisheries from corporate exploitation and speculative development. This local stewardship will guarantee that Cambria’s natural beauty and resources are preserved for future generations without relying on slow, top-down federal agencies.",record_6_h:"Regional Open Ledger & Public Procurement Transparency",record_6_p:"We will establish a comprehensive, mandatory lobbying register for all regional officials and transition Cambria's public finances to a transparent, real-time open ledger. Every single regional government expenditure and procurement contract will be publicly trackable to ensure complete accountability and eliminate backroom corporate deals.",events_title:"Official Schedule",events_1_date:"SEP 12",events_1_h:"Alto, Cambrian Legislature",events_1_p:"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",events_2_date:"SEP 18",events_2_h:"Gryphon, Town Hall",events_2_p:"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",events_3_date:"OCT 05",events_3_h:"Battle Mountain, Railway Station",events_3_p:"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",about_title:"Candidate Dossier",about_h:"Consectetur Adipiscing",about_p1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",about_p2:"Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent.",about_p3:"Per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.",about_p4:"In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.",join_title:"Get Involved Today",join_sub:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",join_p:"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",join_name:"Full Name",join_email:"Email Address",join_affil:"Union / Local Affiliation",join_btn:"Sign Up"}};let p="en";const m=`
   <div class="watermark-scatter" style="top: 15%; left: -2%; transform: rotate(-90deg);">DALGAARD</div>
   <div class="watermark-scatter" style="top: 10%; right: 5%;">CAMBRIA</div>
   <div class="watermark-scatter" style="top: 35%; left: 20%;">BLOC</div>
@@ -102,10 +26,7 @@ const shellHTML = `
     </nav>
   </header>
   <main id="page-content" class="page-container"></main>
-`;
-
-const pages = {
-  home: `
+`,o={home:`
     <div class="newspaper-grid">
       <!-- Left/Main Column: Lead Story -->
       <article class="lead-story">
@@ -154,8 +75,7 @@ const pages = {
         </article>
       </div>
     </div>
-  `,
-  record: `
+  `,record:`
     <div class="section-wrapper">
       <span class="micro text-green" style="display: block; margin-bottom: 1rem;">// PRIOR VICTORIES</span>
       <h2 class="title-section" style="margin-bottom: 4rem;"><span data-i18n="record_title">Completed Mandates</span></h2>
@@ -205,8 +125,7 @@ const pages = {
         </div>
       </div>
     </div>
-  `,
-  platform: `
+  `,platform:`
     <div class="section-wrapper">
       <span class="micro text-green" style="display: block; margin-bottom: 1rem;">// THE MANDATE</span>
       <h2 class="title-section" style="margin-bottom: 4rem;"><span data-i18n="plat_title">Lorem Ipsum Dolor</span></h2>
@@ -244,8 +163,7 @@ const pages = {
         </div>
       </div>
     </div>
-  `,
-  events: `
+  `,events:`
     <div class="section-wrapper">
       <span class="micro" style="display: block; margin-bottom: 1rem;">// SCHEDULE</span>
       <h2 class="title-section"><span data-i18n="events_title">Official Schedule</span></h2>
@@ -277,8 +195,7 @@ const pages = {
         </div>
       </div>
     </div>
-  `,
-  about: `
+  `,about:`
     <div class="section-wrapper">
       <div class="flex-split reverse">
         <div style="flex: 1;">
@@ -297,8 +214,7 @@ const pages = {
         </div>
       </div>
     </div>
-  `,
-  join: `
+  `,join:`
     <div class="section-wrapper">
       <div class="flex-split">
         <div style="flex: 1; padding-right: 4rem;">
@@ -318,64 +234,4 @@ const pages = {
         </div>
       </div>
     </div>
-  `
-};
-
-function initApp() {
-  document.getElementById('app').innerHTML = shellHTML;
-  window.addEventListener('hashchange', handleRoute);
-
-  if (!window.location.hash) {
-    window.location.hash = '#home';
-  } else {
-    handleRoute();
-  }
-}
-
-function handleRoute() {
-  let hash = window.location.hash.substring(1) || 'home';
-  if (!pages[hash]) hash = 'home';
-
-  document.getElementById('page-content').innerHTML = pages[hash];
-
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.classList.toggle('active', link.dataset.page === hash);
-  });
-
-  applyTranslations();
-  if (hash === 'record') attachRecordListeners();
-  window.scrollTo(0, 0);
-}
-
-function attachRecordListeners() {
-  document.querySelectorAll('.record-row').forEach(row => {
-    row.addEventListener('mouseenter', () => {
-      row.classList.add('checked-off');
-    });
-  });
-}
-
-function applyTranslations() {
-  const t = dict[currentLang];
-  if (!t) return;
-
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (t[key]) el.innerHTML = t[key];
-  });
-
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    const key = el.getAttribute('data-i18n-placeholder');
-    if (t[key]) el.setAttribute('placeholder', t[key]);
-  });
-}
-
-window.navigate = (page) => {
-  window.location.hash = '#' + page;
-};
-
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initApp);
-} else {
-  initApp();
-}
+  `};function l(){document.getElementById("app").innerHTML=m,window.addEventListener("hashchange",d),window.location.hash?d():window.location.hash="#home"}function d(){let e=window.location.hash.substring(1)||"home";o[e]||(e="home"),document.getElementById("page-content").innerHTML=o[e],document.querySelectorAll(".nav-link").forEach(t=>{t.classList.toggle("active",t.dataset.page===e)}),h(),e==="record"&&u(),window.scrollTo(0,0)}function u(){document.querySelectorAll(".record-row").forEach(e=>{e.addEventListener("mouseenter",()=>{e.classList.add("checked-off")})})}function h(){const e=c[p];e&&(document.querySelectorAll("[data-i18n]").forEach(t=>{const n=t.getAttribute("data-i18n");e[n]&&(t.innerHTML=e[n])}),document.querySelectorAll("[data-i18n-placeholder]").forEach(t=>{const n=t.getAttribute("data-i18n-placeholder");e[n]&&t.setAttribute("placeholder",e[n])}))}window.navigate=e=>{window.location.hash="#"+e};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",l):l();
