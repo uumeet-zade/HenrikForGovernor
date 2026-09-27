@@ -280,4 +280,8 @@ window.navigate = (page) => {
   window.location.hash = '#' + page;
 };
 
-document.addEventListener('DOMContentLoaded', initApp);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
