@@ -103,7 +103,7 @@ const pages = {
         </div>
         <div style="flex: 1; display: flex; justify-content: flex-end;">
           <div class="img-container">
-            <img src="/assets/kaede_custom_1.jpeg" class="editorial-img" />
+            <img src="./assets/kaede_custom_1.jpeg?v=202" class="editorial-img" />
           </div>
         </div>
       </div>
@@ -207,7 +207,7 @@ const pages = {
         </div>
         <div style="flex: 1;">
           <div class="img-container" style="margin-left: auto;">
-            <img src="/assets/kaede_custom_2.jpg" class="editorial-img" />
+            <img src="./assets/kaede_custom_2.jpg?v=202" class="editorial-img" />
           </div>
         </div>
       </div>
